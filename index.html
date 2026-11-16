@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Construct Maps: Design &amp; visualize constructs</title>
+<meta name="description" content="Design and visualize protein and peptide constructs to investigate biological function. Start from a biological question, a design goal, or constructs you already have.">
+<style>
+:root{--bg:#fcfcfb;--ink:#1a1a19;--muted:#5c5c58;--line:#dcdcd7;--card:#ffffff;--accent:#1f5fbf}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--ink:#ececea;--muted:#a3a39d;--line:#34342f;--card:#1e1e1c;--accent:#7fb0ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:40px 16px 24px}
+h1{font-size:2rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 20px;font-size:1.1rem}
+.lead{max-width:62ch;margin:0 0 28px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.card img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block}
+.card h2{font-size:1.05rem;margin:4px 0 0}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:auto!important;padding-top:6px}
+a{color:var(--accent)}
+.open{font-weight:600}
+footer{max-width:1000px;margin:0 auto;padding:20px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+<h1>Construct Maps</h1>
+<p class="sub">Design &amp; visualize constructs</p>
+<p class="lead">Design and visualize protein and peptide constructs to investigate biological function. Start from a biological question, a design goal, or constructs you already have.</p>
+<section class="grid" aria-label="Live demos">
+
+    <article class="card">
+      <a href="demos/hsp90.html"><img src="assets/hsp90.png" alt="The interactive comparison: Hsp82: ATP binding versus hydrolysis in client maturation" loading="lazy"></a>
+      <h2>Hsp82: ATP binding versus hydrolysis in client maturation</h2>
+      <p>Distinguish nucleotide occupancy, hydrolytic chemistry, conformational coupling and nucleotide-state resetting in client maturation. Use a defined yeast Hsp82 homodimer background and client-specific function alongside loading, release and stability; do not use viability or ATPase as substitutes for maturation.</p>
+      <p class="links"><a class="open" href="demos/hsp90.html">Open the interactive demo</a> <a href="demos/hsp90.json">Download the record</a></p>
+    </article>
+</section>
+</main>
+<footer>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each demo is the plugin's own output, rendered unchanged.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="LICENSE">Licence</a></p>
+</footer>
+</body>
+</html>
