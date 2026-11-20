@@ -6,43 +6,59 @@
 <meta name="color-scheme" content="light dark">
 <title>Construct Maps: Design &amp; visualize constructs</title>
 <meta name="description" content="Design and visualize protein and peptide constructs to investigate biological function. Start from a biological question, a design goal, or constructs you already have.">
-<style>
-:root{--bg:#fcfcfb;--ink:#1a1a19;--muted:#5c5c58;--line:#dcdcd7;--card:#ffffff;--accent:#1f5fbf}
-@media (prefers-color-scheme:dark){:root{--bg:#161615;--ink:#ececea;--muted:#a3a39d;--line:#34342f;--card:#1e1e1c;--accent:#7fb0ff}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:1000px;margin:0 auto;padding:40px 16px 24px}
-h1{font-size:2rem;margin:0 0 4px}
-.sub{color:var(--muted);margin:0 0 20px;font-size:1.1rem}
-.lead{max-width:62ch;margin:0 0 28px}
-.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px}
-.card img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block}
-.card h2{font-size:1.05rem;margin:4px 0 0}
-.card p{margin:0;color:var(--muted);font-size:.95rem}
-.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:auto!important;padding-top:6px}
-a{color:var(--accent)}
-.open{font-weight:600}
-footer{max-width:1000px;margin:0 auto;padding:20px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <main>
 <h1>Construct Maps</h1>
 <p class="sub">Design &amp; visualize constructs</p>
 <p class="lead">Design and visualize protein and peptide constructs to investigate biological function. Start from a biological question, a design goal, or constructs you already have.</p>
-<section class="grid" aria-label="Live demos">
-
-    <article class="card">
-      <a href="demos/hsp90.html"><img src="assets/hsp90.png" alt="The interactive comparison: Hsp82: ATP binding versus hydrolysis in client maturation" loading="lazy"></a>
-      <h2>Hsp82: ATP binding versus hydrolysis in client maturation</h2>
-      <p>Distinguish nucleotide occupancy, hydrolytic chemistry, conformational coupling and nucleotide-state resetting in client maturation. Use a defined yeast Hsp82 homodimer background and client-specific function alongside loading, release and stability; do not use viability or ATPase as substitutes for maturation.</p>
-      <p class="links"><a class="open" href="demos/hsp90.html">Open the interactive demo</a> <a href="demos/hsp90.json">Download the record</a></p>
-    </article>
+<h2>Start here</h2>
+<section class="grid" aria-label="Introductory example">
+<article class="card">
+<a href="demos/hsp90.html"><img src="assets/hsp90.png" alt="The interactive comparison: Hsp82: ATP binding versus hydrolysis in client maturation" loading="lazy"></a>
+<h3>Hsp82: ATP binding versus hydrolysis in client maturation</h3>
+<p>A familiar system, to see what the plugin produces from a research question.</p>
+<p class="links"><a class="open" href="demos/hsp90.html">Open the interactive demo</a> <a href="demos/hsp90.json">Download the record</a></p>
+</article>
+</section>
+<h2>Case studies</h2>
+<p class="lead">Each question was given to the plugin in two products. Open a case to set what each proposed beside what the published paper tested.</p>
+<section class="grid" aria-label="Case studies">
+<article class="card">
+<a href="cases/sortase/"><img src="assets/sortase-gpt-r1.png" alt="A library proposed for: Sortase A: why P94 substitutions raise activity" loading="lazy"></a>
+<h3>Sortase A: why P94 substitutions raise activity</h3>
+<p>Why do substitutions at P94 raise the activity of Staphylococcus aureus sortase A, and is the β7-β8 loop involved?</p>
+<p class="links"><a class="open" href="cases/sortase/">Compare with the paper</a> <a href="cases/sortase/gpt-r1/">GPT</a> <a href="cases/sortase/claude-r1/">Claude</a></p>
+</article>
+<article class="card">
+<a href="cases/hsv-complement/"><img src="assets/hsv-complement-gpt-r1.png" alt="A library proposed for: Antibodies against HSV-1 and complement" loading="lazy"></a>
+<h3>Antibodies against HSV-1 and complement</h3>
+<p>Does complement engagement contribute to protection by antibodies against HSV-1 in neonatal mice, and does it do so across antibodies?</p>
+<p class="links"><a class="open" href="cases/hsv-complement/">Compare with the paper</a> <a href="cases/hsv-complement/gpt-r1/">GPT</a> <a href="cases/hsv-complement/claude-r1/">Claude</a></p>
+</article>
+<article class="card">
+<a href="cases/pdi1/"><img src="assets/pdi1-gpt-r1.png" alt="A library proposed for: Pdi1: which residues bind the ribosome" loading="lazy"></a>
+<h3>Pdi1: which residues bind the ribosome</h3>
+<p>Which residues of the proline-rich antimicrobial peptide Pdi1 drive its binding to the bacterial ribosome?</p>
+<p class="links"><a class="open" href="cases/pdi1/">Compare with the paper</a> <a href="cases/pdi1/gpt-r1/">GPT</a> <a href="cases/pdi1/claude-r1/">Claude</a></p>
+</article>
+<article class="card">
+<a href="cases/patronin/"><img src="assets/patronin-gpt-r1.png" alt="A library proposed for: Patronin: sequence or condensation?" loading="lazy"></a>
+<h3>Patronin: sequence or condensation?</h3>
+<p>Does the prion-like domain of Drosophila Patronin recognize microtubule minus ends through its primary sequence or through its capacity to condense?</p>
+<p class="links"><a class="open" href="cases/patronin/">Compare with the paper</a> <a href="cases/patronin/gpt-r1/">GPT</a> <a href="cases/patronin/claude-r1/">Claude</a></p>
+</article>
+<article class="card">
+<a href="cases/gpx4/"><img src="assets/gpx4-gpt-r1.png" alt="A library proposed for: GPX4: from binder to degrader" loading="lazy"></a>
+<h3>GPX4: from binder to degrader</h3>
+<p>How can a designed binder to human GPX4 be turned into a degrader that removes GPX4 rather than only binding it?</p>
+<p class="links"><a class="open" href="cases/gpx4/">Compare with the paper</a> <a href="cases/gpx4/gpt-r1/">GPT</a> <a href="cases/gpx4/claude-r1/">Claude</a></p>
+</article>
 </section>
 </main>
 <footer>
-<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each demo is the plugin's own output, rendered unchanged.</p>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. The interactive libraries are generated by Construct Maps from each design record and published without edits. The summaries and paper comparisons are editorial.</p>
 <p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="LICENSE">Licence</a></p>
 </footer>
 </body>

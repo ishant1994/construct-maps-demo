@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Antibodies against HSV-1 and complement · Construct Maps</title>
+<meta name="description" content="Does complement engagement contribute to protection by antibodies against HSV-1 in neonatal mice, and does it do so across antibodies?">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<main>
+<p class="crumbs"><a href="../../index.html">Construct Maps</a> / Antibodies against HSV-1 and complement</p>
+<h1>Antibodies against HSV-1 and complement</h1>
+<p class="q">Does complement engagement contribute to protection by antibodies against HSV-1 in neonatal mice, and does it do so across antibodies?</p>
+<details><summary>The prompt</summary><blockquote>Design a library of anti-HSV-1 antibody constructs against gD and gB to test whether complement engagement contributes to protection in neonatal mice and whether it does so uniformly across antibodies. Only use literature published before 2026-01-01.</blockquote></details>
+<h2>What the paper tested</h2>
+<p>Jimenez LM, Slein MD, Leib DA, Ackerman ME. Interaction with complement factor C1q can contribute to and improve monoclonal antibody-mediated protection against lethal HSV-1 challenge. bioRxiv, posted 24 October 2026. <a href="https://doi.org/10.64898/2026.10.19.760222">10.64898/2026.10.19.760222</a></p>
+<div class="wrap"><table>
+<thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
+<tbody>
+<tr><td>E317 (gD): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figures 1 and 3</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>e317-wt</code> <code>e317-ka</code> <code>e317-eg</code></td></tr>
+<tr><td>HSV8 (gD): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figures 1 and 3</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>HSV8_WT</code> <code>HSV8_KA</code> <code>HSV8_EG</code></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>CH42 (gD): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figures 1 and 3</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>CH42_WT</code> <code>CH42_KA</code><span class="note">no E430G form</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>Hu2c (gB): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figure 2</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>HDIT102 (gB): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figure 2</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>D48 (gB): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figure 2</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>D48_WT</code> <code>D48_KA</code> <code>D48_EG</code></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>d48-wt</code> <code>d48-ka</code> <code>d48-eg</code></td></tr>
+<tr><td>BMPC-23 (gB): wild-type, K322A and E430G forms<span class="where">Methods: Monoclonal antibodies; Figure 2</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>BMPC23_WT</code> <code>BMPC23_KA</code><span class="note">no E430G form</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>bmpc23-wt</code> <code>bmpc23-ka</code> <code>bmpc23-eg</code></td></tr>
+<tr><td>VRC01 wild-type IgG1, an irrelevant-antigen isotype control<span class="where">Results: The role of complement activation in mAb-mediated protection from HSV-1 challenge; Figure 4A–C</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span><span class="note">proposed an Fc-silenced anchor (e317-lalapg) instead</span></td></tr>
+</tbody></table></div>
+<p class="legend">✓ the same edit · ~ related, a different change at the same place or the same idea · – not proposed. Constructs are named as in each library's record.</p>
+<h2>Also proposed</h2><ul class="plain"><li><strong>Claude Sonnet 5.5 (high):</strong> An Fc-silenced anchor (LALA-PG) on one antibody, to separate complement from Fc receptor effects.</li></ul>
+<h2>The libraries</h2>
+<section class="grid">
+<article class="card">
+<a href="gpt-r1/"><img src="../../assets/hsv-complement-gpt-r1.png" alt="GPT 6.1 sol (high): Antibodies against HSV-1 and complement" loading="lazy"></a>
+<h3>GPT 6.1 sol (high)</h3>
+<p>10 constructs (2 candidates, 4 controls, 4 references) · 6 hypotheses · 15 cited sources, 9 checked against their identifiers</p>
+<p class="links"><a class="open" href="gpt-r1/">Open this library</a></p>
+</article>
+<article class="card">
+<a href="claude-r1/"><img src="../../assets/hsv-complement-claude-r1.png" alt="Claude Sonnet 5.5 (high): Antibodies against HSV-1 and complement" loading="lazy"></a>
+<h3>Claude Sonnet 5.5 (high)</h3>
+<p>10 constructs (6 candidates, 1 control, 3 references) · 2 hypotheses · 23 cited sources, 23 checked against their identifiers</p>
+<p class="links"><a class="open" href="claude-r1/">Open this library</a></p>
+</article>
+</section>
+</main>
+<footer>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. The interactive libraries are generated by Construct Maps from each design record and published without edits. The summaries and paper comparisons are editorial.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">Licence</a></p>
+</footer>
+</body>
+</html>

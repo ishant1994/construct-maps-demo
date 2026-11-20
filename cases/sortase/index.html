@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Sortase A: why P94 substitutions raise activity · Construct Maps</title>
+<meta name="description" content="Why do substitutions at P94 raise the activity of Staphylococcus aureus sortase A, and is the β7-β8 loop involved?">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<main>
+<p class="crumbs"><a href="../../index.html">Construct Maps</a> / Sortase A: why P94 substitutions raise activity</p>
+<h1>Sortase A: why P94 substitutions raise activity</h1>
+<p class="q">Why do substitutions at P94 raise the activity of Staphylococcus aureus sortase A, and is the β7-β8 loop involved?</p>
+<details><summary>The prompt</summary><blockquote>Design a library of Staphylococcus aureus sortase A (ΔN59) variants to investigate why P94 substitutions raise activity and whether the β7-β8 loop is involved. Only use literature published before 2026-01-01.</blockquote></details>
+<h2>What the paper tested</h2>
+<p>Walkenhauer EG, … Amacher JF. Mutation-induced heterogeneity of the β7-β8 loop of the Staphylococcus aureus class A sortase leading to enhanced catalytic efficiency characterized by NMR and enzyme kinetics. bioRxiv, posted 24 August 2026. <a href="https://doi.org/10.64898/2026.08.21.746310">10.64898/2026.08.21.746310</a></p>
+<div class="wrap"><table>
+<thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
+<tbody>
+<tr><td>Wild-type saSrtA<span class="where">Materials and methods: Protein expression and purification (the variant list); Figures 3 and 4</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>wt</code></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>wt</code></td></tr>
+<tr><td>P94D<span class="where">Figure 4 and Table 1 (kinetics); Results: NMR and kinetic analyses of LPATG peptide binding</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>p94r</code> <code>p94s</code> <code>p94a</code><span class="note">P94R, P94S and P94A instead</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>p94d</code></td></tr>
+<tr><td>C184A, the catalytically inactive background<span class="where">Figure 3 (C184A saSrtA, P94D/C184A saSrtA, C184A saSrtA5M)</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>dead</code><span class="note">on its own, without a P94 variant</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>P94D/C184A<span class="where">Figure 3B; Figures 5 and 6</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>Y187A<span class="where">Results: Mutation of Y187 in saSrtA to interrogate the P94-Y187 interaction; Figure 2</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>y187l</code> <code>y187f</code><span class="note">Y187L and Y187F instead</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>y187a</code></td></tr>
+<tr><td>Y187D and Y187R<span class="where">Results: Mutation of Y187 in saSrtA to interrogate the P94-Y187 interaction; Figure 2</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>y187l</code> <code>y187f</code><span class="note">Y187L and Y187F instead</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>saSrtA5M (P94R, D160N, D165A, K190E, K196T)<span class="where">Figure 4 and Table 1; the text states that saSrtA5M contains P94R plus four additional mutations</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>m5</code><span class="note">built from m4-p94 (the four other mutations) plus P94R</span></td></tr>
+<tr><td>C184A saSrtA5M<span class="where">Figure 3C</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+</tbody></table></div>
+<p class="legend">✓ the same edit · ~ related, a different change at the same place or the same idea · – not proposed. Constructs are named as in each library's record.</p>
+<h2>Also proposed</h2><ul class="plain"><li><strong>GPT 6.1 sol (high):</strong> A P94R/Y187L double, to ask whether the P94R effect depends on residue 187.</li><li><strong>Claude Sonnet 5.5 (high):</strong> P94A, P94S and P94R at the same position, and P94S combined with Y187A.</li></ul>
+<h2>The libraries</h2>
+<section class="grid">
+<article class="card">
+<a href="gpt-r1/"><img src="../../assets/sortase-gpt-r1.png" alt="GPT 6.1 sol (high): Sortase A: why P94 substitutions raise activity" loading="lazy"></a>
+<h3>GPT 6.1 sol (high)</h3>
+<p>8 constructs (3 candidates, 4 controls, 1 reference) · 4 hypotheses · 7 cited sources, 6 checked against their identifiers</p>
+<p class="links"><a class="open" href="gpt-r1/">Open this library</a></p>
+</article>
+<article class="card">
+<a href="claude-r1/"><img src="../../assets/sortase-claude-r1.png" alt="Claude Sonnet 5.5 (high): Sortase A: why P94 substitutions raise activity" loading="lazy"></a>
+<h3>Claude Sonnet 5.5 (high)</h3>
+<p>9 constructs (4 candidates, 4 controls, 1 reference) · 4 hypotheses · 12 cited sources, 11 checked against their identifiers</p>
+<p class="links"><a class="open" href="claude-r1/">Open this library</a></p>
+</article>
+</section>
+</main>
+<footer>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. The interactive libraries are generated by Construct Maps from each design record and published without edits. The summaries and paper comparisons are editorial.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">Licence</a></p>
+</footer>
+</body>
+</html>

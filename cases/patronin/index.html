@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Patronin: sequence or condensation? · Construct Maps</title>
+<meta name="description" content="Does the prion-like domain of Drosophila Patronin recognize microtubule minus ends through its primary sequence or through its capacity to condense?">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<main>
+<p class="crumbs"><a href="../../index.html">Construct Maps</a> / Patronin: sequence or condensation?</p>
+<h1>Patronin: sequence or condensation?</h1>
+<p class="q">Does the prion-like domain of Drosophila Patronin recognize microtubule minus ends through its primary sequence or through its capacity to condense?</p>
+<details><summary>The prompt</summary><blockquote>Design a library of Drosophila Patronin (UniProt A1ZAU8) constructs to test whether its prion-like domain recognizes microtubule minus ends through its primary sequence or through its capacity to condense. Only use literature published before 2026-01-01.</blockquote></details>
+<h2>What the paper tested</h2>
+<p>Zhang B, Yang J, Yu S, Zhou K, He L, Huang L, Liang X, Wang H, Chen J. Patronin condensation integrates recognition, protection and organization of microtubule minus ends. bioRxiv, posted 6 October 2026. <a href="https://doi.org/10.64898/2026.10.03.756418">10.64898/2026.10.03.756418</a></p>
+<div class="wrap"><table>
+<thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
+<tbody>
+<tr><td>The prion-like domain deleted (ΔPrLD)<span class="where">Fig. 3D; Fig. 1L</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>delta</code><span class="note">its domain is residues 713–1038</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>d-prld</code><span class="note">its domain is residues 721–835</span></td></tr>
+<tr><td>All 23 aromatic residues of the domain changed to serine (YFW23S)<span class="where">Fig. 3 (the 23 aromatic stickers are marked); Fig. 3H–L</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>native-aro</code><span class="note">22 aromatic residues (Y, F, W) in its domain</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>aro-ser</code><span class="note">14 residues, tyrosine and phenylalanine only</span></td></tr>
+<tr><td>The domain replaced by the disordered region of HNRNPA1 (Patronin–HNRNPA1)<span class="where">Fig. 3G, P, Q; Fig. 7C, D</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>a1-swap</code></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>fus-lc</code><span class="note">the FUS low-complexity domain instead</span></td></tr>
+<tr><td>The CKK domain deleted (ΔCKK)<span class="where">Fig. 6A</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>delta-ckk</code><span class="note">residues 1458–1630</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>PrLD with CKK, and CKK on its own<span class="where">Fig. 4I, J (CKK alone); Fig. 4K, L (PrLD-CKK)</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>Tyrosines changed to tryptophans in the domain (Y16W)<span class="where">Fig. 3M–O</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td>An optogenetic PrLD, with and without YFW23S<span class="where">Fig. 4D–H</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+</tbody></table></div>
+<p class="legend">✓ the same edit · ~ related, a different change at the same place or the same idea · – not proposed. Constructs are named as in each library's record.</p>
+<h2>Also proposed</h2><ul class="plain"><li><strong>GPT 6.1 sol (high):</strong> A Gly-Ser cassette in place of the domain, a scrambled spacer order, and an aromatic-depleted version of the HNRNPA1 swap.</li><li><strong>Claude Sonnet 5.5 (high):</strong> A length-matched Gly-Gly-Ser spacer, a shuffled domain, and a GCN4 tetramerisation motif to ask whether multivalency alone is enough.</li></ul>
+<h2>The libraries</h2>
+<section class="grid">
+<article class="card">
+<a href="gpt-r1/"><img src="../../assets/patronin-gpt-r1.png" alt="GPT 6.1 sol (high): Patronin: sequence or condensation?" loading="lazy"></a>
+<h3>GPT 6.1 sol (high)</h3>
+<p>8 constructs (3 candidates, 4 controls, 1 reference) · 5 hypotheses · 7 cited sources, 5 checked against their identifiers</p>
+<p class="links"><a class="open" href="gpt-r1/">Open this library</a></p>
+</article>
+<article class="card">
+<a href="claude-r1/"><img src="../../assets/patronin-claude-r1.png" alt="Claude Sonnet 5.5 (high): Patronin: sequence or condensation?" loading="lazy"></a>
+<h3>Claude Sonnet 5.5 (high)</h3>
+<p>7 constructs (5 candidates, 1 control, 1 reference) · 5 hypotheses · 16 cited sources, 16 checked against their identifiers</p>
+<p class="links"><a class="open" href="claude-r1/">Open this library</a></p>
+</article>
+</section>
+</main>
+<footer>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. The interactive libraries are generated by Construct Maps from each design record and published without edits. The summaries and paper comparisons are editorial.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">Licence</a></p>
+</footer>
+</body>
+</html>

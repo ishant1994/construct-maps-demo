@@ -1,0 +1,2685 @@
+{
+ "schema_version": 5,
+ "title": "Anti-HSV-1 gD and gB IgG1 library for testing complement engagement in neonatal mice",
+ "objective": "Test whether C1q-dependent complement engagement contributes to antibody-mediated protection of neonatal mice from HSV-1, and whether any contribution is shared by gD- and gB-directed antibodies that differ in neutralizing ability.",
+ "coordinate_note": "Positions are 1-based within each mature chain (no secretion leader). Residue names such as K322 or E430 use EU numbering of the IgG1 constant region, where EU 118 is the first CH1 residue; the heavy-chain position of EU n is n - 117 plus the VH length (E317 122, D48 124, BMPC-23 120).",
+ "sources": [
+  {
+   "id": "idusogie2000",
+   "title": "Mapping of the C1q binding site on Rituxan, a chimeric antibody with a human IgG1 Fc",
+   "coverage": "Abstract and the RCSB citation record read; full text not inspected. Mouse complement was not among the complement sources named in the abstract.",
+   "identifier": {
+    "doi": "10.4049/jimmunol.164.8.4178",
+    "pmid": "10754313"
+   },
+   "url": "https://doi.org/10.4049/jimmunol.164.8.4178",
+   "published": "2000-04-01"
+  },
+  {
+   "id": "diebolder2014",
+   "title": "Complement is activated by IgG hexamers assembled at the cell surface",
+   "coverage": "Excerpts and abstract-level text read through search results; full text and supplement not inspected.",
+   "identifier": {
+    "doi": "10.1126/science.1248943",
+    "pmid": "24626930"
+   },
+   "url": "https://doi.org/10.1126/science.1248943",
+   "published": "2014-03-01"
+  },
+  {
+   "id": "dejong2016",
+   "title": "A novel platform for the potentiation of therapeutic antibodies based on antigen-dependent formation of IgG hexamers at the cell surface",
+   "coverage": "Abstract and open-access excerpts read; full text and supplement not inspected.",
+   "identifier": {
+    "doi": "10.1371/journal.pbio.1002344",
+    "pmid": "26736041"
+   },
+   "url": "https://doi.org/10.1371/journal.pbio.1002344",
+   "published": "2016-01-06"
+  },
+  {
+   "id": "lo2017",
+   "title": "Effector-attenuating substitutions that maintain antibody stability and reduce toxicity in mice",
+   "coverage": "Abstract read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1074/jbc.m116.767749",
+    "pmid": "28077575"
+   },
+   "url": "https://doi.org/10.1074/jbc.m116.767749",
+   "published": "2017-01-11"
+  },
+  {
+   "id": "schlothauer2016",
+   "title": "Novel human IgG1 and IgG4 Fc-engineered antibodies with completely abolished immune effector functions",
+   "coverage": "Abstract read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1093/protein/gzw040",
+    "pmid": "27578889"
+   },
+   "url": "https://doi.org/10.1093/protein/gzw040",
+   "published": "2016-08-29"
+  },
+  {
+   "id": "slein2024",
+   "title": "Effector functions are required for broad and potent protection of neonatal mice with antibodies targeting HSV glycoprotein D",
+   "coverage": "Read through the 2023 bioRxiv preprint text (10.1101/2023.08.29.555423) as summarised by the fetch tool, plus abstract; published full text and supplement not accessible; figures not inspected.",
+   "identifier": {
+    "doi": "10.1016/j.xcrm.2024.101417",
+    "pmid": "38350452"
+   },
+   "url": "https://doi.org/10.1016/j.xcrm.2024.101417",
+   "published": "2024-02-12"
+  },
+  {
+   "id": "slein2025gb",
+   "title": "Antibodies targeting HSV glycoprotein B require effector functions to protect neonatal mice (bioRxiv preprint)",
+   "coverage": "bioRxiv preprint text read through the fetch tool; figures and supplement not inspected. The 2026 journal version falls after the evidence cutoff and was not used.",
+   "identifier": {
+    "doi": "10.1101/2025.07.25.666806"
+   },
+   "url": "https://doi.org/10.1101/2025.07.25.666806",
+   "published": "2025-07-25"
+  },
+  {
+   "id": "slein2025vfcr",
+   "title": "Eliminating interactions with the viral Fc receptor improves antibody-mediated protection against neonatal HSV infection in mice",
+   "coverage": "Abstract read, plus the 2024 bioRxiv preprint text (10.1101/2024.11.20.624598) through the fetch tool; published full text and supplement not inspected.",
+   "identifier": {
+    "doi": "10.1126/scitranslmed.adu8579",
+    "pmid": "41259538"
+   },
+   "url": "https://doi.org/10.1126/scitranslmed.adu8579",
+   "published": "2025-11-19"
+  },
+  {
+   "id": "kuraoka2023",
+   "title": "A non-neutralizing glycoprotein B monoclonal antibody protects against herpes simplex virus disease in mice",
+   "coverage": "Abstract, figure legends and PDB 7UHZ record read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1172/jci161968",
+    "pmid": "36454639"
+   },
+   "url": "https://doi.org/10.1172/jci161968",
+   "published": "2022-12-01"
+  },
+  {
+   "id": "backes2022",
+   "title": "Maternally transferred mAbs protect neonatal mice from HSV-induced mortality and morbidity",
+   "coverage": "Abstract, Figure 1 legend and early results text read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1084/jem.20220110",
+    "pmid": "36156707"
+   },
+   "url": "https://doi.org/10.1084/jem.20220110",
+   "published": "2022-09-26"
+  },
+  {
+   "id": "lee2013",
+   "title": "Structural basis for the antibody neutralization of herpes simplex virus",
+   "coverage": "Abstract and PDB 3W9D / 3W9E records read; sequences taken from the PDB entries; full text not inspected.",
+   "identifier": {
+    "doi": "10.1107/s0907444913016776",
+    "pmid": "24100313"
+   },
+   "url": "https://doi.org/10.1107/s0907444913016776",
+   "published": "2013-09-20"
+  },
+  {
+   "id": "sun2023",
+   "title": "The structure of HSV-1 gB bound to a potent neutralizing antibody reveals a conservative antigenic domain across herpesviruses",
+   "coverage": "Press summaries and PDB 8KFA record read; sequences taken from PDB 8KFA; the paper itself was not inspected.",
+   "identifier": {
+    "doi": "10.1016/j.hlife.2023.12.004"
+   },
+   "url": "https://doi.org/10.1016/j.hlife.2023.12.004",
+   "published": "2023-12-22"
+  },
+  {
+   "id": "burnaschner2021",
+   "title": "Antibodies elicited in response to a single cycle glycoprotein D deletion viral vaccine candidate bind C1q and activate complement mediated neutralization and cytolysis",
+   "coverage": "Abstract and parts of the open-access full text read through Europe PMC; figures not inspected.",
+   "identifier": {
+    "doi": "10.3390/v13071284",
+    "pmid": "34209320"
+   },
+   "url": "https://doi.org/10.3390/v13071284",
+   "published": "2021-06-30"
+  },
+  {
+   "id": "lubinski2002",
+   "title": "Herpes simplex virus type 1 evades the effects of antibody and complement in vivo",
+   "coverage": "Abstract and introduction read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1128/jvi.76.18.9232-9241.2002",
+    "pmid": "12186907"
+   },
+   "url": "https://doi.org/10.1128/jvi.76.18.9232-9241.2002",
+   "published": "2002-09-01"
+  },
+  {
+   "id": "lubinski2011",
+   "title": "The herpes simplex virus 1 IgG Fc receptor blocks antibody-mediated complement activation and antibody-dependent cellular cytotoxicity in vivo",
+   "coverage": "Abstract read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1128/jvi.02509-10",
+    "pmid": "21228231"
+   },
+   "url": "https://doi.org/10.1128/jvi.02509-10",
+   "published": "2011-01-12"
+  },
+  {
+   "id": "sprague2006",
+   "title": "Crystal structure of the HSV-1 Fc receptor bound to Fc reveals a mechanism for antibody bipolar bridging",
+   "coverage": "Abstract and introduction excerpts read; full text and structure (PDB 2GJ7, 5 A) not inspected.",
+   "identifier": {
+    "doi": "10.1371/journal.pbio.0040148",
+    "pmid": "16646632"
+   },
+   "url": "https://doi.org/10.1371/journal.pbio.0040148",
+   "published": "2006-05-02"
+  },
+  {
+   "id": "gunn2023",
+   "title": "Complement contributes to antibody-mediated protection against repeated SHIV challenge",
+   "coverage": "Abstract and open-access full text excerpts read (Methods and Introduction on the K322A and E430G variants); figures not inspected.",
+   "identifier": {
+    "doi": "10.1073/pnas.2221247120",
+    "pmid": "37155897"
+   },
+   "url": "https://doi.org/10.1073/pnas.2221247120",
+   "published": "2023-05-08"
+  },
+  {
+   "id": "pihlgren2004",
+   "title": "Influence of complement C3 amount on IgG responses in early life: immunization with C3b-conjugated antigen increases murine neonatal antibody responses",
+   "coverage": "Abstract read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1016/j.vaccine.2004.06.010",
+    "pmid": "15530677"
+   },
+   "url": "https://doi.org/10.1016/j.vaccine.2004.06.010",
+   "published": "2004-12-01"
+  },
+  {
+   "id": "dekkers2017",
+   "title": "Affinity of human IgG subclasses to mouse Fc gamma receptors",
+   "coverage": "Abstract read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1080/19420862.2017.1323159",
+    "pmid": "28463043"
+   },
+   "url": "https://doi.org/10.1080/19420862.2017.1323159",
+   "published": "2017-05-02"
+  },
+  {
+   "id": "digaetano2003",
+   "title": "Complement activation determines the therapeutic activity of rituximab in vivo",
+   "coverage": "Abstract (first part) read; full text not inspected.",
+   "identifier": {
+    "doi": "10.4049/jimmunol.171.3.1581",
+    "pmid": "12874252"
+   },
+   "url": "https://doi.org/10.4049/jimmunol.171.3.1581",
+   "published": "2003-08-01"
+  },
+  {
+   "id": "kosik2023",
+   "title": "C1q enables influenza HA stem binding antibodies to block viral attachment and broadens the antibody escape repertoire (bioRxiv preprint)",
+   "coverage": "Abstract read; preprint full text not inspected.",
+   "identifier": {
+    "doi": "10.1101/2023.06.12.544648"
+   },
+   "url": "https://doi.org/10.1101/2023.06.12.544648",
+   "published": "2023-06-13"
+  },
+  {
+   "id": "diamond2023",
+   "title": "Fc-\u03b3R-dependent antibody effector functions are required for vaccine-mediated protection against antigen-shifted variants of SARS-CoV-2",
+   "coverage": "Abstract and search excerpts read; full text not inspected.",
+   "identifier": {
+    "doi": "10.1038/s41564-023-01359-1",
+    "pmid": "37012355"
+   },
+   "url": "https://doi.org/10.1038/s41564-023-01359-1",
+   "published": "2023-04-03"
+  },
+  {
+   "id": "vanosch2021",
+   "title": "Fc galactosylation promotes hexamerization of human IgG1, leading to enhanced classical complement activation",
+   "coverage": "Abstract read; full text not inspected.",
+   "identifier": {
+    "doi": "10.4049/jimmunol.2100399",
+    "pmid": "34408013"
+   },
+   "url": "https://doi.org/10.4049/jimmunol.2100399",
+   "published": "2021-08-18"
+  }
+ ],
+ "regions": [
+  {
+   "region_id": "vh",
+   "name": "Heavy variable domain (antigen recognition)",
+   "kind": "binding",
+   "description": "VH of each antibody; with VL forms the antigen-binding site. Differs between antibodies."
+  },
+  {
+   "region_id": "vl",
+   "name": "Light variable domain (antigen recognition)",
+   "kind": "binding",
+   "description": "VL of each antibody."
+  },
+  {
+   "region_id": "ch1",
+   "name": "CH1 (heavy-light pairing)",
+   "kind": "assembly",
+   "description": "First heavy constant domain; pairs with the light constant domain."
+  },
+  {
+   "region_id": "cl",
+   "name": "Light constant domain (kappa)",
+   "kind": "assembly",
+   "description": "Human kappa constant domain; pairs with CH1 through an interchain disulfide."
+  },
+  {
+   "region_id": "hinge",
+   "name": "Hinge",
+   "kind": "linker",
+   "description": "Upper and core hinge (EU 216-232): flexibility of the Fab arms and the interheavy-chain disulfides."
+  },
+  {
+   "region_id": "lower-hinge",
+   "name": "Lower hinge (FcgR contact)",
+   "kind": "binding",
+   "description": "EU 233-239 at the hinge-CH2 junction; main contact for activating Fc gamma receptors."
+  },
+  {
+   "region_id": "ch2",
+   "name": "CH2",
+   "kind": "module",
+   "description": "Second heavy constant domain (EU 240-340), carrying the N297 glycan."
+  },
+  {
+   "region_id": "c1q-loop",
+   "name": "C1q-contact loop (CH2)",
+   "kind": "binding",
+   "description": "CH2 loop EU 318-331 holding K322, P329 and P331, the core of the human IgG1 C1q footprint together with D270."
+  },
+  {
+   "region_id": "ch3",
+   "name": "CH3 (Fc-Fc and dimer interface)",
+   "kind": "assembly",
+   "description": "Third heavy constant domain (EU 341-447); CH3 homodimerization and the Fc-Fc contacts that form IgG hexamers on antigen."
+  },
+  {
+   "region_id": "fcrn-gei-loop",
+   "name": "CH3 loop at the FcRn / gE-gI site",
+   "kind": "binding",
+   "description": "EU 428-436, flanking H435: part of the CH2-CH3 interface bound by FcRn and by the HSV-1 gE-gI Fc receptor. E430 lies inside it."
+  }
+ ],
+ "donors": [
+  {
+   "donor_id": "e317-vh",
+   "name": "E317 / UB-621 heavy variable domain",
+   "sequence": "QVTLKQSGAEVKKPGSSVKVSCTASGGTLRTYGVSWVRQAPGQGLEWLGRTIPLFGKTDYAQKFQGRVTITADKSMDTSFMELTSLTSEDTAVYYCARDLTTLTSYNWWDLWGQGTLVTVSS",
+   "accession": {
+    "database": "PDB",
+    "accession": "3W9D"
+   },
+   "note": "Variable domain taken from the heavy chain of PDB 3W9D Fab (human); gD complex 3W9E; the PDB chain continues into CH1, which is replaced here by the UniProt constant domain."
+  },
+  {
+   "donor_id": "e317-vl",
+   "name": "E317 / UB-621 light variable domain",
+   "sequence": "EIVLTQSPGTLSLSPGERATLSCRASQSVTSSQLAWYQQKPGQAPRLLISGASNRATGIPDRFSGSGSGTDFTLTISRLEPEDFAVYYCQQYGSSPTFGGGTKVEIK",
+   "accession": {
+    "database": "PDB",
+    "accession": "3W9D"
+   },
+   "note": "Variable domain taken from the light chain of PDB 3W9D Fab (human); gD complex 3W9E."
+  },
+  {
+   "donor_id": "d48-vh",
+   "name": "D48 heavy variable domain",
+   "sequence": "EVQLVETGGGVVRPGRSLRLSCTTSGFSFSGSAMHWVRQAPGKGLEWVAVISHDGNIIQYHDSVKGRFTISRDNSKNVLLLQMNSLRVDDTAMYYCARDVWLLPATISYAFDFWGQGTMVTVSS",
+   "accession": {
+    "database": "PDB",
+    "accession": "8KFA"
+   },
+   "note": "Variable domain taken from the heavy chain of PDB 8KFA Fab (human); the PDB chain continues into CH1, which is replaced here by the UniProt constant domain."
+  },
+  {
+   "donor_id": "d48-vl",
+   "name": "D48 light variable domain",
+   "sequence": "VIWMTQSPPSLSASIGDTVTITCRASQGISNSIAWYQRRPGKAPELLVYAAYRLQSGVPSRLSGSGSGAEYTLTIKNMQPEDFATYYCQQYYDNPLTFGGGTKVEIK",
+   "accession": {
+    "database": "PDB",
+    "accession": "8KFA"
+   },
+   "note": "Variable domain taken from the light chain of PDB 8KFA Fab (human)."
+  },
+  {
+   "donor_id": "bmpc23-vh",
+   "name": "BMPC-23 heavy variable domain",
+   "sequence": "QVQLQQSGPELVKPGASVKLSCKASGYSFTTYDINWVKERPGQGLEWIGWIYPREGSTNYNEKFRGKATLTADTSSSTAYMELHSLTSEDSAVYFCATYGSSRYYTMDYWGQGTSVTVSS",
+   "accession": {
+    "database": "PDB",
+    "accession": "7UHZ"
+   },
+   "note": "Variable domain taken from the heavy chain of PDB 7UHZ Fab (mouse variable domains); the PDB chain continues into CH1, which is replaced here by the UniProt constant domain."
+  },
+  {
+   "donor_id": "bmpc23-vl",
+   "name": "BMPC-23 light variable domain",
+   "sequence": "DIVLTQSPTSLAVSLGQRATISCRASESVDNFGISFMNWFQQKPGQPPKLLIYAASNLGSGVPARFSGSGSGTDFSLNIHPMEDDDTAMYFCQQSKEVPLTFGAGTKLELK",
+   "accession": {
+    "database": "PDB",
+    "accession": "7UHZ"
+   },
+   "note": "Variable domain taken from the light chain of PDB 7UHZ Fab (mouse variable domains)."
+  },
+  {
+   "donor_id": "ighg1-ch",
+   "name": "Human IgG1 constant region CH1-CH3 (secreted form, EU 118-445)",
+   "sequence": "ASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSP",
+   "accession": {
+    "database": "UniProt",
+    "accession": "P01857"
+   },
+   "note": "UniProt P01857 residues 1-328 (EU numbering = residue + 117). The last two residues of the secreted heavy chain (G446, K447) are added as a literal segment."
+  },
+  {
+   "donor_id": "igkc-cl",
+   "name": "Human kappa constant domain",
+   "sequence": "RTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+   "accession": {
+    "database": "UniProt",
+    "accession": "P01834"
+   },
+   "note": "UniProt P01834 (107 residues); UniProt carries V at position 191 (Km3); the E317 PDB Fab carries L there."
+  }
+ ],
+ "hypotheses": [
+  {
+   "hypothesis_id": "c1q-contribution",
+   "question": "Does C1q binding by antigen-bound IgG contribute to protection of neonatal mice, with FcgR engagement and neutralization left intact, and is the contribution the same for each antibody?",
+   "mechanism": "K322A removes a core C1q contact on human IgG1 and leaves the Fab and FcgR-binding region unchanged. The wild-type minus K322A difference is the C1q-dependent increment, the LALA-PG anchor bounds the total Fc-dependent increment, and uniformity is read as a similar fractional loss across the three antibodies.",
+   "measurement": "Per antibody, survival and day-5 brain, ganglion and visceral viral burden over a sub-saturating dose series (about 5-40 ug i.p.) in 2-day-old C57BL/6J pups given HSV-1 intranasally, with an antibody-by-Fc interaction test across the panel. In vitro with neonatal and adult mouse serum: C1q binding and C3/C4 deposition on gD- or gB-coated surfaces and infected cells, and complement-dependent neutralization. Orthogonal host controls outside the library: C1qa-null and C3-null pups, and virus lacking gE Fc binding.",
+   "note": "A null K322A result is only informative if the wild-type antibody binds mouse C1q at baseline, so that is confirmed first. This hypothesis carries three candidates, one per antibody, because uniformity needs the same edit across the panel."
+  },
+  {
+   "hypothesis_id": "complement-limiting",
+   "question": "Is complement engagement limiting for these antibodies, so that promoting IgG hexamers on antigen raises protection, and does it do so equally for each?",
+   "mechanism": "E430G strengthens Fc-Fc contacts between neighbouring antigen-bound IgG, so six Fc regions assemble into a platform matching the six heads of C1q, raising C1q avidity on antigen-dense surfaces without changing the Fab.",
+   "measurement": "Shift of the dose-response curve against wild-type in the same pup model, with C1q and C3 deposition, complement-dependent neutralization, and binding to mouse FcRn, mouse FcgRs and HSV-1 gE-gI measured for each variant. Compared with the K322A twin of the same antibody. An E430G/K322A double in the next round would show whether any gain runs through C1q.",
+   "note": "Because E430 sits beside the FcRn and gE-gI site, a gain here is provisional until those binding measurements are in. Carries three candidates for the same reason as the first hypothesis."
+  }
+ ],
+ "variants": [
+  {
+   "variant_id": "e317-wt",
+   "name": "E317 / UB-621 human IgG1 (wild-type Fc)",
+   "headline": "Wild-type human IgG1 Fc",
+   "construct_role": "reference",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 122,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 123,
+     "end": 220,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 221,
+     "end": 237,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 238,
+     "end": 244,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 245,
+     "end": 345,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 323,
+     "end": 336,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 346,
+     "end": 452,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 433,
+     "end": 441,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVTLKQSGAEVKKPGSSVKVSCTASGGTLRTYGVSWVRQAPGQGLEWLGRTIPLFGKTDYAQKFQGRVTITADKSMDTSFMELTSLTSEDTAVYYCARDLTTLTSYNWWDLWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "assembly": {
+      "segments": [
+       {
+        "segment_id": "e317-h1",
+        "kind": "donor",
+        "start": 1,
+        "end": 122,
+        "label": "E317 VH",
+        "donor_id": "e317-vh",
+        "donor_start": 1,
+        "donor_end": 122
+       },
+       {
+        "segment_id": "e317-h2",
+        "kind": "donor",
+        "start": 123,
+        "end": 450,
+        "label": "IgG1 CH1-CH3",
+        "donor_id": "ighg1-ch",
+        "donor_start": 1,
+        "donor_end": 328
+       },
+       {
+        "segment_id": "e317-h3",
+        "kind": "literal",
+        "start": 451,
+        "end": 452,
+        "label": "C-terminal GK (EU 446-447)",
+        "sequence": "GK"
+       }
+      ]
+     }
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "EIVLTQSPGTLSLSPGERATLSCRASQSVTSSQLAWYQQKPGQAPRLLISGASNRATGIPDRFSGSGSGTDFTLTISRLEPEDFAVYYCQQYGSSPTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "assembly": {
+      "segments": [
+       {
+        "segment_id": "e317-l1",
+        "kind": "donor",
+        "start": 1,
+        "end": 107,
+        "label": "E317 VL",
+        "donor_id": "e317-vl",
+        "donor_start": 1,
+        "donor_end": 107
+       },
+       {
+        "segment_id": "e317-l2",
+        "kind": "donor",
+        "start": 108,
+        "end": 214,
+        "label": "Kappa constant domain",
+        "donor_id": "igkc-cl",
+        "donor_start": 1,
+        "donor_end": 107
+       }
+      ]
+     }
+    }
+   ],
+   "rationale": {
+    "hypothesis": "The unmodified human IgG1 form of the gD-directed, receptor-blocking antibody; every Fc variant of this antibody is measured against it.",
+    "observations": [
+     {
+      "source_id": "backes2022",
+      "finding": "E317 / UB-621 is one of four human IgG1 gD antibodies evaluated in neonatal mice, where gD-directed antibodies protected against HSV-1 and HSV-2 mortality; UB-621 is the clinical-grade product of the E317 clone.",
+      "locator": "Abstract; Figure 1 legend",
+      "context": "Neonatal mice, mAb given directly or by maternal transfer."
+     },
+     {
+      "source_id": "slein2024",
+      "finding": "Unmodified UB-621 improved neonatal survival over an irrelevant antibody and induced complement deposition on gD in vitro, as did HSV8 and an FcgR-enhanced CH42; their Fc-knockout forms did not.",
+      "locator": "Results, complement deposition panel (Fig. 2G) and neonatal survival, preprint text",
+      "context": "2-day-old C57BL/6J pups, 40 ug i.p., HSV-1 1e4 PFU i.n.; source of complement not stated."
+     },
+     {
+      "source_id": "lee2013",
+      "finding": "E317 binds the gD surface used for nectin-1 binding and occludes the HVEM contact, so it neutralizes by blocking receptor engagement.",
+      "locator": "Abstract",
+      "context": "Crystal structure of the gD-E317 Fab complex."
+     }
+    ],
+    "comparison": "Reference for E317 K322A, E430G and LALA-PG.",
+    "uncertainty": "The variable domains are the PDB 3W9D Fab sequences and are assumed to equal the UB-621 product. The constant regions are set to UniProt IGHG1 and IGKC, and the allotype of the published constructs is not stated. The secretion leader comes from the expression vector and is not part of these mature chains."
+   }
+  },
+  {
+   "variant_id": "d48-wt",
+   "name": "D48 human IgG1 (wild-type Fc)",
+   "headline": "Wild-type human IgG1 Fc",
+   "construct_role": "reference",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 124,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 125,
+     "end": 222,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 223,
+     "end": 239,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 240,
+     "end": 246,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 247,
+     "end": 347,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 325,
+     "end": 338,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 348,
+     "end": 454,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 435,
+     "end": 443,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "EVQLVETGGGVVRPGRSLRLSCTTSGFSFSGSAMHWVRQAPGKGLEWVAVISHDGNIIQYHDSVKGRFTISRDNSKNVLLLQMNSLRVDDTAMYYCARDVWLLPATISYAFDFWGQGTMVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "assembly": {
+      "segments": [
+       {
+        "segment_id": "d48-h1",
+        "kind": "donor",
+        "start": 1,
+        "end": 124,
+        "label": "D48 VH",
+        "donor_id": "d48-vh",
+        "donor_start": 1,
+        "donor_end": 124
+       },
+       {
+        "segment_id": "d48-h2",
+        "kind": "donor",
+        "start": 125,
+        "end": 452,
+        "label": "IgG1 CH1-CH3",
+        "donor_id": "ighg1-ch",
+        "donor_start": 1,
+        "donor_end": 328
+       },
+       {
+        "segment_id": "d48-h3",
+        "kind": "literal",
+        "start": 453,
+        "end": 454,
+        "label": "C-terminal GK (EU 446-447)",
+        "sequence": "GK"
+       }
+      ]
+     }
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "VIWMTQSPPSLSASIGDTVTITCRASQGISNSIAWYQRRPGKAPELLVYAAYRLQSGVPSRLSGSGSGAEYTLTIKNMQPEDFATYYCQQYYDNPLTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "assembly": {
+      "segments": [
+       {
+        "segment_id": "d48-l1",
+        "kind": "donor",
+        "start": 1,
+        "end": 107,
+        "label": "D48 VL",
+        "donor_id": "d48-vl",
+        "donor_start": 1,
+        "donor_end": 107
+       },
+       {
+        "segment_id": "d48-l2",
+        "kind": "donor",
+        "start": 108,
+        "end": 214,
+        "label": "Kappa constant domain",
+        "donor_id": "igkc-cl",
+        "donor_start": 1,
+        "donor_end": 107
+       }
+      ]
+     }
+    }
+   ],
+   "rationale": {
+    "hypothesis": "The unmodified human IgG1 form of a gB domain II neutralizing antibody; every Fc variant of this antibody is measured against it.",
+    "observations": [
+     {
+      "source_id": "slein2025gb",
+      "finding": "D48 as human IgG1 gave near-complete protection at 20 ug and, like the other gB antibodies tested, required Fc effector function (LALA-PG form) in neonatal mice.",
+      "locator": "Results and Discussion, preprint text",
+      "context": "2-day-old C57BL/6J pups, i.p. antibody, HSV-1 st17syn+ 1e4 PFU i.n.; complement was not dissected."
+     },
+     {
+      "source_id": "sun2023",
+      "finding": "D48 neutralizes HSV-1 by binding gB domain II; the antibody-gB complex was resolved by cryo-EM (PDB 8KFA).",
+      "locator": "Press summaries and the PDB record",
+      "context": "Cryo-EM of HSV-1 gB with D48 Fab, 3.04 A."
+     }
+    ],
+    "comparison": "Reference for D48 K322A and E430G.",
+    "uncertainty": "The variable domains are the PDB 8KFA Fab sequences; the C-terminal His tag in that entry is not part of the construct. Constant regions are UniProt IGHG1 and IGKC and the secretion leader is vector-supplied. The paper describing D48 was not read in full."
+   }
+  },
+  {
+   "variant_id": "bmpc23-wt",
+   "name": "BMPC-23 human IgG1 (wild-type Fc)",
+   "headline": "Wild-type human IgG1 Fc",
+   "construct_role": "reference",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 120,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 121,
+     "end": 218,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 219,
+     "end": 235,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 236,
+     "end": 242,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 243,
+     "end": 343,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 321,
+     "end": 334,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 344,
+     "end": 450,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 431,
+     "end": 439,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 111,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 112,
+     "end": 218,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVQLQQSGPELVKPGASVKLSCKASGYSFTTYDINWVKERPGQGLEWIGWIYPREGSTNYNEKFRGKATLTADTSSSTAYMELHSLTSEDSAVYFCATYGSSRYYTMDYWGQGTSVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "assembly": {
+      "segments": [
+       {
+        "segment_id": "bmpc23-h1",
+        "kind": "donor",
+        "start": 1,
+        "end": 120,
+        "label": "BMPC-23 VH",
+        "donor_id": "bmpc23-vh",
+        "donor_start": 1,
+        "donor_end": 120
+       },
+       {
+        "segment_id": "bmpc23-h2",
+        "kind": "donor",
+        "start": 121,
+        "end": 448,
+        "label": "IgG1 CH1-CH3",
+        "donor_id": "ighg1-ch",
+        "donor_start": 1,
+        "donor_end": 328
+       },
+       {
+        "segment_id": "bmpc23-h3",
+        "kind": "literal",
+        "start": 449,
+        "end": 450,
+        "label": "C-terminal GK (EU 446-447)",
+        "sequence": "GK"
+       }
+      ]
+     }
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "DIVLTQSPTSLAVSLGQRATISCRASESVDNFGISFMNWFQQKPGQPPKLLIYAASNLGSGVPARFSGSGSGTDFSLNIHPMEDDDTAMYFCQQSKEVPLTFGAGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "assembly": {
+      "segments": [
+       {
+        "segment_id": "bmpc23-l1",
+        "kind": "donor",
+        "start": 1,
+        "end": 111,
+        "label": "BMPC-23 VL",
+        "donor_id": "bmpc23-vl",
+        "donor_start": 1,
+        "donor_end": 111
+       },
+       {
+        "segment_id": "bmpc23-l2",
+        "kind": "donor",
+        "start": 112,
+        "end": 218,
+        "label": "Kappa constant domain",
+        "donor_id": "igkc-cl",
+        "donor_start": 1,
+        "donor_end": 107
+       }
+      ]
+     }
+    }
+   ],
+   "rationale": {
+    "hypothesis": "The unmodified human IgG1 form of a non-neutralizing gB domain IV antibody; its protection cannot rest on neutralization, so it reads the effector arms most directly.",
+    "observations": [
+     {
+      "source_id": "kuraoka2023",
+      "finding": "BMPC-23 does not neutralize, activates mouse FcgRIV, binds gB domain IV, and protected mice as mouse IgG2c and, as human IgG1, mice expressing human FcgRIII.",
+      "locator": "Abstract",
+      "context": "Antibody cloned from a delta-gD-2-vaccinated mouse; protection tested after intravaginal HSV-2 challenge."
+     },
+     {
+      "source_id": "slein2025gb",
+      "finding": "BMPC-23 as human IgG1 protected about 40% of neonates at 20 ug, and its LALA-PG form retained some FcgR binding in vitro.",
+      "locator": "Results, preprint text",
+      "context": "2-day-old C57BL/6J pups, i.p. antibody, HSV-1 st17syn+ 1e4 PFU i.n."
+     }
+    ],
+    "comparison": "Reference for BMPC-23 K322A and E430G.",
+    "uncertainty": "BMPC-23 variable domains are mouse sequences (PDB 7UHZ); the human IgG1/kappa chimera is assumed to match the format used in the neonatal studies. The PDB light chain ends at the first constant residue and the heavy chain at the first CH1 residue, so the junctions to the human constant domains are set here, not taken from the source. The secretion leader is vector-supplied."
+   }
+  },
+  {
+   "variant_id": "e317-ka",
+   "name": "E317 / UB-621 IgG1 K322A",
+   "headline": "C1q-binding ablation (K322A)",
+   "hypothesis_id": "c1q-contribution",
+   "construct_role": "candidate",
+   "parent_id": "e317-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 122,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 123,
+     "end": 220,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 221,
+     "end": 237,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 238,
+     "end": 244,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 245,
+     "end": 345,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 323,
+     "end": 336,
+     "evidence": "predicted",
+     "note": "K322A removes C1q binding to human IgG1 for human, rabbit and guinea-pig complement; mouse C1q binding is assumed, not shown."
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 346,
+     "end": 452,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 433,
+     "end": 441,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVTLKQSGAEVKKPGSSVKVSCTASGGTLRTYGVSWVRQAPGQGLEWLGRTIPLFGKTDYAQKFQGRVTITADKSMDTSFMELTSLTSEDTAVYYCARDLTTLTSYNWWDLWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCAVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 327,
+       "from": "K",
+       "to": "A"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "EIVLTQSPGTLSLSPGERATLSCRASQSVTSSQLAWYQQKPGQAPRLLISGASNRATGIPDRFSGSGSGTDFTLTISRLEPEDFAVYYCQQYGSSPTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "K322A removes C1q binding while the Fab and the FcgR-binding lower hinge are unchanged. If complement contributes, this variant protects less than wild-type at a sub-saturating dose by more than any loss of neutralization explains.",
+    "observations": [
+     {
+      "source_id": "idusogie2000",
+      "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+      "locator": "Abstract",
+      "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+     },
+     {
+      "source_id": "gunn2023",
+      "finding": "K322A and E430G variants of the HIV antibody 10-1074 respectively raised and lowered the antibody dose needed to prevent SHIV viremia, showing that ablating or boosting complement activity changes protection in vivo; the mutations did not appreciably change antigen, FcgR or FcRn binding.",
+      "locator": "Abstract; Introduction and Methods text on the KA and EG variants",
+      "context": "Rhesus macaques, weekly low-dose intrarectal SHIV challenge, subcutaneous antibody."
+     },
+     {
+      "source_id": "digaetano2003",
+      "finding": "In immunocompetent mice the activity of rituximab, a chimeric human IgG1, was governed by complement activation, so a human IgG1 can engage mouse complement in vivo.",
+      "locator": "Title and first part of the abstract",
+      "context": "Mouse EL4 lymphoma expressing human CD20; rituximab i.p."
+     },
+     {
+      "source_id": "pihlgren2004",
+      "finding": "Serum C3 is low in infant mice compared with adults.",
+      "locator": "Abstract",
+      "context": "Infant versus adult mice; tetanus toxoid immunisation model."
+     },
+     {
+      "source_id": "kosik2023",
+      "finding": "C1q alone, without the downstream cascade, blocked viral attachment by influenza HA stem antibodies through steric interference and sharpened neutralization in vitro and in mice.",
+      "locator": "Abstract",
+      "context": "Influenza virus; anti-stem antibodies plus C1q; mouse respiratory challenge."
+     },
+     {
+      "source_id": "diamond2023",
+      "finding": "Passive immune serum protection against SARS-CoV-2 in mice needed activating FcgRs, and in that study C1q was not required, so antibody effector arms are not interchangeable across viruses.",
+      "locator": "Abstract and search excerpts",
+      "context": "C57BL/6 and FcgR- or C1q-knockout mice; serum transfer and vaccination."
+     },
+     {
+      "source_id": "slein2024",
+      "finding": "HSV8, UB-621 and an FcgR-enhanced gD antibody activated complement deposition on gD in vitro and their Fc-knockout forms did not; whether complement matters in vivo was not tested.",
+      "locator": "Results, Fig. 2G (preprint text)",
+      "context": "In vitro deposition assay; complement source not stated."
+     }
+    ],
+    "comparison": "Against the E317 wild-type parent for the C1q-dependent increment; against E317 LALA-PG for the share of Fc-dependent protection that C1q carries.",
+    "uncertainty": "K322A was defined against human, rabbit and guinea-pig complement, so loss of mouse C1q binding on gD- or gB-bound IgG is assumed and must be measured. Neonatal mouse C3 is low, so a null result cannot separate no role from too little complement to matter. If the antibody binds C1q poorly at baseline, K322A has nothing to remove (the 10-1074 paper cites b12, whose wild-type form already behaved as complement-null). K322A also cannot separate C1q acting alone (steric interference with attachment, as reported for influenza stem antibodies) from downstream cascade activation.",
+    "edit": "Removes the lysine at the centre of the human IgG1 C1q footprint while leaving the Fab and the FcgR binding region untouched."
+   }
+  },
+  {
+   "variant_id": "e317-eg",
+   "name": "E317 / UB-621 IgG1 E430G",
+   "headline": "Hexamer-promoting Fc (E430G)",
+   "hypothesis_id": "complement-limiting",
+   "construct_role": "candidate",
+   "parent_id": "e317-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 122,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 123,
+     "end": 220,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 221,
+     "end": 237,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 238,
+     "end": 244,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 245,
+     "end": 345,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 323,
+     "end": 336,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 346,
+     "end": 452,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 433,
+     "end": 441,
+     "evidence": "unknown",
+     "note": "E430 sits inside this loop; whether E430G changes gE-gI or mouse FcRn binding has not been reported for HSV antibodies."
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVTLKQSGAEVKKPGSSVKVSCTASGGTLRTYGVSWVRQAPGQGLEWLGRTIPLFGKTDYAQKFQGRVTITADKSMDTSFMELTSLTSEDTAVYYCARDLTTLTSYNWWDLWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHGALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 435,
+       "from": "E",
+       "to": "G"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "EIVLTQSPGTLSLSPGERATLSCRASQSVTSSQLAWYQQKPGQAPRLLISGASNRATGIPDRFSGSGSGTDFTLTISRLEPEDFAVYYCQQYGSSPTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "E430G favours Fc-Fc contacts between neighbouring antigen-bound IgG, so hexamers form more readily on antigen and C1q avidity rises. If complement is limiting for this antibody, protection at a sub-saturating dose exceeds wild-type with the Fab, neutralization and FcgR binding unchanged.",
+    "observations": [
+     {
+      "source_id": "digaetano2003",
+      "finding": "In immunocompetent mice the activity of rituximab, a chimeric human IgG1, was governed by complement activation, so a human IgG1 can engage mouse complement in vivo.",
+      "locator": "Title and first part of the abstract",
+      "context": "Mouse EL4 lymphoma expressing human CD20; rituximab i.p."
+     },
+     {
+      "source_id": "diebolder2014",
+      "finding": "Antigen-bound IgG assembles into ordered hexamers that engage the six heads of C1q, and Fc-Fc contact mutations including E430G raise complement activation.",
+      "locator": "Abstract and excerpts",
+      "context": "Cell-surface antigens (CD20, CD38) on cells; human complement."
+     },
+     {
+      "source_id": "dejong2016",
+      "finding": "E430G and E345K IgG1 backbones strongly raised complement-dependent killing in an antigen-binding-dependent way.",
+      "locator": "Abstract",
+      "context": "Cell lines and patient tumour cells; therapeutic antibodies against several targets."
+     },
+     {
+      "source_id": "gunn2023",
+      "finding": "K322A and E430G variants of the HIV antibody 10-1074 respectively raised and lowered the antibody dose needed to prevent SHIV viremia, showing that ablating or boosting complement activity changes protection in vivo; the mutations did not appreciably change antigen, FcgR or FcRn binding.",
+      "locator": "Abstract; Introduction and Methods text on the KA and EG variants",
+      "context": "Rhesus macaques, weekly low-dose intrarectal SHIV challenge, subcutaneous antibody."
+     },
+     {
+      "source_id": "lubinski2011",
+      "finding": "The HSV-1 gE-gI Fc receptor blocked antibody-mediated complement activation in vivo; the effect was seen in C3-knockout mice.",
+      "locator": "Abstract",
+      "context": "Mouse flank zosteriform model; wild-type versus Fc-binding-deficient virus."
+     },
+     {
+      "source_id": "lubinski2002",
+      "finding": "HSV-1 gC (C3b binding) and gE (IgG Fc binding) together protect the virus from antibody and complement: removing both greatly increased complement-enhanced neutralization in vitro and reduced virulence in mice.",
+      "locator": "Abstract",
+      "context": "Mouse model; mutant HSV-1 lacking gC C3b binding, gE Fc binding, or both."
+     }
+    ],
+    "comparison": "Against the wild-type parent for a complement gain, and against its K322A twin for loss; an E430G/K322A double is the next-round attribution control.",
+    "uncertainty": "E430 lies in the CH3 loop beside H435, part of the site bound by FcRn and by the HSV-1 gE-gI Fc receptor, and the effect of E430G on gE-gI or mouse FcRn binding has not been reported for HSV antibodies, so a change in protection could not yet be assigned to complement alone. Hexamer formation needs enough antigen at the right spacing; gD is likely sparser than gB on the virion, and gC (C3b binding) and gE-gI can offset the gain.",
+    "edit": "Strengthens Fc-Fc contacts between neighbouring antigen-bound IgG so that hexamers form more readily on antigen, without touching the Fab."
+   }
+  },
+  {
+   "variant_id": "d48-ka",
+   "name": "D48 IgG1 K322A",
+   "headline": "C1q-binding ablation (K322A)",
+   "hypothesis_id": "c1q-contribution",
+   "construct_role": "candidate",
+   "parent_id": "d48-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 124,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 125,
+     "end": 222,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 223,
+     "end": 239,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 240,
+     "end": 246,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 247,
+     "end": 347,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 325,
+     "end": 338,
+     "evidence": "predicted",
+     "note": "K322A removes C1q binding to human IgG1 for human, rabbit and guinea-pig complement; mouse C1q binding is assumed, not shown."
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 348,
+     "end": 454,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 435,
+     "end": 443,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "EVQLVETGGGVVRPGRSLRLSCTTSGFSFSGSAMHWVRQAPGKGLEWVAVISHDGNIIQYHDSVKGRFTISRDNSKNVLLLQMNSLRVDDTAMYYCARDVWLLPATISYAFDFWGQGTMVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCAVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 329,
+       "from": "K",
+       "to": "A"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "VIWMTQSPPSLSASIGDTVTITCRASQGISNSIAWYQRRPGKAPELLVYAAYRLQSGVPSRLSGSGSGAEYTLTIKNMQPEDFATYYCQQYYDNPLTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "K322A removes C1q binding while the Fab and the FcgR-binding lower hinge are unchanged. If complement contributes, this variant protects less than wild-type at a sub-saturating dose by more than any loss of neutralization explains.",
+    "observations": [
+     {
+      "source_id": "idusogie2000",
+      "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+      "locator": "Abstract",
+      "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+     },
+     {
+      "source_id": "gunn2023",
+      "finding": "K322A and E430G variants of the HIV antibody 10-1074 respectively raised and lowered the antibody dose needed to prevent SHIV viremia, showing that ablating or boosting complement activity changes protection in vivo; the mutations did not appreciably change antigen, FcgR or FcRn binding.",
+      "locator": "Abstract; Introduction and Methods text on the KA and EG variants",
+      "context": "Rhesus macaques, weekly low-dose intrarectal SHIV challenge, subcutaneous antibody."
+     },
+     {
+      "source_id": "digaetano2003",
+      "finding": "In immunocompetent mice the activity of rituximab, a chimeric human IgG1, was governed by complement activation, so a human IgG1 can engage mouse complement in vivo.",
+      "locator": "Title and first part of the abstract",
+      "context": "Mouse EL4 lymphoma expressing human CD20; rituximab i.p."
+     },
+     {
+      "source_id": "pihlgren2004",
+      "finding": "Serum C3 is low in infant mice compared with adults.",
+      "locator": "Abstract",
+      "context": "Infant versus adult mice; tetanus toxoid immunisation model."
+     },
+     {
+      "source_id": "kosik2023",
+      "finding": "C1q alone, without the downstream cascade, blocked viral attachment by influenza HA stem antibodies through steric interference and sharpened neutralization in vitro and in mice.",
+      "locator": "Abstract",
+      "context": "Influenza virus; anti-stem antibodies plus C1q; mouse respiratory challenge."
+     },
+     {
+      "source_id": "diamond2023",
+      "finding": "Passive immune serum protection against SARS-CoV-2 in mice needed activating FcgRs, and in that study C1q was not required, so antibody effector arms are not interchangeable across viruses.",
+      "locator": "Abstract and search excerpts",
+      "context": "C57BL/6 and FcgR- or C1q-knockout mice; serum transfer and vaccination."
+     },
+     {
+      "source_id": "burnaschner2021",
+      "finding": "C1q-binding antibodies in mouse serum from the single-cycle delta-gD-2 vaccine recognised gB and gave stronger complement-dependent neutralization and cytolysis in vitro, yet passive transfer of that serum still protected C1q-knockout mice.",
+      "locator": "Abstract",
+      "context": "Adult mice, polyclonal immune serum, HSV-2; complement-dependent neutralization and lysis in vitro."
+     }
+    ],
+    "comparison": "Against the wild-type parent for the C1q-dependent increment. A published LALA-PG comparison exists for this antibody (Slein 2025 preprint), so the total Fc-dependent increment is not rebuilt here.",
+    "uncertainty": "K322A was defined against human, rabbit and guinea-pig complement, so loss of mouse C1q binding on gD- or gB-bound IgG is assumed and must be measured. Neonatal mouse C3 is low, so a null result cannot separate no role from too little complement to matter. If the antibody binds C1q poorly at baseline, K322A has nothing to remove (the 10-1074 paper cites b12, whose wild-type form already behaved as complement-null). K322A also cannot separate C1q acting alone (steric interference with attachment, as reported for influenza stem antibodies) from downstream cascade activation.",
+    "edit": "Removes the lysine at the centre of the human IgG1 C1q footprint while leaving the Fab and the FcgR binding region untouched."
+   }
+  },
+  {
+   "variant_id": "d48-eg",
+   "name": "D48 IgG1 E430G",
+   "headline": "Hexamer-promoting Fc (E430G)",
+   "hypothesis_id": "complement-limiting",
+   "construct_role": "candidate",
+   "parent_id": "d48-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 124,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 125,
+     "end": 222,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 223,
+     "end": 239,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 240,
+     "end": 246,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 247,
+     "end": 347,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 325,
+     "end": 338,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 348,
+     "end": 454,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 435,
+     "end": 443,
+     "evidence": "unknown",
+     "note": "E430 sits inside this loop; whether E430G changes gE-gI or mouse FcRn binding has not been reported for HSV antibodies."
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "EVQLVETGGGVVRPGRSLRLSCTTSGFSFSGSAMHWVRQAPGKGLEWVAVISHDGNIIQYHDSVKGRFTISRDNSKNVLLLQMNSLRVDDTAMYYCARDVWLLPATISYAFDFWGQGTMVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHGALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 437,
+       "from": "E",
+       "to": "G"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "VIWMTQSPPSLSASIGDTVTITCRASQGISNSIAWYQRRPGKAPELLVYAAYRLQSGVPSRLSGSGSGAEYTLTIKNMQPEDFATYYCQQYYDNPLTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "E430G favours Fc-Fc contacts between neighbouring antigen-bound IgG, so hexamers form more readily on antigen and C1q avidity rises. If complement is limiting for this antibody, protection at a sub-saturating dose exceeds wild-type with the Fab, neutralization and FcgR binding unchanged.",
+    "observations": [
+     {
+      "source_id": "digaetano2003",
+      "finding": "In immunocompetent mice the activity of rituximab, a chimeric human IgG1, was governed by complement activation, so a human IgG1 can engage mouse complement in vivo.",
+      "locator": "Title and first part of the abstract",
+      "context": "Mouse EL4 lymphoma expressing human CD20; rituximab i.p."
+     },
+     {
+      "source_id": "diebolder2014",
+      "finding": "Antigen-bound IgG assembles into ordered hexamers that engage the six heads of C1q, and Fc-Fc contact mutations including E430G raise complement activation.",
+      "locator": "Abstract and excerpts",
+      "context": "Cell-surface antigens (CD20, CD38) on cells; human complement."
+     },
+     {
+      "source_id": "dejong2016",
+      "finding": "E430G and E345K IgG1 backbones strongly raised complement-dependent killing in an antigen-binding-dependent way.",
+      "locator": "Abstract",
+      "context": "Cell lines and patient tumour cells; therapeutic antibodies against several targets."
+     },
+     {
+      "source_id": "gunn2023",
+      "finding": "K322A and E430G variants of the HIV antibody 10-1074 respectively raised and lowered the antibody dose needed to prevent SHIV viremia, showing that ablating or boosting complement activity changes protection in vivo; the mutations did not appreciably change antigen, FcgR or FcRn binding.",
+      "locator": "Abstract; Introduction and Methods text on the KA and EG variants",
+      "context": "Rhesus macaques, weekly low-dose intrarectal SHIV challenge, subcutaneous antibody."
+     },
+     {
+      "source_id": "lubinski2011",
+      "finding": "The HSV-1 gE-gI Fc receptor blocked antibody-mediated complement activation in vivo; the effect was seen in C3-knockout mice.",
+      "locator": "Abstract",
+      "context": "Mouse flank zosteriform model; wild-type versus Fc-binding-deficient virus."
+     },
+     {
+      "source_id": "lubinski2002",
+      "finding": "HSV-1 gC (C3b binding) and gE (IgG Fc binding) together protect the virus from antibody and complement: removing both greatly increased complement-enhanced neutralization in vitro and reduced virulence in mice.",
+      "locator": "Abstract",
+      "context": "Mouse model; mutant HSV-1 lacking gC C3b binding, gE Fc binding, or both."
+     }
+    ],
+    "comparison": "Against the wild-type parent for a complement gain, and against its K322A twin for loss; an E430G/K322A double is the next-round attribution control.",
+    "uncertainty": "E430 lies in the CH3 loop beside H435, part of the site bound by FcRn and by the HSV-1 gE-gI Fc receptor, and the effect of E430G on gE-gI or mouse FcRn binding has not been reported for HSV antibodies, so a change in protection could not yet be assigned to complement alone. Hexamer formation needs enough antigen at the right spacing; gD is likely sparser than gB on the virion, and gC (C3b binding) and gE-gI can offset the gain.",
+    "edit": "Strengthens Fc-Fc contacts between neighbouring antigen-bound IgG so that hexamers form more readily on antigen, without touching the Fab."
+   }
+  },
+  {
+   "variant_id": "bmpc23-ka",
+   "name": "BMPC-23 IgG1 K322A",
+   "headline": "C1q-binding ablation (K322A)",
+   "hypothesis_id": "c1q-contribution",
+   "construct_role": "candidate",
+   "parent_id": "bmpc23-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 120,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 121,
+     "end": 218,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 219,
+     "end": 235,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 236,
+     "end": 242,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 243,
+     "end": 343,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 321,
+     "end": 334,
+     "evidence": "predicted",
+     "note": "K322A removes C1q binding to human IgG1 for human, rabbit and guinea-pig complement; mouse C1q binding is assumed, not shown."
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 344,
+     "end": 450,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 431,
+     "end": 439,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 111,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 112,
+     "end": 218,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVQLQQSGPELVKPGASVKLSCKASGYSFTTYDINWVKERPGQGLEWIGWIYPREGSTNYNEKFRGKATLTADTSSSTAYMELHSLTSEDSAVYFCATYGSSRYYTMDYWGQGTSVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCAVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 325,
+       "from": "K",
+       "to": "A"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "DIVLTQSPTSLAVSLGQRATISCRASESVDNFGISFMNWFQQKPGQPPKLLIYAASNLGSGVPARFSGSGSGTDFSLNIHPMEDDDTAMYFCQQSKEVPLTFGAGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "K322A removes C1q binding while the Fab and the FcgR-binding lower hinge are unchanged. If complement contributes, this variant protects less than wild-type at a sub-saturating dose by more than any loss of neutralization explains.",
+    "observations": [
+     {
+      "source_id": "idusogie2000",
+      "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+      "locator": "Abstract",
+      "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+     },
+     {
+      "source_id": "gunn2023",
+      "finding": "K322A and E430G variants of the HIV antibody 10-1074 respectively raised and lowered the antibody dose needed to prevent SHIV viremia, showing that ablating or boosting complement activity changes protection in vivo; the mutations did not appreciably change antigen, FcgR or FcRn binding.",
+      "locator": "Abstract; Introduction and Methods text on the KA and EG variants",
+      "context": "Rhesus macaques, weekly low-dose intrarectal SHIV challenge, subcutaneous antibody."
+     },
+     {
+      "source_id": "digaetano2003",
+      "finding": "In immunocompetent mice the activity of rituximab, a chimeric human IgG1, was governed by complement activation, so a human IgG1 can engage mouse complement in vivo.",
+      "locator": "Title and first part of the abstract",
+      "context": "Mouse EL4 lymphoma expressing human CD20; rituximab i.p."
+     },
+     {
+      "source_id": "pihlgren2004",
+      "finding": "Serum C3 is low in infant mice compared with adults.",
+      "locator": "Abstract",
+      "context": "Infant versus adult mice; tetanus toxoid immunisation model."
+     },
+     {
+      "source_id": "kosik2023",
+      "finding": "C1q alone, without the downstream cascade, blocked viral attachment by influenza HA stem antibodies through steric interference and sharpened neutralization in vitro and in mice.",
+      "locator": "Abstract",
+      "context": "Influenza virus; anti-stem antibodies plus C1q; mouse respiratory challenge."
+     },
+     {
+      "source_id": "diamond2023",
+      "finding": "Passive immune serum protection against SARS-CoV-2 in mice needed activating FcgRs, and in that study C1q was not required, so antibody effector arms are not interchangeable across viruses.",
+      "locator": "Abstract and search excerpts",
+      "context": "C57BL/6 and FcgR- or C1q-knockout mice; serum transfer and vaccination."
+     },
+     {
+      "source_id": "burnaschner2021",
+      "finding": "C1q-binding antibodies in mouse serum from the single-cycle delta-gD-2 vaccine recognised gB and gave stronger complement-dependent neutralization and cytolysis in vitro, yet passive transfer of that serum still protected C1q-knockout mice.",
+      "locator": "Abstract",
+      "context": "Adult mice, polyclonal immune serum, HSV-2; complement-dependent neutralization and lysis in vitro."
+     }
+    ],
+    "comparison": "Against the wild-type parent for the C1q-dependent increment. A published LALA-PG comparison exists for this antibody (Slein 2025 preprint), so the total Fc-dependent increment is not rebuilt here.",
+    "uncertainty": "K322A was defined against human, rabbit and guinea-pig complement, so loss of mouse C1q binding on gD- or gB-bound IgG is assumed and must be measured. Neonatal mouse C3 is low, so a null result cannot separate no role from too little complement to matter. If the antibody binds C1q poorly at baseline, K322A has nothing to remove (the 10-1074 paper cites b12, whose wild-type form already behaved as complement-null). K322A also cannot separate C1q acting alone (steric interference with attachment, as reported for influenza stem antibodies) from downstream cascade activation.",
+    "edit": "Removes the lysine at the centre of the human IgG1 C1q footprint while leaving the Fab and the FcgR binding region untouched."
+   }
+  },
+  {
+   "variant_id": "bmpc23-eg",
+   "name": "BMPC-23 IgG1 E430G",
+   "headline": "Hexamer-promoting Fc (E430G)",
+   "hypothesis_id": "complement-limiting",
+   "construct_role": "candidate",
+   "parent_id": "bmpc23-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 120,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 121,
+     "end": 218,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 219,
+     "end": 235,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 236,
+     "end": 242,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 243,
+     "end": 343,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 321,
+     "end": 334,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 344,
+     "end": 450,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 431,
+     "end": 439,
+     "evidence": "unknown",
+     "note": "E430 sits inside this loop; whether E430G changes gE-gI or mouse FcRn binding has not been reported for HSV antibodies."
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 111,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 112,
+     "end": 218,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVQLQQSGPELVKPGASVKLSCKASGYSFTTYDINWVKERPGQGLEWIGWIYPREGSTNYNEKFRGKATLTADTSSSTAYMELHSLTSEDSAVYFCATYGSSRYYTMDYWGQGTSVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHGALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 433,
+       "from": "E",
+       "to": "G"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "DIVLTQSPTSLAVSLGQRATISCRASESVDNFGISFMNWFQQKPGQPPKLLIYAASNLGSGVPARFSGSGSGTDFSLNIHPMEDDDTAMYFCQQSKEVPLTFGAGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "E430G favours Fc-Fc contacts between neighbouring antigen-bound IgG, so hexamers form more readily on antigen and C1q avidity rises. If complement is limiting for this antibody, protection at a sub-saturating dose exceeds wild-type with the Fab, neutralization and FcgR binding unchanged.",
+    "observations": [
+     {
+      "source_id": "digaetano2003",
+      "finding": "In immunocompetent mice the activity of rituximab, a chimeric human IgG1, was governed by complement activation, so a human IgG1 can engage mouse complement in vivo.",
+      "locator": "Title and first part of the abstract",
+      "context": "Mouse EL4 lymphoma expressing human CD20; rituximab i.p."
+     },
+     {
+      "source_id": "diebolder2014",
+      "finding": "Antigen-bound IgG assembles into ordered hexamers that engage the six heads of C1q, and Fc-Fc contact mutations including E430G raise complement activation.",
+      "locator": "Abstract and excerpts",
+      "context": "Cell-surface antigens (CD20, CD38) on cells; human complement."
+     },
+     {
+      "source_id": "dejong2016",
+      "finding": "E430G and E345K IgG1 backbones strongly raised complement-dependent killing in an antigen-binding-dependent way.",
+      "locator": "Abstract",
+      "context": "Cell lines and patient tumour cells; therapeutic antibodies against several targets."
+     },
+     {
+      "source_id": "gunn2023",
+      "finding": "K322A and E430G variants of the HIV antibody 10-1074 respectively raised and lowered the antibody dose needed to prevent SHIV viremia, showing that ablating or boosting complement activity changes protection in vivo; the mutations did not appreciably change antigen, FcgR or FcRn binding.",
+      "locator": "Abstract; Introduction and Methods text on the KA and EG variants",
+      "context": "Rhesus macaques, weekly low-dose intrarectal SHIV challenge, subcutaneous antibody."
+     },
+     {
+      "source_id": "lubinski2011",
+      "finding": "The HSV-1 gE-gI Fc receptor blocked antibody-mediated complement activation in vivo; the effect was seen in C3-knockout mice.",
+      "locator": "Abstract",
+      "context": "Mouse flank zosteriform model; wild-type versus Fc-binding-deficient virus."
+     },
+     {
+      "source_id": "lubinski2002",
+      "finding": "HSV-1 gC (C3b binding) and gE (IgG Fc binding) together protect the virus from antibody and complement: removing both greatly increased complement-enhanced neutralization in vitro and reduced virulence in mice.",
+      "locator": "Abstract",
+      "context": "Mouse model; mutant HSV-1 lacking gC C3b binding, gE Fc binding, or both."
+     }
+    ],
+    "comparison": "Against the wild-type parent for a complement gain, and against its K322A twin for loss; an E430G/K322A double is the next-round attribution control.",
+    "uncertainty": "E430 lies in the CH3 loop beside H435, part of the site bound by FcRn and by the HSV-1 gE-gI Fc receptor, and the effect of E430G on gE-gI or mouse FcRn binding has not been reported for HSV antibodies, so a change in protection could not yet be assigned to complement alone. Hexamer formation needs enough antigen at the right spacing; gD is likely sparser than gB on the virion, and gC (C3b binding) and gE-gI can offset the gain.",
+    "edit": "Strengthens Fc-Fc contacts between neighbouring antigen-bound IgG so that hexamers form more readily on antigen, without touching the Fab."
+   }
+  },
+  {
+   "variant_id": "e317-lalapg",
+   "name": "E317 / UB-621 IgG1 LALA-PG",
+   "headline": "Fc-silenced anchor (LALA-PG)",
+   "hypothesis_id": "c1q-contribution",
+   "construct_role": "control",
+   "parent_id": "e317-wt",
+   "features": [
+    {
+     "instance_id": "vh@h",
+     "chain_id": "heavy",
+     "region_id": "vh",
+     "start": 1,
+     "end": 122,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "ch1@h",
+     "chain_id": "heavy",
+     "region_id": "ch1",
+     "start": 123,
+     "end": 220,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "hinge@h",
+     "chain_id": "heavy",
+     "region_id": "hinge",
+     "start": 221,
+     "end": 237,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "lower-hinge@h",
+     "chain_id": "heavy",
+     "region_id": "lower-hinge",
+     "start": 238,
+     "end": 244,
+     "evidence": "predicted",
+     "note": "L234A/L235A reduce FcgR binding in human IgG1; mouse FcgR binding of this antibody is not shown here."
+    },
+    {
+     "instance_id": "ch2@h",
+     "chain_id": "heavy",
+     "region_id": "ch2",
+     "start": 245,
+     "end": 345,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "c1q-loop@h",
+     "chain_id": "heavy",
+     "region_id": "c1q-loop",
+     "start": 323,
+     "end": 336,
+     "evidence": "predicted",
+     "note": "P329G with LALA is reported to abolish C1q and FcgR binding (human IgG1); mouse C1q binding not shown here."
+    },
+    {
+     "instance_id": "ch3@h",
+     "chain_id": "heavy",
+     "region_id": "ch3",
+     "start": 346,
+     "end": 452,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "fcrn-gei-loop@h",
+     "chain_id": "heavy",
+     "region_id": "fcrn-gei-loop",
+     "start": 433,
+     "end": 441,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "vl@l",
+     "chain_id": "light",
+     "region_id": "vl",
+     "start": 1,
+     "end": 107,
+     "evidence": "established_elsewhere"
+    },
+    {
+     "instance_id": "cl@l",
+     "chain_id": "light",
+     "region_id": "cl",
+     "start": 108,
+     "end": 214,
+     "evidence": "established_elsewhere"
+    }
+   ],
+   "chains": [
+    {
+     "chain_id": "heavy",
+     "name": "Heavy chain",
+     "sequence": "QVTLKQSGAEVKKPGSSVKVSCTASGGTLRTYGVSWVRQAPGQGLEWLGRTIPLFGKTDYAQKFQGRVTITADKSMDTSFMELTSLTSEDTAVYYCARDLTTLTSYNWWDLWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPEAAGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALGAPIEKTISKAKGQPREPQVYTLPPSRDELTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+     "copies": 2,
+     "derivation": "edited",
+     "edits": [
+      {
+       "op": "substitute",
+       "position": 239,
+       "from": "L",
+       "to": "A"
+      },
+      {
+       "op": "substitute",
+       "position": 240,
+       "from": "L",
+       "to": "A"
+      },
+      {
+       "op": "substitute",
+       "position": 334,
+       "from": "P",
+       "to": "G"
+      }
+     ]
+    },
+    {
+     "chain_id": "light",
+     "name": "Light chain",
+     "sequence": "EIVLTQSPGTLSLSPGERATLSCRASQSVTSSQLAWYQQKPGQAPRLLISGASNRATGIPDRFSGSGSGTDFTLTISRLEPEDFAVYYCQQYGSSPTFGGGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+     "copies": 2,
+     "derivation": "unchanged"
+    }
+   ],
+   "rationale": {
+    "hypothesis": "Removing FcgR and C1q binding together shows how much of E317 protection is Fc-dependent at the chosen dose; the C1q share is then read as the wild-type minus K322A difference against that total.",
+    "observations": [
+     {
+      "source_id": "lo2017",
+      "finding": "LALA-PG eliminated complement binding and fixation and FcgR-dependent cytotoxicity in both murine IgG2a and human IgG1.",
+      "locator": "Abstract",
+      "context": "Therapeutic antibody Fc variants tested in mice."
+     },
+     {
+      "source_id": "schlothauer2016",
+      "finding": "Human IgG1 P329G LALA lacked FcgR and C1q interactions while FcRn binding and Fc stability were unchanged.",
+      "locator": "Abstract",
+      "context": "In vitro binding of engineered human IgG1 Fc."
+     },
+     {
+      "source_id": "slein2024",
+      "finding": "HSV8 LALA-PG lost protection at 10 ug but protected at 40 ug, so neutralization alone sufficed at the higher dose.",
+      "locator": "Results, preprint text",
+      "context": "2-day-old C57BL/6J pups, i.p. antibody, HSV-1 1e4 PFU i.n."
+     }
+    ],
+    "comparison": "Against E317 wild-type for the total Fc-dependent protection, and against E317 K322A for the FcgR-dependent part.",
+    "uncertainty": "LALA-PG is not always fully silent: BMPC-23 LALA-PG kept some FcgR binding in the gB preprint, and E317 LALA-PG has not been measured with mouse receptors or mouse complement. Only E317 carries this anchor here because published LALA-PG data already exist for HSV8, D48 and BMPC-23.",
+    "edit": "Removes FcgR and C1q binding together, giving the floor of Fc-dependent protection against which the single-function variants are read."
+   }
+  }
+ ],
+ "sites": [
+  {
+   "site_id": "e317-c1q-k322",
+   "label": "K322 - C1q contact",
+   "role": "interaction",
+   "applies_to": "e317-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 327,
+     "expected": "K"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "idusogie2000",
+     "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+     "locator": "Abstract",
+     "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+    }
+   ],
+   "note": "Edited in the K322A variant. Measured in rituximab, not in this antibody. EU numbering; heavy-chain position = EU - 117 + 122 VH residues."
+  },
+  {
+   "site_id": "e317-c1q-core",
+   "label": "D270, P329, P331 - C1q contact",
+   "role": "interaction",
+   "applies_to": "e317-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 275,
+     "expected": "D"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 334,
+     "expected": "P"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 336,
+     "expected": "P"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "idusogie2000",
+     "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+     "locator": "Abstract",
+     "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+    }
+   ],
+   "note": "P329 is also substituted (P329G) in the LALA-PG anchor. Retained here, so these contacts stay available in the K322A variant. EU numbering; heavy-chain position = EU - 117 + 122 VH residues."
+  },
+  {
+   "site_id": "e317-fcgr-lala",
+   "label": "L234, L235 - FcgR contact",
+   "role": "interaction",
+   "applies_to": "e317-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 239,
+     "expected": "L"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 240,
+     "expected": "L"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "lo2017",
+     "finding": "LALA-PG, which includes L234A and L235A, removed FcgR-dependent cytotoxicity of human IgG1.",
+     "locator": "Abstract",
+     "context": "Human and murine IgG with the LALA-PG Fc."
+    },
+    {
+     "source_id": "dekkers2017",
+     "finding": "Human IgG1 binds mouse FcgRs with affinities close to those of the human orthologues, with IgG1 above IgG2 and IgG4.",
+     "locator": "Abstract",
+     "context": "Binding of human and mouse IgG subclasses to mouse FcgRs."
+    }
+   ],
+   "note": "Substituted only in the LALA-PG anchor of E317. EU numbering; heavy-chain position = EU - 117 + 122 VH residues."
+  },
+  {
+   "site_id": "e317-hexamer-e430",
+   "label": "E430 - Fc-Fc hexamer contact",
+   "role": "interaction",
+   "applies_to": "e317-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 435,
+     "expected": "E"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "diebolder2014",
+     "finding": "E430G is one of the Fc-Fc interface substitutions that raise hexamer formation and complement activity.",
+     "locator": "Abstract and excerpts",
+     "context": "Cell-bound human IgG1."
+    },
+    {
+     "source_id": "dejong2016",
+     "finding": "E430G conveyed strong antigen-dependent complement-dependent killing.",
+     "locator": "Abstract",
+     "context": "Therapeutic IgG1 backbones."
+    }
+   ],
+   "note": "Edited in the E430G variant. EU numbering; heavy-chain position = EU - 117 + 122 VH residues."
+  },
+  {
+   "site_id": "e317-gei-h435",
+   "label": "H435 - FcRn and gE-gI contact",
+   "role": "interaction",
+   "applies_to": "e317-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 440,
+     "expected": "H"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "sprague2006",
+     "finding": "The HSV-1 gE-gI Fc receptor binds IgG at the CH2-CH3 interface, the site shared with several mammalian and bacterial Fc-binding proteins, through interface histidines that may confer pH-dependent binding.",
+     "locator": "Abstract",
+     "context": "Crystal structure of gE-Fc at 5 A and 1.78 A gE C-terminal domain."
+    },
+    {
+     "source_id": "slein2025vfcr",
+     "finding": "In the preprint, IgG1 variants M428L/N434S, M428L/N434A and the YTE triple lost binding to HSV-1 gE, and IgG3 allotypes with H435R, with or without Y436F, did not bind gE; the LS and LA variants protected neonates better than wild-type IgG1.",
+     "locator": "Results, Fig. 3 and neonatal survival (preprint text)",
+     "context": "HSV8 (gD) variants; gE binding by biolayer interferometry; 2-day-old C57BL/6J pups."
+    },
+    {
+     "source_id": "slein2025vfcr",
+     "finding": "Antibodies engineered to lose gE binding showed better neutralization in vitro and better protection in neonatal mice, but only when the virus carried a working Fc receptor.",
+     "locator": "Abstract",
+     "context": "Neonatal mice; gE-binding and gE-null HSV-1; gD- and gB-directed and non-neutralizing antibodies."
+    }
+   ],
+   "note": "Not edited. Sits next to E430, so the E430G variants need gE-gI and mouse FcRn binding measured. EU numbering; heavy-chain position = EU - 117 + 122 VH residues."
+  },
+  {
+   "site_id": "e317-n297-glycan",
+   "label": "N297 - Fc glycan",
+   "role": "modification",
+   "applies_to": "e317-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 302,
+     "expected": "N"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "vanosch2021",
+     "finding": "Galactosylation of the IgG1 Fc glycan enhanced hexamerization and classical complement activation without changing intrinsic C1q binding.",
+     "locator": "Abstract",
+     "context": "Human IgG1 on red cells and Raji cells."
+    }
+   ],
+   "note": "Glycoform depends on the producer cell line, so all variants should be made in one system and glycoprofiled. EU numbering; heavy-chain position = EU - 117 + 122 VH residues."
+  },
+  {
+   "site_id": "d48-c1q-k322",
+   "label": "K322 - C1q contact",
+   "role": "interaction",
+   "applies_to": "d48-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 329,
+     "expected": "K"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "idusogie2000",
+     "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+     "locator": "Abstract",
+     "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+    }
+   ],
+   "note": "Edited in the K322A variant. Measured in rituximab, not in this antibody. EU numbering; heavy-chain position = EU - 117 + 124 VH residues."
+  },
+  {
+   "site_id": "d48-c1q-core",
+   "label": "D270, P329, P331 - C1q contact",
+   "role": "interaction",
+   "applies_to": "d48-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 277,
+     "expected": "D"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 336,
+     "expected": "P"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 338,
+     "expected": "P"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "idusogie2000",
+     "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+     "locator": "Abstract",
+     "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+    }
+   ],
+   "note": "P329 is also substituted (P329G) in the LALA-PG anchor. Retained here, so these contacts stay available in the K322A variant. EU numbering; heavy-chain position = EU - 117 + 124 VH residues."
+  },
+  {
+   "site_id": "d48-fcgr-lala",
+   "label": "L234, L235 - FcgR contact",
+   "role": "interaction",
+   "applies_to": "d48-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 241,
+     "expected": "L"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 242,
+     "expected": "L"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "lo2017",
+     "finding": "LALA-PG, which includes L234A and L235A, removed FcgR-dependent cytotoxicity of human IgG1.",
+     "locator": "Abstract",
+     "context": "Human and murine IgG with the LALA-PG Fc."
+    },
+    {
+     "source_id": "dekkers2017",
+     "finding": "Human IgG1 binds mouse FcgRs with affinities close to those of the human orthologues, with IgG1 above IgG2 and IgG4.",
+     "locator": "Abstract",
+     "context": "Binding of human and mouse IgG subclasses to mouse FcgRs."
+    }
+   ],
+   "note": "Substituted only in the LALA-PG anchor of E317. EU numbering; heavy-chain position = EU - 117 + 124 VH residues."
+  },
+  {
+   "site_id": "d48-hexamer-e430",
+   "label": "E430 - Fc-Fc hexamer contact",
+   "role": "interaction",
+   "applies_to": "d48-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 437,
+     "expected": "E"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "diebolder2014",
+     "finding": "E430G is one of the Fc-Fc interface substitutions that raise hexamer formation and complement activity.",
+     "locator": "Abstract and excerpts",
+     "context": "Cell-bound human IgG1."
+    },
+    {
+     "source_id": "dejong2016",
+     "finding": "E430G conveyed strong antigen-dependent complement-dependent killing.",
+     "locator": "Abstract",
+     "context": "Therapeutic IgG1 backbones."
+    }
+   ],
+   "note": "Edited in the E430G variant. EU numbering; heavy-chain position = EU - 117 + 124 VH residues."
+  },
+  {
+   "site_id": "d48-gei-h435",
+   "label": "H435 - FcRn and gE-gI contact",
+   "role": "interaction",
+   "applies_to": "d48-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 442,
+     "expected": "H"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "sprague2006",
+     "finding": "The HSV-1 gE-gI Fc receptor binds IgG at the CH2-CH3 interface, the site shared with several mammalian and bacterial Fc-binding proteins, through interface histidines that may confer pH-dependent binding.",
+     "locator": "Abstract",
+     "context": "Crystal structure of gE-Fc at 5 A and 1.78 A gE C-terminal domain."
+    },
+    {
+     "source_id": "slein2025vfcr",
+     "finding": "In the preprint, IgG1 variants M428L/N434S, M428L/N434A and the YTE triple lost binding to HSV-1 gE, and IgG3 allotypes with H435R, with or without Y436F, did not bind gE; the LS and LA variants protected neonates better than wild-type IgG1.",
+     "locator": "Results, Fig. 3 and neonatal survival (preprint text)",
+     "context": "HSV8 (gD) variants; gE binding by biolayer interferometry; 2-day-old C57BL/6J pups."
+    },
+    {
+     "source_id": "slein2025vfcr",
+     "finding": "Antibodies engineered to lose gE binding showed better neutralization in vitro and better protection in neonatal mice, but only when the virus carried a working Fc receptor.",
+     "locator": "Abstract",
+     "context": "Neonatal mice; gE-binding and gE-null HSV-1; gD- and gB-directed and non-neutralizing antibodies."
+    }
+   ],
+   "note": "Not edited. Sits next to E430, so the E430G variants need gE-gI and mouse FcRn binding measured. EU numbering; heavy-chain position = EU - 117 + 124 VH residues."
+  },
+  {
+   "site_id": "d48-n297-glycan",
+   "label": "N297 - Fc glycan",
+   "role": "modification",
+   "applies_to": "d48-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 304,
+     "expected": "N"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "vanosch2021",
+     "finding": "Galactosylation of the IgG1 Fc glycan enhanced hexamerization and classical complement activation without changing intrinsic C1q binding.",
+     "locator": "Abstract",
+     "context": "Human IgG1 on red cells and Raji cells."
+    }
+   ],
+   "note": "Glycoform depends on the producer cell line, so all variants should be made in one system and glycoprofiled. EU numbering; heavy-chain position = EU - 117 + 124 VH residues."
+  },
+  {
+   "site_id": "bmpc23-c1q-k322",
+   "label": "K322 - C1q contact",
+   "role": "interaction",
+   "applies_to": "bmpc23-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 325,
+     "expected": "K"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "idusogie2000",
+     "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+     "locator": "Abstract",
+     "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+    }
+   ],
+   "note": "Edited in the K322A variant. Measured in rituximab, not in this antibody. EU numbering; heavy-chain position = EU - 117 + 120 VH residues."
+  },
+  {
+   "site_id": "bmpc23-c1q-core",
+   "label": "D270, P329, P331 - C1q contact",
+   "role": "interaction",
+   "applies_to": "bmpc23-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 273,
+     "expected": "D"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 332,
+     "expected": "P"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 334,
+     "expected": "P"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "idusogie2000",
+     "finding": "Alanine at K322, D270, P329 or P331 sharply reduced C1q binding and complement activation of a human IgG1, whereas alanine at E318 or K320 (the murine IgG2b motif) had little effect; the variants were described as retaining the other effector functions.",
+     "locator": "Abstract",
+     "context": "Chimeric anti-CD20 human IgG1 (rituximab); human, rabbit and guinea-pig complement. Mouse complement not named."
+    }
+   ],
+   "note": "P329 is also substituted (P329G) in the LALA-PG anchor. Retained here, so these contacts stay available in the K322A variant. EU numbering; heavy-chain position = EU - 117 + 120 VH residues."
+  },
+  {
+   "site_id": "bmpc23-fcgr-lala",
+   "label": "L234, L235 - FcgR contact",
+   "role": "interaction",
+   "applies_to": "bmpc23-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 237,
+     "expected": "L"
+    },
+    {
+     "chain_id": "heavy",
+     "position": 238,
+     "expected": "L"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "lo2017",
+     "finding": "LALA-PG, which includes L234A and L235A, removed FcgR-dependent cytotoxicity of human IgG1.",
+     "locator": "Abstract",
+     "context": "Human and murine IgG with the LALA-PG Fc."
+    },
+    {
+     "source_id": "dekkers2017",
+     "finding": "Human IgG1 binds mouse FcgRs with affinities close to those of the human orthologues, with IgG1 above IgG2 and IgG4.",
+     "locator": "Abstract",
+     "context": "Binding of human and mouse IgG subclasses to mouse FcgRs."
+    }
+   ],
+   "note": "Substituted only in the LALA-PG anchor of E317. EU numbering; heavy-chain position = EU - 117 + 120 VH residues."
+  },
+  {
+   "site_id": "bmpc23-hexamer-e430",
+   "label": "E430 - Fc-Fc hexamer contact",
+   "role": "interaction",
+   "applies_to": "bmpc23-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 433,
+     "expected": "E"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "diebolder2014",
+     "finding": "E430G is one of the Fc-Fc interface substitutions that raise hexamer formation and complement activity.",
+     "locator": "Abstract and excerpts",
+     "context": "Cell-bound human IgG1."
+    },
+    {
+     "source_id": "dejong2016",
+     "finding": "E430G conveyed strong antigen-dependent complement-dependent killing.",
+     "locator": "Abstract",
+     "context": "Therapeutic IgG1 backbones."
+    }
+   ],
+   "note": "Edited in the E430G variant. EU numbering; heavy-chain position = EU - 117 + 120 VH residues."
+  },
+  {
+   "site_id": "bmpc23-gei-h435",
+   "label": "H435 - FcRn and gE-gI contact",
+   "role": "interaction",
+   "applies_to": "bmpc23-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 438,
+     "expected": "H"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "sprague2006",
+     "finding": "The HSV-1 gE-gI Fc receptor binds IgG at the CH2-CH3 interface, the site shared with several mammalian and bacterial Fc-binding proteins, through interface histidines that may confer pH-dependent binding.",
+     "locator": "Abstract",
+     "context": "Crystal structure of gE-Fc at 5 A and 1.78 A gE C-terminal domain."
+    },
+    {
+     "source_id": "slein2025vfcr",
+     "finding": "In the preprint, IgG1 variants M428L/N434S, M428L/N434A and the YTE triple lost binding to HSV-1 gE, and IgG3 allotypes with H435R, with or without Y436F, did not bind gE; the LS and LA variants protected neonates better than wild-type IgG1.",
+     "locator": "Results, Fig. 3 and neonatal survival (preprint text)",
+     "context": "HSV8 (gD) variants; gE binding by biolayer interferometry; 2-day-old C57BL/6J pups."
+    },
+    {
+     "source_id": "slein2025vfcr",
+     "finding": "Antibodies engineered to lose gE binding showed better neutralization in vitro and better protection in neonatal mice, but only when the virus carried a working Fc receptor.",
+     "locator": "Abstract",
+     "context": "Neonatal mice; gE-binding and gE-null HSV-1; gD- and gB-directed and non-neutralizing antibodies."
+    }
+   ],
+   "note": "Not edited. Sits next to E430, so the E430G variants need gE-gI and mouse FcRn binding measured. EU numbering; heavy-chain position = EU - 117 + 120 VH residues."
+  },
+  {
+   "site_id": "bmpc23-n297-glycan",
+   "label": "N297 - Fc glycan",
+   "role": "modification",
+   "applies_to": "bmpc23-wt",
+   "residues": [
+    {
+     "chain_id": "heavy",
+     "position": 300,
+     "expected": "N"
+    }
+   ],
+   "evidence": "established_elsewhere",
+   "observations": [
+    {
+     "source_id": "vanosch2021",
+     "finding": "Galactosylation of the IgG1 Fc glycan enhanced hexamerization and classical complement activation without changing intrinsic C1q binding.",
+     "locator": "Abstract",
+     "context": "Human IgG1 on red cells and Raji cells."
+    }
+   ],
+   "note": "Glycoform depends on the producer cell line, so all variants should be made in one system and glycoprofiled. EU numbering; heavy-chain position = EU - 117 + 120 VH residues."
+  }
+ ],
+ "precedent_search": {
+  "scope": "Europe PMC (title, abstract and full text) for HSV or herpes simplex antibodies combined with K322A, E430G, C1q or complement, 2015 to 2025-12-31; Europe PMC for E430G or K322A with viral challenge; forward citations of Slein 2024, Backes 2022 and Kuraoka 2023; web search of the same terms. Results were in hand before the constructs were chosen.",
+  "completed": true,
+  "found": [
+   "gunn2023",
+   "slein2024",
+   "slein2025gb",
+   "slein2025vfcr",
+   "burnaschner2021"
+  ]
+ },
+ "attempted_analyses": [
+  {
+   "kind": "conservation",
+   "target": "e317-vh",
+   "target_kind": "donor",
+   "reason": "No ortholog set exists: the E317 / UB-621 heavy variable domain is a single B-cell clone known only from PDB 3W9D, with no UniProt accession for the fetcher to build a cluster from, and a UniRef or Pfam set for an immunoglobulin variable domain pools unrelated antibodies, so it would score the fold and say nothing about this antibody.",
+   "attempted": "No query could be run; PDB 3W9D is the only record of the sequence."
+  },
+  {
+   "kind": "conservation",
+   "target": "e317-vl",
+   "target_kind": "donor",
+   "reason": "No ortholog set exists: the E317 / UB-621 light variable domain is a single B-cell clone known only from PDB 3W9D, with no UniProt accession for the fetcher to build a cluster from, and a UniRef or Pfam set for an immunoglobulin variable domain pools unrelated antibodies, so it would score the fold and say nothing about this antibody.",
+   "attempted": "No query could be run; PDB 3W9D is the only record of the sequence."
+  },
+  {
+   "kind": "conservation",
+   "target": "d48-vh",
+   "target_kind": "donor",
+   "reason": "No ortholog set exists: the D48 heavy variable domain is a single B-cell clone known only from PDB 8KFA, with no UniProt accession for the fetcher to build a cluster from, and a UniRef or Pfam set for an immunoglobulin variable domain pools unrelated antibodies, so it would score the fold and say nothing about this antibody.",
+   "attempted": "No query could be run; PDB 8KFA is the only record of the sequence."
+  },
+  {
+   "kind": "conservation",
+   "target": "d48-vl",
+   "target_kind": "donor",
+   "reason": "No ortholog set exists: the D48 light variable domain is a single B-cell clone known only from PDB 8KFA, with no UniProt accession for the fetcher to build a cluster from, and a UniRef or Pfam set for an immunoglobulin variable domain pools unrelated antibodies, so it would score the fold and say nothing about this antibody.",
+   "attempted": "No query could be run; PDB 8KFA is the only record of the sequence."
+  },
+  {
+   "kind": "conservation",
+   "target": "bmpc23-vh",
+   "target_kind": "donor",
+   "reason": "No ortholog set exists: the BMPC-23 heavy variable domain is a single B-cell clone known only from PDB 7UHZ, with no UniProt accession for the fetcher to build a cluster from, and a UniRef or Pfam set for an immunoglobulin variable domain pools unrelated antibodies, so it would score the fold and say nothing about this antibody.",
+   "attempted": "No query could be run; PDB 7UHZ is the only record of the sequence."
+  },
+  {
+   "kind": "conservation",
+   "target": "bmpc23-vl",
+   "target_kind": "donor",
+   "reason": "No ortholog set exists: the BMPC-23 light variable domain is a single B-cell clone known only from PDB 7UHZ, with no UniProt accession for the fetcher to build a cluster from, and a UniRef or Pfam set for an immunoglobulin variable domain pools unrelated antibodies, so it would score the fold and say nothing about this antibody.",
+   "attempted": "No query could be run; PDB 7UHZ is the only record of the sequence."
+  },
+  {
+   "kind": "conservation",
+   "target": "ighg1-ch",
+   "target_kind": "donor",
+   "reason": "The ortholog-level set was refused: UniRef50_P01857 holds 9 UniProtKB entries (12 cluster members), below the floor of 30. The Pfam family set (PF07654, 62,503 members) would score constant-domain fold conservation, which does not speak to whether K322, E430 or L234 are constrained in IgG1, so it was not run.",
+   "attempted": "fetch_homologs.py P01857 at the orthologs level (UniRef50_P01857, 9 UniProtKB entries); no alignment was made."
+  },
+  {
+   "kind": "conservation",
+   "target": "igkc-cl",
+   "target_kind": "donor",
+   "reason": "The ortholog-level set was refused: UniRef50_P01834 holds 1 UniProtKB entry (5 cluster members), below the floor of 30. The Pfam family set (PF07654) would score fold conservation only and says nothing about the kappa constant domain in this construct, so it was not run.",
+   "attempted": "fetch_homologs.py P01834 at the orthologs level (UniRef50_P01834, 1 UniProtKB entry); no alignment was made."
+  }
+ ]
+}
