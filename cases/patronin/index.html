@@ -11,43 +11,63 @@
 <body>
 <main>
 <p class="crumbs"><a href="../../index.html">Construct Maps</a> / Patronin: sequence or condensation?</p>
+<div class="case-head">
+<div>
 <h1>Patronin: sequence or condensation?</h1>
 <p class="q">Does the prion-like domain of Drosophila Patronin recognize microtubule minus ends through its primary sequence or through its capacity to condense?</p>
-<details><summary>The prompt</summary><blockquote>Design a library of Drosophila Patronin (UniProt A1ZAU8) constructs to test whether its prion-like domain recognizes microtubule minus ends through its primary sequence or through its capacity to condense. Only use literature published before 2026-01-01.</blockquote></details>
-<h2>What the paper tested</h2>
-<p>Zhang B, Yang J, Yu S, Zhou K, He L, Huang L, Liang X, Wang H, Chen J. Patronin condensation integrates recognition, protection and organization of microtubule minus ends. bioRxiv, posted 6 October 2026. <a href="https://doi.org/10.64898/2026.10.03.756418">10.64898/2026.10.03.756418</a></p>
-<div class="wrap"><table>
+</div>
+<img class="cartoon" src="../../assets/cartoons/disordered.png" alt="" width="1120" height="1120">
+</div>
+<div class="prose">
+<p class="label">Background</p>
+<p>Proteins that recognize and track microtubule plus ends are well understood, but minus ends are not. In cells they are often stable, although in vitro they grow and shrink <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>. Patronin, the single fly member of the CAMSAP family, binds minus ends and protects them from depolymerization. Condensation helps plus-end proteins accumulate at microtubule ends, and mammalian CAMSAP2 and the worm Patronin homolog PTRN-1 have been reported to condense, but which region drives this, and whether it helps recognize minus ends, is not known. The paper tests this in <em>Drosophila</em> Patronin <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>.</p>
+<p class="test-note">The plugin was then asked this question using only literature published before 2026-01-01, so it could not have seen the paper. Below is what GPT and Claude proposed, then what the paper found and how the proposals compare.</p>
+<div class="prompt-block"><p class="label">The prompt given to GPT and Claude</p>
+<blockquote class="prompt">Design a library of Drosophila Patronin (UniProt A1ZAU8) constructs to test whether its prion-like domain recognizes microtubule minus ends through its primary sequence or through its capacity to condense. Only use literature published before 2026-01-01.</blockquote></div>
+<div class="tabs" role="radiogroup" aria-label="Library">
+<div class="tab"><input type="radio" name="library" id="tab-gpt-r1" checked><label for="tab-gpt-r1">GPT 6.1 sol (high)</label><div class="panel">
+<iframe class="map" src="../../demos/patronin-gpt-r1.html" title="GPT 6.1 sol (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">GPT&#39;s library has eight constructs on full-length Patronin. It deletes the candidate prion-like domain (residues 713–1038), replaces it with the hnRNPA1 low-complexity domain, a condensing domain from another protein, and with a version of that domain with its aromatic residues removed, and with a Gly/Ser cassette of the same length. It also scrambles the order of the spacers, removes the domain&#39;s native aromatic residues, and deletes the CKK module. The design rests on aromatic residues setting how strongly domains like this phase separate <sup class="cite"><a href="#src-martin2020" aria-label="Source 2">2</a></sup>, on Patronin&#39;s role at minus ends <sup class="cite"><a href="#src-hendershott2014" aria-label="Source 3">3</a></sup>, and on the condensation of mammalian CAMSAP2 <sup class="cite"><a href="#src-imasaki2022" aria-label="Source 4">4</a></sup>.</p>
+<p class="links"><a href="../../demos/patronin-gpt-r1.html">Open the map on its own page</a> · <a href="../../demos/patronin-gpt-r1.json">Download the design record</a> · <a href="gpt-r1/">Construct list</a></p>
+</div></div>
+<div class="tab"><input type="radio" name="library" id="tab-claude-r1"><label for="tab-claude-r1">Claude Sonnet 5.5 (high)</label><div class="panel">
+<iframe class="map" src="../../demos/patronin-claude-r1.html" title="Claude Sonnet 5.5 (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">Claude&#39;s library has seven constructs on mEGFP-Patronin. It takes the prion-like domain to be 115 residues (721–835) and deletes it, replaces it with a Gly-Gly-Ser spacer of the same length, shuffles it, changes its 14 aromatic residues to serine, replaces it with the FUS low-complexity domain, and replaces it with a GCN4 tetramer, which gives fixed multivalency without liquid-like condensation. It rests on the same sources: aromatic residues set how strongly such domains phase separate <sup class="cite"><a href="#src-martin2020" aria-label="Source 2">2</a></sup>, Patronin protects minus ends <sup class="cite"><a href="#src-hendershott2014" aria-label="Source 3">3</a></sup>, and CAMSAP2 condenses with tubulin <sup class="cite"><a href="#src-imasaki2022" aria-label="Source 4">4</a></sup>.</p>
+<p class="links"><a href="../../demos/patronin-claude-r1.html">Open the map on its own page</a> · <a href="../../demos/patronin-claude-r1.json">Download the design record</a> · <a href="claude-r1/">Construct list</a></p>
+</div></div>
+</div>
+<section id="paper">
+<h2>What the paper found</h2>
+<p>The paper, posted in October 2026, found that Patronin condenses on its own and that a prion-like domain of about 300 residues drives this <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>. Deleting the domain, or replacing its 23 aromatic residues with serine, sharply reduced condensation and abolished minus-end enrichment in cells <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>.</p>
+<p>Replacing the domain with two copies of the hnRNPA1 low-complexity domain restored condensates at minus ends, and mutating that domain&#39;s aromatic residues abolished the effect, so condensation capacity, and not the Patronin sequence, is what matters. Condensation alone is not enough: the isolated domain did not bind microtubules and the CKK domain did not pick out minus ends, but joined together they tracked minus ends. A second region that does not need CKK (residues 712–1457) also recognized minus ends once condensation was restored with light <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>.</p>
+</section>
+<section id="accounting">
+<h2>How the proposals compare with what the paper tested</h2>
+<div class="wrap"><table class="cmp-table">
 <thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
 <tbody>
-<tr><td>The prion-like domain deleted (ΔPrLD)<span class="where">Fig. 3D; Fig. 1L</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>delta</code><span class="note">its domain is residues 713–1038</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>d-prld</code><span class="note">its domain is residues 721–835</span></td></tr>
-<tr><td>All 23 aromatic residues of the domain changed to serine (YFW23S)<span class="where">Fig. 3 (the 23 aromatic stickers are marked); Fig. 3H–L</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>native-aro</code><span class="note">22 aromatic residues (Y, F, W) in its domain</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>aro-ser</code><span class="note">14 residues, tyrosine and phenylalanine only</span></td></tr>
-<tr><td>The domain replaced by the disordered region of HNRNPA1 (Patronin–HNRNPA1)<span class="where">Fig. 3G, P, Q; Fig. 7C, D</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>a1-swap</code></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>fus-lc</code><span class="note">the FUS low-complexity domain instead</span></td></tr>
-<tr><td>The CKK domain deleted (ΔCKK)<span class="where">Fig. 6A</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>delta-ckk</code><span class="note">residues 1458–1630</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
-<tr><td>PrLD with CKK, and CKK on its own<span class="where">Fig. 4I, J (CKK alone); Fig. 4K, L (PrLD-CKK)</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
-<tr><td>Tyrosines changed to tryptophans in the domain (Y16W)<span class="where">Fig. 3M–O</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
-<tr><td>An optogenetic PrLD, with and without YFW23S<span class="where">Fig. 4D–H</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td><td><span class="st st-absent" aria-hidden="true">–</span><span class="word">Not proposed</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">The prion-like domain deleted (ΔPrLD)</span><span class="where">Fig. 3D; Fig. 1L</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-match" aria-hidden="true">✓</span>Same edit</span><span class="ids"><code>delta</code></span><span class="note">its domain is residues 713–1038</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-match" aria-hidden="true">✓</span>Same edit</span><span class="ids"><code>d-prld</code></span><span class="note">its domain is residues 721–835</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">All 23 aromatic residues of the domain changed to serine (YFW23S)</span><span class="where">Fig. 3 (the 23 aromatic stickers are marked); Fig. 3H–L</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-match" aria-hidden="true">✓</span>Same edit</span><span class="ids"><code>native-aro</code></span><span class="note">22 aromatic residues (Y, F, W) in its domain</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>aro-ser</code></span><span class="note">14 residues, tyrosine and phenylalanine only</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">The domain replaced by the disordered region of HNRNPA1 (Patronin–HNRNPA1)</span><span class="where">Fig. 3G, P, Q; Fig. 7C, D</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-match" aria-hidden="true">✓</span>Same edit</span><span class="ids"><code>a1-swap</code></span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>fus-lc</code></span><span class="note">the FUS low-complexity domain instead</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">The CKK domain deleted (ΔCKK)</span><span class="where">Fig. 6A</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-match" aria-hidden="true">✓</span>Same edit</span><span class="ids"><code>delta-ckk</code></span><span class="note">residues 1458–1630</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">PrLD with CKK, and CKK on its own</span><span class="where">Fig. 4I, J (CKK alone); Fig. 4K, L (PrLD-CKK)</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">Tyrosines changed to tryptophans in the domain (Y16W)</span><span class="where">Fig. 3M–O</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">An optogenetic PrLD, with and without YFW23S</span><span class="where">Fig. 4D–H</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td></tr>
 </tbody></table></div>
-<p class="legend">✓ the same edit · ~ related, a different change at the same place or the same idea · – not proposed. Constructs are named as in each library's record.</p>
-<h2>Also proposed</h2><ul class="plain"><li><strong>GPT 6.1 sol (high):</strong> A Gly-Ser cassette in place of the domain, a scrambled spacer order, and an aromatic-depleted version of the HNRNPA1 swap.</li><li><strong>Claude Sonnet 5.5 (high):</strong> A length-matched Gly-Gly-Ser spacer, a shuffled domain, and a GCN4 tetramerisation motif to ask whether multivalency alone is enough.</li></ul>
-<h2>The libraries</h2>
-<section class="grid">
-<article class="card">
-<a href="gpt-r1/"><img src="../../assets/patronin-gpt-r1.png" alt="GPT 6.1 sol (high): Patronin: sequence or condensation?" loading="lazy"></a>
-<h3>GPT 6.1 sol (high)</h3>
-<p>8 constructs (3 candidates, 4 controls, 1 reference) · 5 hypotheses · 7 cited sources, 5 checked against their identifiers</p>
-<p class="links"><a class="open" href="gpt-r1/">Open this library</a></p>
-</article>
-<article class="card">
-<a href="claude-r1/"><img src="../../assets/patronin-claude-r1.png" alt="Claude Sonnet 5.5 (high): Patronin: sequence or condensation?" loading="lazy"></a>
-<h3>Claude Sonnet 5.5 (high)</h3>
-<p>7 constructs (5 candidates, 1 control, 1 reference) · 5 hypotheses · 16 cited sources, 16 checked against their identifiers</p>
-<p class="links"><a class="open" href="claude-r1/">Open this library</a></p>
-</article>
+<p class="legend">✓ same edit · ~ related: a different change at the same position, or the same idea · – not proposed. Construct names are the ones each library uses.</p>
 </section>
+<h2 id="sources">Sources</h2>
+<ol class="sources">
+<li id="src-paper">Zhang B, Yang J, Yu S, Zhou K, He L, Huang L, Liang X, Wang H, Chen J. Patronin condensation integrates recognition, protection and organization of microtubule minus ends. bioRxiv, posted 6 October 2026. <a href="https://doi.org/10.64898/2026.10.03.756418">10.64898/2026.10.03.756418</a></li>
+<li id="src-martin2020">Martin EW, Holehouse AS, Peran I, et al. Valence and patterning of aromatic residues determine the phase behavior of prion-like domains. Science 367, 694–699 (2020). <a href="https://doi.org/10.1126/science.aaw8653">10.1126/science.aaw8653</a></li>
+<li id="src-hendershott2014">Hendershott MC, Vale RD. Regulation of microtubule minus-end dynamics by CAMSAPs and Patronin. Proceedings of the National Academy of Sciences 111, 5860–5865 (2014). <a href="https://doi.org/10.1073/pnas.1404133111">10.1073/pnas.1404133111</a></li>
+<li id="src-imasaki2022">Imasaki T, Kikkawa S, Niwa S, et al. CAMSAP2 organizes a γ-tubulin-independent microtubule nucleation centre through phase separation. eLife 11, e77365 (2022). <a href="https://doi.org/10.7554/elife.77365">10.7554/elife.77365</a></li>
+</ol>
+</div>
 </main>
 <footer>
-<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. The interactive libraries are generated by Construct Maps from each design record and published without edits. The summaries and paper comparisons are editorial.</p>
-<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">Licence</a></p>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. The summaries and the paper comparisons were written for this site.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">License</a></p>
 </footer>
 </body>
 </html>

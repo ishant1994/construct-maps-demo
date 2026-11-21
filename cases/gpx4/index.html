@@ -11,40 +11,59 @@
 <body>
 <main>
 <p class="crumbs"><a href="../../index.html">Construct Maps</a> / GPX4: from binder to degrader</p>
+<div class="case-head">
+<div>
 <h1>GPX4: from binder to degrader</h1>
 <p class="q">How can a designed binder to human GPX4 be turned into a degrader that removes GPX4 rather than only binding it?</p>
-<details><summary>The prompt</summary><blockquote>Design a library of constructs to turn binder5, a BindCraft-designed binder to human GPX4 (P36969), into a degrader that removes GPX4 rather than only binding it. Only use literature published before 2026-01-01.</blockquote></details>
-<h2>What the paper tested</h2>
-<p>Zhang SH, An Y, Zeng N, Liu MC, Sun JX, Gong X, Xu JZ, Wang SG, Xia QD. Degrading GPX4 via biomimetic nanoparticle-mediated in situ synthesis of deep-learning-designed binder-degron chimeras for prostate cancer therapy. Advanced Science 2026. <a href="https://doi.org/10.1002/advs.77932">10.1002/advs.77932</a></p>
-<div class="wrap"><table>
+</div>
+<img class="cartoon" src="../../assets/cartoons/minibinder.png" alt="" width="1120" height="1120">
+</div>
+<div class="prose">
+<p class="label">Background</p>
+<p>GPX4 protects cells from ferroptosis, an iron-dependent form of cell death, by neutralizing lipid peroxides, and inducing ferroptosis can help overcome resistance in prostate cancer <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>. GPX4 has a flat surface with no deep pockets, so it is hard to hit with small molecules, and the covalent inhibitors that work in cells have poor pharmacokinetics. The paper designs peptide binders to GPX4 with BindCraft and then tries to degrade GPX4, not only inhibit it, by joining the binder to a degron, a short signal that E3 ubiquitin ligases read <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>.</p>
+<p class="test-note">The plugin was then asked this question using only literature published before 2026-01-01, so it could not have seen the paper. Below is what GPT and Claude proposed, then what the paper found and how the proposals compare.</p>
+<div class="prompt-block"><p class="label">The prompt given to GPT and Claude</p>
+<blockquote class="prompt">Design a library of constructs to turn binder5, a BindCraft-designed binder to human GPX4 (P36969), into a degrader that removes GPX4 rather than only binding it. Only use literature published before 2026-01-01.</blockquote></div>
+<div class="tabs" role="radiogroup" aria-label="Library">
+<div class="tab"><input type="radio" name="library" id="tab-gpt-r1" checked><label for="tab-gpt-r1">GPT 6.1 sol (high)</label><div class="panel">
+<iframe class="map" src="../../demos/gpx4-gpt-r1.html" title="GPT 6.1 sol (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">GPT&#39;s library has ten constructs built on binder5. Its main route is a C-terminal RRRG degron from a published bioPROTAC, which degraded cytosolic and membrane targets when attached to a nanobody or a leucine zipper <sup class="cite"><a href="#src-kim2024" aria-label="Source 2">2</a></sup>, with an inactive TRGN tail as the control. It also tests a KLHDC2-recognition tail and a blocked version, a lysine-free binder (eight lysines changed to arginine) with each degron tail, and a CHIP fusion in which the binder replaces the ligase&#39;s own substrate-binding domain, as in published ubiquibodies <sup class="cite"><a href="#src-portnoff2014" aria-label="Source 3">3</a></sup>, with an E2-interaction mutant and a binder-free CHIP as controls. GPT repeats each comparison for GPX4 half-life and measured binder levels.</p>
+<p class="links"><a href="../../demos/gpx4-gpt-r1.html">Open the map on its own page</a> · <a href="../../demos/gpx4-gpt-r1.json">Download the design record</a> · <a href="gpt-r1/">Construct list</a></p>
+</div></div>
+<div class="tab"><input type="radio" name="library" id="tab-claude-r1"><label for="tab-claude-r1">Claude Sonnet 5.5 (high)</label><div class="panel">
+<iframe class="map" src="../../demos/gpx4-claude-r1.html" title="Claude Sonnet 5.5 (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">Claude&#39;s library has nine constructs and compares four routes, each against a matched dead control: the RRRG degron (TRGN control) <sup class="cite"><a href="#src-kim2024" aria-label="Source 2">2</a></sup>, a CHIP E3 module (R272A control) <sup class="cite"><a href="#src-portnoff2014" aria-label="Source 3">3</a></sup>, a SPOP cullin adapter (3-box deleted), and a KFERQ-type motif that sends proteins to the lysosome (glutamine changed to alanine). The lysosomal route builds on the finding that GPX4 is degraded by chaperone-mediated autophagy during ferroptosis <sup class="cite"><a href="#src-wu2019" aria-label="Source 4">4</a></sup>. Rescue by a proteasome inhibitor or a lysosome inhibitor shows which compartment each construct uses.</p>
+<p class="links"><a href="../../demos/gpx4-claude-r1.html">Open the map on its own page</a> · <a href="../../demos/gpx4-claude-r1.json">Download the design record</a> · <a href="claude-r1/">Construct list</a></p>
+</div></div>
+</div>
+<section id="paper">
+<h2>What the paper found</h2>
+<p>The paper, published in 2026, started from the same binder, which bound GPX4 with a dissociation constant of about 1.2 µM <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>. It built bdC, the binder with a C-terminal degron (RFLGGREE), and p-TAC, the binder joined to a VHL ligand peptide (ALAPYIP). The synthetic peptides did not lower GPX4 when added to cells, because at about 6,000 Da they entered cells poorly <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>.</p>
+<p>Expressed inside cells, bdC lowered GPX4 more than p-TAC, beginning at 12 hours and clearly by 24 hours in three cell lines. The proteasome inhibitor MG132 reversed the loss, bdC increased GPX4 polyubiquitination, and a version with the degron scrambled (bdCm) did not, so the intact degron was required. Proteomics showed GPX4 falling along with 95 other proteins, so off-target effects are possible <sup class="cite"><a href="#src-paper" aria-label="Source 1">1</a></sup>.</p>
+</section>
+<section id="accounting">
+<h2>How the proposals compare with what the paper tested</h2>
+<div class="wrap"><table class="cmp-table">
 <thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
 <tbody>
-<tr><td>binder5, the designed binder<span class="where">Results: De Novo Design and Validation of Binders Targeting GPX4; Figure 2</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>D01</code><span class="note">binder alone</span></td><td><span class="st st-match" aria-hidden="true">✓</span><span class="word">Same edit</span> <code>ref</code><span class="note">the binder with a linker</span></td></tr>
-<tr><td>The binder fused to a C-terminal degron (bdC, binder5–RFLGGREE)<span class="where">Results: Construction of Binder-Degron Chimeras; Figure 3</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>D02</code> <code>D04</code><span class="note">an RRRG tail, and a KLHDC2-recognition tail</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>rrrg</code><span class="note">an RRRG C-end degron</span></td></tr>
-<tr><td>A degron-mutant control of the same composition (bdCm, RFGLGEER)<span class="where">Methods: Ubiquitination Assay; Results: Construction of Binder-Degron Chimeras</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>D03</code><span class="note">a TRGN control tail</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>trgn</code><span class="note">a degron-null TRGN ending</span></td></tr>
-<tr><td>A peptide-PROTAC: binder5 joined to the VHL ligand ALAPYIP (p-TAC)<span class="where">Results: Construction of Binder-Degron Chimeras</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>D08</code><span class="note">recruits an E3 through a fused CHIP module</span></td><td><span class="st st-related" aria-hidden="true">~</span><span class="word">Related</span> <code>chip</code> <code>spop</code><span class="note">recruits an E3 through a fused CHIP or SPOP module</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">The binder fused to a C-terminal degron (bdC, binder5–RFLGGREE)</span><span class="where">Results: Construction of Binder-Degron Chimeras; Figure 3</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>D02</code> <code>D04</code></span><span class="note">an RRRG tail, and a KLHDC2-recognition tail</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>rrrg</code></span><span class="note">an RRRG C-end degron</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">A degron-mutant control of the same composition (bdCm, RFGLGEER)</span><span class="where">Methods: Ubiquitination Assay; Results: Construction of Binder-Degron Chimeras</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>D03</code></span><span class="note">a TRGN control tail</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>trgn</code></span><span class="note">a degron-null TRGN ending</span></td></tr>
+<tr><td class="item" data-label="Tested in the paper"><span class="name">A peptide-PROTAC: binder5 joined to the VHL ligand ALAPYIP (p-TAC)</span><span class="where">Results: Construction of Binder-Degron Chimeras</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>D08</code></span><span class="note">recruits an E3 through a fused CHIP module</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-related" aria-hidden="true">~</span>Related</span><span class="ids"><code>chip</code> <code>spop</code></span><span class="note">recruits an E3 through a fused CHIP or SPOP module</span></td></tr>
 </tbody></table></div>
-<p class="legend">✓ the same edit · ~ related, a different change at the same place or the same idea · – not proposed. Constructs are named as in each library's record.</p>
-<h2>Also proposed</h2><ul class="plain"><li><strong>GPT 6.1 sol (high):</strong> A blocked terminal diglycine, eight lysine-to-arginine substitutions in the binder, and an E2-interaction mutant of CHIP.</li><li><strong>Claude Sonnet 5.5 (high):</strong> A KFERQ-type lysosomal-routing motif, SPOP without its 3-box, and an E2-binding-dead CHIP.</li></ul>
-<h2>The libraries</h2>
-<section class="grid">
-<article class="card">
-<a href="gpt-r1/"><img src="../../assets/gpx4-gpt-r1.png" alt="GPT 6.1 sol (high): GPX4: from binder to degrader" loading="lazy"></a>
-<h3>GPT 6.1 sol (high)</h3>
-<p>10 constructs (4 candidates, 5 controls, 1 reference) · 4 hypotheses · 8 cited sources, 8 checked against their identifiers</p>
-<p class="links"><a class="open" href="gpt-r1/">Open this library</a></p>
-</article>
-<article class="card">
-<a href="claude-r1/"><img src="../../assets/gpx4-claude-r1.png" alt="Claude Sonnet 5.5 (high): GPX4: from binder to degrader" loading="lazy"></a>
-<h3>Claude Sonnet 5.5 (high)</h3>
-<p>9 constructs (4 candidates, 4 controls, 1 reference) · 4 hypotheses · 26 cited sources, 25 checked against their identifiers</p>
-<p class="links"><a class="open" href="claude-r1/">Open this library</a></p>
-</article>
+<p class="legend">✓ same edit · ~ related: a different change at the same position, or the same idea · – not proposed. Construct names are the ones each library uses.</p>
 </section>
+<h2 id="sources">Sources</h2>
+<ol class="sources">
+<li id="src-paper">Zhang SH, An Y, Zeng N, Liu MC, Sun JX, Gong X, Xu JZ, Wang SG, Xia QD. Degrading GPX4 via biomimetic nanoparticle-mediated in situ synthesis of deep-learning-designed binder-degron chimeras for prostate cancer therapy. Advanced Science 2026. <a href="https://doi.org/10.1002/advs.77932">10.1002/advs.77932</a></li>
+<li id="src-kim2024">Kim MS, Bhargava HK, Shavey GE, Lim WA, El-Samad H, Ng AH. Degron-based bioPROTACs for controlling signaling in CAR T cells. ACS Synthetic Biology 13, 2313–2327 (2024). <a href="https://doi.org/10.1021/acssynbio.4c00109">10.1021/acssynbio.4c00109</a></li>
+<li id="src-portnoff2014">Portnoff AD, Stephens EA, Varner JD, DeLisa MP. Ubiquibodies, synthetic E3 ubiquitin ligases endowed with unnatural substrate specificity for targeted protein silencing. Journal of Biological Chemistry 289, 7844–7855 (2014). <a href="https://doi.org/10.1074/jbc.m113.544825">10.1074/jbc.m113.544825</a></li>
+<li id="src-wu2019">Wu Z, Geng Y, Lu X, et al. Chaperone-mediated autophagy is involved in the execution of ferroptosis. Proceedings of the National Academy of Sciences 116, 2996–3005 (2019). <a href="https://doi.org/10.1073/pnas.1819728116">10.1073/pnas.1819728116</a></li>
+</ol>
+</div>
 </main>
 <footer>
-<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. The interactive libraries are generated by Construct Maps from each design record and published without edits. The summaries and paper comparisons are editorial.</p>
-<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">Licence</a></p>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. The summaries and the paper comparisons were written for this site.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">License</a></p>
 </footer>
 </body>
 </html>
