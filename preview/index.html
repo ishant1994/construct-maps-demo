@@ -15,8 +15,10 @@
 <p class="lead">When designing a panel of protein constructs, we often turn to the literature for starting points and inspiration. A published mutant might separate two activities we want to study, while a construct from a related protein might suggest where to place a domain boundary.</p>
 <p class="lead">LLMs are useful here because they can quickly read across papers with a specific design goal in mind. ChatGPT and Claude can already identify relevant constructs, compare what different groups measured, and suggest which variants would be informative to test together. Once we have a panel in hand, though, we want to see exactly how the constructs differ and inspect the evidence behind each change. For peptides, we also need a way to represent chemistry that a sequence alone can’t capture.</p>
 <p class="lead">We built Construct Maps as a plugin for this workflow. Given a biological question, it proposes a panel of constructs and controls and explains what each comparison could tell us. An interactive map aligns the constructs on a shared residue scale so you can inspect a change, follow it to the source, and see whether the evidence comes from that construct, a related system, or a prediction. For peptides, the design record also specifies features such as D-amino acids, terminal caps, and cyclization.</p>
-<section class="grid" aria-label="Worked example">
-<article class="card feature">
+<h2>Case studies</h2>
+<p class="lead">Each case starts from a question we gave the plugin. The first is a worked example. The other five were run in GPT and Claude, and compare what each proposed with what a published paper later tested.</p>
+<section class="grid" aria-label="Case studies">
+<article class="card">
 <img src="assets/hsp90.png" alt="The interactive map for: ATP binding and hydrolysis in Hsp90 client maturation" loading="lazy">
 <div class="body">
 <span class="eyebrow">Worked example</span>
@@ -25,78 +27,51 @@
 <span class="go" aria-hidden="true">Read the walkthrough</span>
 </div>
 </article>
-</section>
-<h2>Case studies</h2>
-<p class="lead">We gave each question below to the plugin in both GPT and Claude. Each case explains why we asked, shows what each model proposed, and compares the proposals with what a published paper later tested.</p>
-<section class="group" aria-labelledby="group-enzymes">
-<h2 id="group-enzymes">Enzymes</h2>
-<p class="blurb">Which changes make a catalyst work better, and why.</p>
-<div class="grid">
 <article class="card">
 <img src="assets/sortase-gpt-r1.png" alt="The interactive map for: Residue 94 and the β7–β8 loop in S. aureus sortase A" loading="lazy">
 <div class="body">
+<span class="eyebrow">Enzymes</span>
 <h3><a href="cases/sortase/">Residue 94 and the β7–β8 loop in S. aureus sortase A</a></h3>
 <p>Why do substitutions at P94 raise the activity of Staphylococcus aureus sortase A, and is the β7-β8 loop involved?</p>
 <span class="go" aria-hidden="true">Read the case</span>
 </div>
 </article>
-</div>
-</section>
-<section class="group" aria-labelledby="group-antibodies">
-<h2 id="group-antibodies">Antibodies</h2>
-<p class="blurb">How the parts of an antibody shape what it does once bound.</p>
-<div class="grid">
 <article class="card">
 <img src="assets/hsv-complement-gpt-r1.png" alt="The interactive map for: Antibodies against HSV-1 and complement" loading="lazy">
 <div class="body">
+<span class="eyebrow">Antibodies</span>
 <h3><a href="cases/hsv-complement/">Antibodies against HSV-1 and complement</a></h3>
 <p>Does complement engagement contribute to protection by antibodies against HSV-1 in neonatal mice, and does it do so across antibodies?</p>
 <span class="go" aria-hidden="true">Read the case</span>
 </div>
 </article>
-</div>
-</section>
-<section class="group" aria-labelledby="group-peptides">
-<h2 id="group-peptides">Peptides</h2>
-<p class="blurb">Short sequences, where one residue can decide the outcome.</p>
-<div class="grid">
 <article class="card">
 <img src="assets/pdi1-gpt-r1.png" alt="The interactive map for: Pdi1: which residues bind the ribosome" loading="lazy">
 <div class="body">
+<span class="eyebrow">Peptides</span>
 <h3><a href="cases/pdi1/">Pdi1: which residues bind the ribosome</a></h3>
 <p>Which residues of the proline-rich antimicrobial peptide Pdi1 drive its binding to the bacterial ribosome?</p>
 <span class="go" aria-hidden="true">Read the case</span>
 </div>
 </article>
-</div>
-</section>
-<section class="group" aria-labelledby="group-disordered-regions">
-<h2 id="group-disordered-regions">Disordered regions</h2>
-<p class="blurb">Regions with no fixed fold that still carry function.</p>
-<div class="grid">
 <article class="card">
 <img src="assets/patronin-gpt-r1.png" alt="The interactive map for: Patronin: sequence or condensation?" loading="lazy">
 <div class="body">
+<span class="eyebrow">Disordered regions</span>
 <h3><a href="cases/patronin/">Patronin: sequence or condensation?</a></h3>
 <p>Does the prion-like domain of Drosophila Patronin recognize microtubule minus ends through its primary sequence or through its capacity to condense?</p>
 <span class="go" aria-hidden="true">Read the case</span>
 </div>
 </article>
-</div>
-</section>
-<section class="group" aria-labelledby="group-binders-and-degraders">
-<h2 id="group-binders-and-degraders">Binders and degraders</h2>
-<p class="blurb">Designed proteins that bind a target and can send it for removal.</p>
-<div class="grid">
 <article class="card">
 <img src="assets/gpx4-gpt-r1.png" alt="The interactive map for: GPX4: from binder to degrader" loading="lazy">
 <div class="body">
+<span class="eyebrow">Binders and degraders</span>
 <h3><a href="cases/gpx4/">GPX4: from binder to degrader</a></h3>
 <p>How can a designed binder to human GPX4 be turned into a degrader that removes GPX4 rather than only binding it?</p>
 <span class="go" aria-hidden="true">Read the case</span>
 </div>
 </article>
-</div>
 </section>
 </main>
 <footer>

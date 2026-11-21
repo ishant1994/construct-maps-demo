@@ -15,7 +15,7 @@ a{color:var(--accent)}
 .cite{font-size:.75em;margin-left:1px}
 .cite a{text-decoration:none;font-weight:600}
 code{font-size:.86em;background:var(--soft);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
-.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr))}
 .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px}
 .card:hover,.card:focus-within{border-color:var(--accent)}
 .card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:6px;border:1px solid var(--line);display:block}
@@ -24,15 +24,8 @@ code{font-size:.86em;background:var(--soft);padding:1px 5px;border-radius:4px;ov
 .card h3 a::after{content:"";position:absolute;inset:0;border-radius:10px}
 .card p{margin:0;color:var(--muted);font-size:.95rem}
 .card .go{color:var(--accent);font-weight:600;margin-top:auto;padding-top:6px}
-.card .body{display:flex;flex-direction:column;gap:8px}
+.card .body{display:flex;flex-direction:column;gap:8px;flex:1}
 .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.feature,.group .card{display:grid;gap:18px;align-items:center;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
-.feature{grid-column:1/-1;padding:18px;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
-.feature h3{font-size:1.3rem}
-.group{margin:34px 0 0}
-.group h2{margin:0 0 2px}
-.group .blurb{color:var(--muted);margin:0 0 12px;max-width:64ch}
-.group .grid{grid-template-columns:repeat(auto-fill,minmax(440px,1fr))}
 .switch{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0 0 16px}
 .switch a{padding:8px 18px;text-decoration:none;color:var(--ink);background:var(--card)}
 .switch a+a{border-left:1px solid var(--line)}
@@ -78,10 +71,12 @@ ul.plain{padding-left:20px;margin:6px 0}
 ol.sources{padding-left:22px;font-size:.92rem;color:var(--muted)}
 ol.sources li{margin:6px 0}
 footer{max-width:1040px;margin:0 auto;padding:20px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:900px){
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 @media (max-width:640px){
 h1{font-size:1.6rem}
-.feature,.group .card{grid-template-columns:1fr}
-.group .grid{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr}
 table.cmp-table thead{position:absolute;left:-9999px}
 table.cmp-table,table.cmp-table tbody,table.cmp-table tr,table.cmp-table td{display:block;width:100%}
 table.cmp-table tr{border:1px solid var(--line);border-radius:8px;margin:0 0 12px;padding:6px 0}
