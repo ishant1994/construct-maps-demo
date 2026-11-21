@@ -1,0 +1,20 @@
+# Construct Maps
+
+> Open-source plugin for Claude and ChatGPT that designs protein and peptide construct libraries from the literature and draws an interactive map of each design.
+
+Design and visualize protein and peptide constructs to investigate biological function. Start from a biological question, a design goal, or constructs you already have.
+
+## Get it
+
+- [Source, README and install steps](https://github.com/ishant1994/construct-maps): the plugin for Claude, Claude Code and ChatGPT, GPL-3.0-or-later
+- [ChatGPT plugin zip](https://github.com/ishant1994/construct-maps/releases/latest/download/construct-maps-openai.zip): upload it in the Plugins tab
+- [Privacy](https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md) and [terms](https://github.com/ishant1994/construct-maps/blob/main/TERMS.md)
+
+## Case studies
+
+- [ATP binding and hydrolysis in Hsp90 client maturation](https://ishant1994.github.io/construct-maps-demo/cases/hsp90/): In yeast, Hsp90 that cannot hydrolyze ATP still supports growth, but Hsp90 that cannot bind it does not. Which step does a given client protein need?
+- [Residue 94 and the β7–β8 loop in S. aureus sortase A](https://ishant1994.github.io/construct-maps-demo/cases/sortase/): Why do substitutions at P94 raise the activity of Staphylococcus aureus sortase A, and is the β7-β8 loop involved?
+- [Antibodies against HSV-1 and complement](https://ishant1994.github.io/construct-maps-demo/cases/hsv-complement/): Does complement engagement contribute to protection by antibodies against HSV-1 in neonatal mice, and does it do so across antibodies?
+- [Pdi1: which residues bind the ribosome](https://ishant1994.github.io/construct-maps-demo/cases/pdi1/): Which residues of the proline-rich antimicrobial peptide Pdi1 drive its binding to the bacterial ribosome?
+- [Patronin: sequence or condensation?](https://ishant1994.github.io/construct-maps-demo/cases/patronin/): Does the prion-like domain of Drosophila Patronin recognize microtubule minus ends through its primary sequence or through its capacity to condense?
+- [GPX4: from binder to degrader](https://ishant1994.github.io/construct-maps-demo/cases/gpx4/): How can a designed binder to human GPX4 be turned into a degrader that removes GPX4 rather than only binding it?

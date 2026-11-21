@@ -4,8 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Construct Maps: Design &amp; visualize constructs</title>
-<meta name="description" content="Design and visualize protein and peptide constructs to investigate biological function. Start from a biological question, a design goal, or constructs you already have.">
+<title>Construct Maps: protein and peptide construct design for Claude and ChatGPT</title>
+<meta name="description" content="Open-source plugin for Claude and ChatGPT that designs protein and peptide construct libraries from the literature and draws an interactive map of each design.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="canonical" href="https://ishant1994.github.io/construct-maps-demo/">
+<meta name="author" content="ishant1994">
+<meta property="og:site_name" content="Construct Maps">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Construct Maps: protein and peptide construct design for Claude and ChatGPT">
+<meta property="og:description" content="Open-source plugin for Claude and ChatGPT that designs protein and peptide construct libraries from the literature and draws an interactive map of each design.">
+<meta property="og:url" content="https://ishant1994.github.io/construct-maps-demo/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Construct Maps: protein and peptide construct design for Claude and ChatGPT">
+<meta name="twitter:description" content="Open-source plugin for Claude and ChatGPT that designs protein and peptide construct libraries from the literature and draws an interactive map of each design.">
+<meta property="og:image" content="https://ishant1994.github.io/construct-maps-demo/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Construct Maps: Design &amp; visualize constructs">
+<meta name="twitter:image" content="https://ishant1994.github.io/construct-maps-demo/assets/og.png">
+<meta name="twitter:image:alt" content="Construct Maps: Design &amp; visualize constructs">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ishant1994.github.io/construct-maps-demo/#website","url":"https://ishant1994.github.io/construct-maps-demo/","name":"Construct Maps","description":"Open-source plugin for Claude and ChatGPT that designs protein and peptide construct libraries from the literature and draws an interactive map of each design.","inLanguage":"en","publisher":{"@id":"https://ishant1994.github.io/construct-maps-demo/#author"}},{"@type":"Person","name":"ishant1994","url":"https://github.com/ishant1994","@id":"https://ishant1994.github.io/construct-maps-demo/#author"},{"@type":["SoftwareApplication","SoftwareSourceCode"],"@id":"https://ishant1994.github.io/construct-maps-demo/#software","name":"Construct Maps","description":"Design protein and peptide constructs to investigate biological function. Build a focused library informed by literature and sequence analysis, or compare designs you already have. Explore constructs side by side in interactive maps that connect sequence changes, functional regions, conservation, and peptide chemistry to supporting evidence and experiments that test each hypothesis.","url":"https://ishant1994.github.io/construct-maps-demo/","codeRepository":"https://github.com/ishant1994/construct-maps","license":"https://spdx.org/licenses/GPL-3.0-or-later.html","programmingLanguage":["TypeScript","Python"],"applicationCategory":"Scientific research software","keywords":"protein engineering, construct design, peptide design, sequence visualization, structure–function relationships","isAccessibleForFree":true,"author":{"@id":"https://ishant1994.github.io/construct-maps-demo/#author"},"sameAs":["https://github.com/ishant1994/construct-maps"],"image":"https://ishant1994.github.io/construct-maps-demo/assets/og.png"}]}</script>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -16,7 +35,7 @@
 <p class="lead">LLMs are useful here because they can quickly read across papers with a specific design goal in mind. ChatGPT and Claude can already identify relevant constructs, compare what different groups measured, and suggest which variants would be informative to test together. Once we have a panel in hand, though, we want to see exactly how the constructs differ and inspect the evidence behind each change. For peptides, we also need a way to represent chemistry that a sequence alone can’t capture.</p>
 <p class="lead"><a href="https://github.com/ishant1994/construct-maps">Construct Maps</a> was built as a plugin for this workflow. Given a biological question, it proposes a panel of constructs and controls and explains what each comparison could tell us. An interactive map aligns the constructs on a shared residue scale so you can inspect a change, follow it to the source, and see whether the evidence comes from that construct, a related system, or a prediction. For peptides, the design record also specifies features such as D-amino acids, terminal caps, and cyclization.</p>
 <h2>Case studies</h2>
-<p class="lead">Each case starts from a question given to the plugin. The first is an introductory test case. The other five were run in GPT and Claude, and compare what each proposed with what a published paper later tested.</p>
+<p class="lead">Each case starts from a question given to the plugin. The first is an introductory test case. The other five were run in GPT and Claude, and compare what each proposed with what a later study tested.</p>
 <section class="grid" aria-label="Case studies">
 <article class="card">
 <div class="art"><img src="assets/cartoons/hsp90.png" alt="" width="1120" height="1120" loading="lazy"></div>
@@ -75,7 +94,7 @@
 </section>
 </main>
 <footer>
-<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. The summaries and the paper comparisons were written for this site.</p>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. The summaries and the comparisons were written for this site.</p>
 <p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="LICENSE">License</a></p>
 </footer>
 </body>
