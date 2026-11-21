@@ -14,9 +14,9 @@
 <p class="sub">Design &amp; visualize constructs</p>
 <p class="lead">When designing a panel of protein constructs, we often turn to the literature for starting points and inspiration. A published mutant might separate two activities we want to study, while a construct from a related protein might suggest where to place a domain boundary.</p>
 <p class="lead">LLMs are useful here because they can quickly read across papers with a specific design goal in mind. ChatGPT and Claude can already identify relevant constructs, compare what different groups measured, and suggest which variants would be informative to test together. Once we have a panel in hand, though, we want to see exactly how the constructs differ and inspect the evidence behind each change. For peptides, we also need a way to represent chemistry that a sequence alone can’t capture.</p>
-<p class="lead">We built Construct Maps as a plugin for this workflow. Given a biological question, it proposes a panel of constructs and controls and explains what each comparison could tell us. An interactive map aligns the constructs on a shared residue scale so you can inspect a change, follow it to the source, and see whether the evidence comes from that construct, a related system, or a prediction. For peptides, the design record also specifies features such as D-amino acids, terminal caps, and cyclization.</p>
+<p class="lead">Construct Maps was built as a plugin for this workflow. Given a biological question, it proposes a panel of constructs and controls and explains what each comparison could tell us. An interactive map aligns the constructs on a shared residue scale so you can inspect a change, follow it to the source, and see whether the evidence comes from that construct, a related system, or a prediction. For peptides, the design record also specifies features such as D-amino acids, terminal caps, and cyclization.</p>
 <h2>Case studies</h2>
-<p class="lead">Each case starts from a question we gave the plugin. The first is an introductory test case. The other five were run in GPT and Claude, and compare what each proposed with what a published paper later tested.</p>
+<p class="lead">Each case starts from a question given to the plugin. The first is an introductory test case. The other five were run in GPT and Claude, and compare what each proposed with what a published paper later tested.</p>
 <section class="grid" aria-label="Case studies">
 <article class="card">
 <div class="art"><img src="assets/cartoons/hsp90.png" alt="" width="1120" height="1120" loading="lazy"></div>
@@ -75,7 +75,7 @@
 </section>
 </main>
 <footer>
-<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. We wrote the summaries and the paper comparisons.</p>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. The summaries and the paper comparisons were written for this site.</p>
 <p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="LICENSE">License</a></p>
 </footer>
 </body>
