@@ -12,70 +12,29 @@
 <main>
 <p class="crumbs"><a href="../../index.html">Construct Maps</a> / Antibodies against HSV-1 and complement</p>
 <h1>Antibodies against HSV-1 and complement</h1>
+<p class="q">Does complement engagement contribute to protection by antibodies against HSV-1 in neonatal mice, and does it do so across antibodies?</p>
 <div class="prose">
-<p>Antibodies against the HSV glycoproteins D (gD) and B (gB) protect neonatal mice, and for a panel of gD antibodies, effector functions were needed in addition to neutralization <sup class="cite"><a href="#src-slein2024" aria-label="Source 1">1</a></sup>. Those effector functions include engagement of Fc receptors and of C1q, the first component of the classical complement pathway. HSV resists both: its gC protein binds the complement component C3b, and its gE protein binds the Fc region of IgG <sup class="cite"><a href="#src-lubinski2002" aria-label="Source 2">2</a></sup>. How much complement contributes to protection by these antibodies, and whether it contributes equally for every antibody, is the question.</p>
 <div class="prompt-block"><p class="label">The prompt we gave GPT and Claude</p>
-<blockquote class="prompt">Design a library of anti-HSV-1 antibody constructs against gD and gB to test whether complement engagement contributes to protection in neonatal mice and whether it does so uniformly across antibodies. Only use literature published before 2026-01-01.</blockquote>
-<p class="meta">The prompt already names the antigens (gD and gB), the mouse model and the question, so the models did not have to find them.</p></div>
-<div class="libs pair"><article class="card lib"><p class="lib-title">GPT 6.1 sol (high)</p>
-<p class="meta">10 constructs (2 candidates, 4 controls, 4 references) · 6 hypotheses · 15 cited sources, 9 confirmed in Europe PMC</p>
-<p class="lib-note">Four antibodies, each with its own wild-type Fc: HSV8 and CH42 against gD, D48 and BMPC-23 against gB. K322A is made for all four, and E430G for HSV8 and D48.</p>
-<p class="buttons"><a class="primary" href="../../demos/hsv-complement-gpt-r1.html">Open interactive map</a><a href="../../demos/hsv-complement-gpt-r1.json">Download record</a><a href="gpt-r1/">Construct list</a></p>
-<details class="embed"><summary>Show all 10 constructs on this page</summary>
-<iframe class="viewer" src="../../demos/hsv-complement-gpt-r1.html" title="GPT 6.1 sol (high): the interactive library" loading="lazy"></iframe>
-</details></article>
-<article class="card lib"><p class="lib-title">Claude Sonnet 5.5 (high)</p>
-<p class="meta">10 constructs (6 candidates, 1 control, 3 references) · 2 hypotheses · 23 cited sources, 23 confirmed in Europe PMC</p>
-<p class="lib-note">Three antibodies, each as wild type, K322A and E430G: E317 against gD, D48 and BMPC-23 against gB. An Fc-silenced E317 (LALA-PG) is added as a floor.</p>
-<p class="buttons"><a class="primary" href="../../demos/hsv-complement-claude-r1.html">Open interactive map</a><a href="../../demos/hsv-complement-claude-r1.json">Download record</a><a href="claude-r1/">Construct list</a></p>
-<details class="embed"><summary>Show all 10 constructs on this page</summary>
-<iframe class="viewer" src="../../demos/hsv-complement-claude-r1.html" title="Claude Sonnet 5.5 (high): the interactive library" loading="lazy"></iframe>
-</details></article></div>
-<p>Both libraries use the same two Fc changes. K322A removes a C1q contact, and E430G makes antigen-bound IgG assemble into hexamers that C1q binds more strongly. The Fab stays the same in every pair, so any difference in protection comes from the Fc. The libraries differ in how they cover the antibodies and in what they add to separate complement from Fc receptors.</p>
-<section id="fig-1">
-<h2>Does HSV8 need C1q, and does an Fc that hexamerizes more easily protect better?</h2>
-<figure class="preview"><a href="../../demos/hsv-complement-gpt-r1.html"><img src="../../assets/preview-hsv-complement-1.png" alt="The interactive library cropped to HSV8_WT, HSV8_KA, HSV8_EG" loading="lazy"></a><figcaption>HSV8 with wild-type Fc, with K322A, and with E430G. The antigen-binding regions are identical. If K322A loses protection, complement contributes. If E430G gains it, complement is limiting. <a class="open-map" href="../../demos/hsv-complement-gpt-r1.html">Open the full interactive map (GPT)</a>.</figcaption></figure>
-<p>K322A removed C1q binding and complement-dependent killing in an HIV antibody, with a two-fold drop in Fc receptor binding <sup class="cite"><a href="#src-hezareh2001" aria-label="Source 3">3</a></sup>. E430G promotes IgG hexamers on antigen and raises complement activation <sup class="cite"><a href="#src-dejong2016" aria-label="Source 4">4</a></sup>. GPT builds this pair of changes for HSV8 and D48, and builds K322A alone for CH42 and BMPC-23.</p>
-<p>GPT&#39;s key control is to repeat each comparison in mice that lack C1q. An effect of K322A or E430G that disappears without C1q is a complement effect, and one that persists is not. The record adds that K322A is not guaranteed to leave Fc receptor binding untouched, so Fc receptor activity has to be measured for each variant.</p>
-<details class="evidence"><summary>Evidence for <code>HSV8_KA</code> from the design record</summary>
-<dl>
-<dt>Construct</dt><dd><a class="chip" href="gpt-r1/#c-HSV8_KA"><code>HSV8_KA</code></a> in GPT 6.1 sol (high). Perturbs the C1q-contact region while leaving the paired antigen-binding domains unchanged.</dd>
-<dt>Source</dt><dd>Hezareh et al. 2001 <sup class="cite"><a href="#src-hezareh2001" aria-label="Source 3">3</a></sup> · Abstract</dd>
-<dt>What it measured</dt><dd>K322A removed C1q/CDC activity in b12 but changed FcγR binding and ADCC modestly.</dd>
-<dt>System</dt><dd>Human IgG1 anti-HIV b12, not this anti-HSV antibody</dd>
-<dt>Inference</dt><dd>Transfer a published IgG1 perturbation to an anti-HSV Fab on the same common Fc sequence.</dd>
-<dt>Still open</dt><dd>K322A is C1q-reducing, not guaranteed to be complement-selective or a complete mouse-complement knockout; FcγR and viral Fc-receptor activity must be measured.</dd>
-</dl>
-<p class="meta">This text comes straight from the design record. Expand the row for <code>HSV8_KA</code> in the interactive map to see the same evidence there.</p>
-</details>
-</section>
-<section id="fig-2">
-<h2>Does complement matter equally for every antibody?</h2>
-<figure class="preview"><a href="../../demos/hsv-complement-claude-r1.html"><img src="../../assets/preview-hsv-complement-2.png" alt="The interactive library cropped to e317-wt, e317-ka, e317-eg, d48-wt, d48-ka, d48-eg, bmpc23-wt, bmpc23-ka, bmpc23-eg, e317-lalapg" loading="lazy"></a><figcaption>E317 (gD), D48 and BMPC-23 (gB), each as wild type, K322A and E430G, plus E317 with the Fc-silenced LALA-PG. Reading the same pair of changes across three antibodies shows whether the contribution of complement is shared or specific to each antibody. <a class="open-map" href="../../demos/hsv-complement-claude-r1.html">Open the full interactive map (Claude)</a>.</figcaption></figure>
-<p>Claude puts uniformity first. Every antibody has its own wild-type, K322A and E430G forms, so the effect of complement is read per antibody and then compared across them. <a class="chip" href="claude-r1/#c-e317-lalapg"><code>e317-lalapg</code></a> removes both C1q and Fc receptor binding. It marks the lowest protection that Fc functions can explain, which separates complement from Fc receptors and tests how much of K322A&#39;s effect is complement alone.</p>
-<p>The record points out that LALA-PG is not always fully silent. BMPC-23 LALA-PG kept some Fc receptor binding in a gB study, so only E317, whose published data are better, carries it here. The record also lists C1qa-null and C3-null pups as controls outside the library.</p>
-<details class="evidence"><summary>Evidence for <code>e317-lalapg</code> from the design record</summary>
-<dl>
-<dt>Construct</dt><dd><a class="chip" href="claude-r1/#c-e317-lalapg"><code>e317-lalapg</code></a> in Claude Sonnet 5.5 (high). Removes FcgR and C1q binding together, giving the floor of Fc-dependent protection against which the single-function variants are read.</dd>
-<dt>Source</dt><dd>Slein et al. 2024 <sup class="cite"><a href="#src-slein2024" aria-label="Source 1">1</a></sup> · Results, preprint text</dd>
-<dt>What it measured</dt><dd>HSV8 LALA-PG lost protection at 10 ug but protected at 40 ug, so neutralization alone sufficed at the higher dose.</dd>
-<dt>System</dt><dd>2-day-old C57BL/6J pups, i.p. antibody, HSV-1 1e4 PFU i.n.</dd>
-
-<dt>Still open</dt><dd>LALA-PG is not always fully silent: BMPC-23 LALA-PG kept some FcgR binding in the gB preprint, and E317 LALA-PG has not been measured with mouse receptors or mouse complement. Only E317 carries this anchor here because published LALA-PG data already exist for HSV8, D48 and BMPC-23.</dd>
-</dl>
-<p class="meta">This text comes straight from the design record. Expand the row for <code>e317-lalapg</code> in the interactive map to see the same evidence there.</p>
-</details>
-</section>
+<blockquote class="prompt">Design a library of anti-HSV-1 antibody constructs against gD and gB to test whether complement engagement contributes to protection in neonatal mice and whether it does so uniformly across antibodies. Only use literature published before 2026-01-01.</blockquote></div>
+<div class="tabs" role="radiogroup" aria-label="Library">
+<div class="tab"><input type="radio" name="library" id="tab-gpt-r1" checked><label for="tab-gpt-r1">GPT 6.1 sol (high)</label><div class="panel">
+<iframe class="map" src="../../demos/hsv-complement-gpt-r1.html" title="GPT 6.1 sol (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">GPT&#39;s library has ten constructs built on four antibodies, HSV8 and CH42 against gD and D48 and BMPC-23 against gB, each with its own wild-type Fc. Every antibody gets K322A, which removes a C1q contact and abolished C1q binding and complement-dependent killing in an HIV antibody <sup class="cite"><a href="#src-hezareh2001" aria-label="Source 1">1</a></sup>. HSV8 and D48 also get E430G, which promotes IgG hexamers on antigen and raises complement activation <sup class="cite"><a href="#src-dejong2016" aria-label="Source 2">2</a></sup>. The antigen-binding regions are identical within each antibody, so any difference in protection comes from the Fc. GPT plans to repeat each comparison in mice that lack C1q, to tell a complement effect from another Fc effect.</p>
+<p class="links"><a href="../../demos/hsv-complement-gpt-r1.html">Open the map on its own page</a> · <a href="../../demos/hsv-complement-gpt-r1.json">Download the design record</a> · <a href="gpt-r1/">Construct list</a></p>
+</div></div>
+<div class="tab"><input type="radio" name="library" id="tab-claude-r1"><label for="tab-claude-r1">Claude Sonnet 5.5 (high)</label><div class="panel">
+<iframe class="map" src="../../demos/hsv-complement-claude-r1.html" title="Claude Sonnet 5.5 (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">Claude&#39;s library has ten constructs built on three antibodies, E317 against gD and D48 and BMPC-23 against gB, each as wild type, K322A and E430G, which follow the same two sources as GPT&#39;s <sup class="cite"><a href="#src-hezareh2001" aria-label="Source 1">1</a></sup> <sup class="cite"><a href="#src-dejong2016" aria-label="Source 2">2</a></sup>. It adds an Fc-silenced E317 (LALA-PG), which removes both C1q and Fc receptor binding and marks the lowest protection Fc functions can explain. Reading the same pair of changes across three antibodies shows whether complement matters equally for each. The design draws on the finding that effector functions are needed for protection by gD antibodies in neonatal mice <sup class="cite"><a href="#src-slein2024" aria-label="Source 3">3</a></sup>, and on the fact that HSV resists both complement and Fc receptors, through its gC and gE proteins <sup class="cite"><a href="#src-lubinski2002" aria-label="Source 4">4</a></sup>.</p>
+<p class="links"><a href="../../demos/hsv-complement-claude-r1.html">Open the map on its own page</a> · <a href="../../demos/hsv-complement-claude-r1.json">Download the design record</a> · <a href="claude-r1/">Construct list</a></p>
+</div></div>
+</div>
 <section id="paper">
-<h2>Complement was needed for E317, enhancing it helped the gB antibodies, and both depended on host C1q</h2>
-<p>The paper, posted in October 2026, built each antibody as wild type, K322A and E430G and tested them in 2-day-old mice challenged with HSV-1 <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. The Fc changes did not alter antigen binding. K322A abolished C1q binding and complement deposition for every antibody, while E430G raised them for some antibodies and not others, depending on antigen density in the assay <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>Protection differed by antibody. K322A removed all of E317&#39;s protection, and E430G added nothing for it. For HSV8, E430G improved survival, and K322A&#39;s drop of about 20% fewer survivors was not statistically significant. CH42, a non-neutralizing gD antibody, was unaffected by either change. For all four gB antibodies, K322A made no difference, while E430G significantly improved survival, including for BMPC-23, which is non-neutralizing and did not protect on its own at the tested amount <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>To test whether these effects ran through complement, the authors repeated the HSV8, Hu2c and HDIT102 comparisons in mice lacking C1q. All three Fc variants still protected, but the effects of K322A and E430G disappeared <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. In mice lacking Fc receptors, HSV8 E430G still improved survival over wild type. In adult mice, K322A reduced HSV8&#39;s protection, and wild-type HSV8 gave no benefit in C1q-deficient adults <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>Both libraries put the question the right way round. GPT&#39;s record calls for the C1q-deficient comparison that the paper used to show the effects ran through complement. Claude&#39;s record lists C1qa-null pups as a control outside the library, and adds an Fc-silenced antibody to bound the Fc-dependent effect. The paper tested Fc receptors with Fc receptor-deficient mice instead <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>The libraries cover the paper&#39;s antibodies only in part. The paper used seven: E317, HSV8 and CH42 against gD, and Hu2c, HDIT102, D48 and BMPC-23 against gB. GPT included HSV8, CH42, D48 and BMPC-23, and Claude included E317, D48 and BMPC-23. Neither included Hu2c or HDIT102, the two gB antibodies the paper took forward with HSV8 into the C1q-deficient and second-strain experiments <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. GPT left E430G out for CH42 and BMPC-23, so it would have missed the gain the paper saw for BMPC-23. Claude&#39;s three antibodies, each with all three Fc forms, cover every pattern the paper found: complement needed for protection (E317), and complement not needed but helpful when enhanced (D48, BMPC-23).</p>
+<h2>What the paper found</h2>
+<p>The paper, posted in October 2026, built seven antibodies (E317, HSV8 and CH42 against gD, and Hu2c, HDIT102, D48 and BMPC-23 against gB) as wild type, K322A and E430G and tested them in 2-day-old mice challenged with HSV-1 <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. The Fc changes did not alter antigen binding, and K322A abolished C1q binding and complement deposition for every antibody <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
+<p>Protection differed by antibody. K322A removed all of E317&#39;s protection, and E430G added nothing for it. E430G improved survival for HSV8, and K322A&#39;s drop for HSV8 was not significant. CH42 was unaffected by either change. For all four gB antibodies, K322A made no difference and E430G significantly improved survival <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. In mice lacking C1q, the effects of K322A and E430G disappeared for HSV8, Hu2c and HDIT102, so they ran through C1q <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
 </section>
 <section id="accounting">
-<h2>The antibody variants the paper tested, compared with each library</h2>
+<h2>What the paper tested, against each library</h2>
 <div class="wrap"><table class="cmp-table">
 <thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
 <tbody>
@@ -89,13 +48,13 @@
 <tr><td class="item" data-label="Tested in the paper"><span class="name">VRC01 wild-type IgG1, an irrelevant-antigen isotype control</span><span class="where">Results: The role of complement activation in mAb-mediated protection from HSV-1 challenge; Figure 4A–C</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span><span class="note">proposed an Fc-silenced anchor (e317-lalapg) instead</span></td></tr>
 </tbody></table></div>
 <p class="legend">✓ same edit · ~ related: a different change at the same position, or the same idea · – not proposed. Construct names are the ones each library uses.</p>
-
-</section><h2 id="sources">Sources</h2>
+</section>
+<h2 id="sources">Sources</h2>
 <ol class="sources">
-<li id="src-slein2024">Slein MD, Backes IM, Garland CR, et al. Effector functions are required for broad and potent protection of neonatal mice with antibodies targeting HSV glycoprotein D. Cell Reports Medicine 5, 101417 (2024). <a href="https://doi.org/10.1016/j.xcrm.2024.101417">10.1016/j.xcrm.2024.101417</a></li>
-<li id="src-lubinski2002">Lubinski JM, Jiang M, Hook L, et al. Herpes simplex virus type 1 evades the effects of antibody and complement in vivo. Journal of Virology 76, 9232–9241 (2002). <a href="https://doi.org/10.1128/jvi.76.18.9232-9241.2002">10.1128/jvi.76.18.9232-9241.2002</a></li>
 <li id="src-hezareh2001">Hezareh M, Hessell AJ, Jensen RC, van de Winkel JG, Parren PW. Effector function activities of a panel of mutants of a broadly neutralizing antibody against human immunodeficiency virus type 1. Journal of Virology 75, 12161–12168 (2001). <a href="https://doi.org/10.1128/jvi.75.24.12161-12168.2001">10.1128/jvi.75.24.12161-12168.2001</a></li>
 <li id="src-dejong2016">de Jong RN, Beurskens FJ, Verploegen S, et al. A novel platform for the potentiation of therapeutic antibodies based on antigen-dependent formation of IgG hexamers at the cell surface. PLoS Biology 14, e1002344 (2016). <a href="https://doi.org/10.1371/journal.pbio.1002344">10.1371/journal.pbio.1002344</a></li>
+<li id="src-slein2024">Slein MD, Backes IM, Garland CR, et al. Effector functions are required for broad and potent protection of neonatal mice with antibodies targeting HSV glycoprotein D. Cell Reports Medicine 5, 101417 (2024). <a href="https://doi.org/10.1016/j.xcrm.2024.101417">10.1016/j.xcrm.2024.101417</a></li>
+<li id="src-lubinski2002">Lubinski JM, Jiang M, Hook L, et al. Herpes simplex virus type 1 evades the effects of antibody and complement in vivo. Journal of Virology 76, 9232–9241 (2002). <a href="https://doi.org/10.1128/jvi.76.18.9232-9241.2002">10.1128/jvi.76.18.9232-9241.2002</a></li>
 <li id="src-paper">Jimenez LM, Slein MD, Leib DA, Ackerman ME. Interaction with complement factor C1q can contribute to and improve monoclonal antibody-mediated protection against lethal HSV-1 challenge. bioRxiv, posted 24 October 2026. <a href="https://doi.org/10.64898/2026.10.19.760222">10.64898/2026.10.19.760222</a></li>
 </ol>
 </div>

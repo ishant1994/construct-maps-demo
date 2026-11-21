@@ -12,72 +12,29 @@
 <main>
 <p class="crumbs"><a href="../../index.html">Construct Maps</a> / Pdi1: which residues bind the ribosome</p>
 <h1>Pdi1: which residues bind the ribosome</h1>
+<p class="q">Which residues of the proline-rich antimicrobial peptide Pdi1 drive its binding to the bacterial ribosome?</p>
 <div class="prose">
-<p>Type II proline-rich antimicrobial peptides, such as the honeybee peptide apidaecin, bind in the ribosome&#39;s exit tunnel after a protein has been released and trap the release factors there <sup class="cite"><a href="#src-huang2024" aria-label="Source 1">1</a></sup>. Genome mining has found dozens of related insect peptides, and those that keep apidaecin&#39;s conserved C-terminal sequence (PHPRL) trap ribosomes at stop codons in the same way <sup class="cite"><a href="#src-huang2024" aria-label="Source 1">1</a></sup>. Pdi1, from the wasp <em>Pimpla disparis</em>, ends in that sequence. Structure-activity studies have focused on apidaecin itself <sup class="cite"><a href="#src-skowron2023" aria-label="Source 2">2</a></sup>, so which Pdi1 residues the ribosome depends on, and which matter only for trapping the release factor, was not known.</p>
 <div class="prompt-block"><p class="label">The prompt we gave GPT and Claude</p>
-<blockquote class="prompt">Design a library of variants of the proline-rich antimicrobial peptide Pdi1 (wasp Pimpla disparis, GKPNRPRPAPIQPRPPHPRL) to identify which residues drive its binding to the bacterial ribosome. Only use literature published before 2026-01-01.</blockquote>
-<p class="meta">The prompt already gives the Pdi1 sequence and the question, so the models did not have to find them.</p></div>
-<div class="libs pair"><article class="card lib"><p class="lib-title">GPT 6.1 sol (high)</p>
-<p class="meta">10 constructs (8 candidates, 1 control, 1 reference) · 2 hypotheses · 6 cited sources, 4 confirmed in Europe PMC</p>
-<p class="lib-note">Also in this library: P13A, the one position in the C-terminal segment the paper did not scan, and R7A, an arginine well upstream, as a control.</p>
-<p class="buttons"><a class="primary" href="../../demos/pdi1-gpt-r1.html">Open interactive map</a><a href="../../demos/pdi1-gpt-r1.json">Download record</a><a href="gpt-r1/">Construct list</a></p>
-<details class="embed"><summary>Show all 10 constructs on this page</summary>
-<iframe class="viewer" src="../../demos/pdi1-gpt-r1.html" title="GPT 6.1 sol (high): the interactive library" loading="lazy"></iframe>
-</details></article>
-<article class="card lib"><p class="lib-title">Claude Sonnet 5.5 (high)</p>
-<p class="meta">10 constructs (8 candidates, 1 control, 1 reference) · 4 hypotheses · 12 cited sources, 12 confirmed in Europe PMC</p>
-<p class="lib-note">Also in this library: K2A/R5A/R7A, which remove three positive charges from the leader, and A9Y, which puts a tyrosine where apidaecin has Tyr7.</p>
-<p class="buttons"><a class="primary" href="../../demos/pdi1-claude-r1.html">Open interactive map</a><a href="../../demos/pdi1-claude-r1.json">Download record</a><a href="claude-r1/">Construct list</a></p>
-<details class="embed"><summary>Show all 10 constructs on this page</summary>
-<iframe class="viewer" src="../../demos/pdi1-claude-r1.html" title="Claude Sonnet 5.5 (high): the interactive library" loading="lazy"></iframe>
-</details></article></div>
-<section id="fig-1">
-<h2>Which residues of the C-terminal segment hold Pdi1 on the ribosome, and which trap the release factor?</h2>
-<figure class="preview"><a href="../../demos/pdi1-gpt-r1.html"><img src="../../assets/preview-pdi1-1.png" alt="The interactive library cropped to pdi1-wt, pdi1-p13a, pdi1-r14a, pdi1-p15a, pdi1-p16a, pdi1-h17a, pdi1-p18a, pdi1-r19a, pdi1-l20a" loading="lazy"></a><figcaption>Pdi1 and an alanine scan of positions 13 to 20 (PRPPHPRL), one substitution per construct. A residue whose replacement lowers binding is a contact with the ribosome. One that keeps binding but loses the stop-codon stall would be needed for trapping the release factor. <a class="open-map" href="../../demos/pdi1-gpt-r1.html">Open the full interactive map (GPT)</a>.</figcaption></figure>
-<p>GPT measures each variant two ways: binding to ribosomes alone, and binding to ribosomes in the post-release state with a release factor and tRNA present, together with a toeprint that shows whether the peptide still stalls the ribosome at the stop codon. A residue that matters in both states is a contact with the ribosome. One that matters only in the second state is needed to trap the release factor.</p>
-<p>According to GPT&#39;s record, three of the positions (14, 18 and 19) already had preliminary evidence from a 2024 conference abstract that alanine lowered binding <sup class="cite"><a href="#src-dean2024" aria-label="Source 3">3</a></sup>, so those are deliberate replications. The other positions test which other residues matter. <a class="chip" href="gpt-r1/#c-pdi1-r7a"><code>pdi1-r7a</code></a>, an arginine far upstream, shows whether removing any one arginine has the same effect as <a class="chip" href="gpt-r1/#c-pdi1-r14a"><code>pdi1-r14a</code></a> or <a class="chip" href="gpt-r1/#c-pdi1-r19a"><code>pdi1-r19a</code></a>.</p>
-<details class="evidence"><summary>Evidence for <code>pdi1-r19a</code> from the design record</summary>
-<dl>
-<dt>Construct</dt><dd><a class="chip" href="gpt-r1/#c-pdi1-r19a"><code>pdi1-r19a</code></a> in GPT 6.1 sol (high). Reproduce the reported Pdi1-sensitive site and distinguish ribosome association from RF-complex stabilization.</dd>
-<dt>Source</dt><dd>2024 conference abstract <sup class="cite"><a href="#src-dean2024" aria-label="Source 3">3</a></sup> · Abstract</dd>
-<dt>What it measured</dt><dd>Alanine changes at Pdi1 positions 14, 18 and 19 reduced BLI response.</dd>
-<dt>System</dt><dd>N-terminal biotin–PEG24 peptide on streptavidin sensors; purified bacterial ribosomes. RF/tRNA state and quantitative per-mutant affinity are not specified in the abstract.</dd>
-
-<dt>Still open</dt><dd>Api R17 contacts RF, but RF dependence is not specified by the 2024 Pdi1 binding abstract; the mutant is not assumed nonbinding.</dd>
-</dl>
-<p class="meta">This text comes straight from the design record. Expand the row for <code>pdi1-r19a</code> in the interactive map to see the same evidence there.</p>
-</details>
-</section>
-<section id="fig-2">
-<h2>Does Pdi1 need its free C-terminal carboxylate?</h2>
-<figure class="preview"><a href="../../demos/pdi1-claude-r1.html"><img src="../../assets/preview-pdi1-2.png" alt="The interactive library cropped to pdi1, pdi1-amide, L20A" loading="lazy"></a><figcaption>Pdi1, its C-terminal amide (<a class="chip" href="claude-r1/#c-pdi1-amide"><code>pdi1-amide</code></a>) and L20A. The amide has the same twenty letters as Pdi1, and only the cap on the chain differs. L20A removes the Leu20 side chain and keeps the carboxylate, so the two together separate the terminal group from the side chain. <a class="open-map" href="../../demos/pdi1-claude-r1.html">Open the full interactive map (Claude)</a>.</figcaption></figure>
-<p>A sequence can&#39;t show this change, because the amide and wild type have the same letters. The design record stores it as a C-terminal cap on the chain, so the amide appears on the map as its own construct next to L20A. In apidaecin derivatives, amidation lets the peptide occupy a third binding pocket and the amidated peptide interferes with translation presumably without trapping the release factor <sup class="cite"><a href="#src-lauer2024" aria-label="Source 4">4</a></sup>. If amidated Pdi1 binds the ribosome but no longer stalls it at the stop codon, the terminal group matters for trapping and the Leu20 side chain for something else.</p>
-<p>The comparison has a limit. Amidation also adds one positive charge, so a change in binding could reflect electrostatics and not the lost carboxylate.</p>
-<details class="evidence"><summary>Evidence for <code>pdi1-amide</code> from the design record</summary>
-<dl>
-<dt>Construct</dt><dd><a class="chip" href="claude-r1/#c-pdi1-amide"><code>pdi1-amide</code></a> in Claude Sonnet 5.5 (high). Replaces the terminal carboxylic acid with a primary amide. A chemistry change has no edit form.</dd>
-<dt>Source</dt><dd>Lauer et al. 2024 <sup class="cite"><a href="#src-lauer2024" aria-label="Source 4">4</a></sup> · Results, Figs. 2-4 and 7</dd>
-<dt>What it measured</dt><dd>Amidated Api88 was positioned 3.2 Å deeper than Api137, adopted at least three conformers, occupied a third binding pocket in 23S rRNA domain III, and inhibited translation largely independently of RF1 and about 50% less effectively than Api137 with RF1.</dd>
-<dt>System</dt><dd>Cryo-EM of 50S and 70S, fluorescence polarisation on purified 70S, in vitro translation.</dd>
-<dt>Source</dt><dd>Lauer et al. 2024 <sup class="cite"><a href="#src-lauer2024" aria-label="Source 4">4</a></sup> · Fig. 1e</dd>
-<dt>What it measured</dt><dd>Purified 70S bound labelled Api137 with Kd 4.7 µM and Api88 with Kd 1.8 µM.</dd>
-<dt>System</dt><dd>Fluorescence polarisation, E. coli 70S purified to remove release-factor carry-over.</dd>
-
-<dt>Still open</dt><dd>Amidation also raises net charge by one, so a change in 70S binding may reflect electrostatics and the third site rather than loss of the A76 hydrogen bond. The data for this effect are for an apidaecin with different N-terminal chemistry (N-terminal guanidino-ornithine), not for Pdi1.</dd>
-</dl>
-<p class="meta">This text comes straight from the design record. Expand the row for <code>pdi1-amide</code> in the interactive map to see the same evidence there.</p>
-</details>
-</section>
+<blockquote class="prompt">Design a library of variants of the proline-rich antimicrobial peptide Pdi1 (wasp Pimpla disparis, GKPNRPRPAPIQPRPPHPRL) to identify which residues drive its binding to the bacterial ribosome. Only use literature published before 2026-01-01.</blockquote></div>
+<div class="tabs" role="radiogroup" aria-label="Library">
+<div class="tab"><input type="radio" name="library" id="tab-gpt-r1" checked><label for="tab-gpt-r1">GPT 6.1 sol (high)</label><div class="panel">
+<iframe class="map" src="../../demos/pdi1-gpt-r1.html" title="GPT 6.1 sol (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">GPT&#39;s library has ten constructs: a complete alanine scan of the C-terminal segment PRPPHPRL (positions 13 to 20), one substitution per construct, and R7A, an arginine well upstream, as a control. The scan targets the conserved C-terminal sequence that Type II peptides like apidaecin share <sup class="cite"><a href="#src-huang2024" aria-label="Source 1">1</a></sup>. According to GPT&#39;s record, a 2024 conference abstract had already reported that alanine at positions 14, 18 and 19 lowered binding <sup class="cite"><a href="#src-dean2024" aria-label="Source 2">2</a></sup>. GPT pairs binding to ribosomes alone with binding in the post-release state and a toeprint, so a residue needed for binding can be told apart from one needed to trap the release factor.</p>
+<p class="links"><a href="../../demos/pdi1-gpt-r1.html">Open the map on its own page</a> · <a href="../../demos/pdi1-gpt-r1.json">Download the design record</a> · <a href="gpt-r1/">Construct list</a></p>
+</div></div>
+<div class="tab"><input type="radio" name="library" id="tab-claude-r1"><label for="tab-claude-r1">Claude Sonnet 5.5 (high)</label><div class="panel">
+<iframe class="map" src="../../demos/pdi1-claude-r1.html" title="Claude Sonnet 5.5 (high): the interactive map" loading="lazy" style="height:1400px"></iframe>
+<p class="summary">Claude&#39;s library has ten constructs. It scans six of the eight positions with alanine (it leaves out P13 and P15), using apidaecin structure-activity work to choose them <sup class="cite"><a href="#src-skowron2023" aria-label="Source 3">3</a></sup>. It adds K2A/R5A/R7A, which removes three positive charges from the leader, A9Y, which puts a tyrosine where apidaecin has Tyr7, and a C-terminal amide. The amide has the same letters as Pdi1, and the design record stores the difference as a cap on the chain. In apidaecin derivatives, amidation lets the peptide occupy a third binding pocket, and the amidated peptide interferes with translation presumably without trapping the release factor <sup class="cite"><a href="#src-lauer2024" aria-label="Source 4">4</a></sup>.</p>
+<p class="links"><a href="../../demos/pdi1-claude-r1.html">Open the map on its own page</a> · <a href="../../demos/pdi1-claude-r1.json">Download the design record</a> · <a href="claude-r1/">Construct list</a></p>
+</div></div>
+</div>
 <section id="paper">
-<h2>Arg14, Pro18 and Arg19 hold Pdi1 on the ribosome, and His17 is needed to stall it</h2>
-<p>The paper, published in 2026, measured binding by biolayer interferometry (BLI), with each peptide tethered through an N-terminal biotin–PEG24 linker to a streptavidin sensor <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. Wild-type Pdi1 bound the ribosome with a dissociation constant of 209 ± 24 pM and a residence time of about 24 minutes. In the alanine scan, P15A, P16A, H17A and L20A changed binding little, while R14A, P18A and R19A bound less well and came off the ribosome about 2 to 5 times faster <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>Cell assays showed that binding is not the whole story. In an <em>E. coli</em> stop-codon readthrough assay, R14A, P18A and R19A left little or no zone of clearance, while H17A kept a clear antibiotic effect but produced no fluorescent halo, so it did not inhibit termination at sub-inhibitory concentrations <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. In broth, the MIC of R14A was 41-fold higher than wild type and the MIC of R19A more than 1,333-fold higher, whereas P18A (0.35 µM) and H17A (0.75 µM) were close to each other <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. Toeprinting showed that H17A and R19A both fail to stall ribosomes at the stop codon, so His17 is needed for termination inhibition as well as the penultimate arginine <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>Both libraries scanned the right segment. GPT&#39;s scan covered positions 13 to 20, which includes all seven the paper scanned, and added R7A as an upstream control. Claude scanned six positions and left out P13 and P15, so it has no counterpart to P15A, one of the positions the paper found tolerant. Both libraries paired binding with a stop-codon toeprint, the assay that separated H17A from the other variants. Neither included the scrambled Pdi1 the paper used as a negative control <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>Claude&#39;s plan names competition fluorescence polarization or BLI for measuring binding. The paper found that fluorescence anisotropy did not work well here: binding did not saturate even above 10 µM ribosome, and the competition experiment was inconclusive. It used BLI instead <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
-<p>The paper also shows why a sequence is not the whole design. Its assays used chemically modified peptides: an N-terminal biotin–PEG24 linker for BLI and a fluorescein label for anisotropy. The PEGylated peptide had reduced activity (MIC 25 µM), though still 4-fold better than the scrambled control, and both modified peptides still stalled ribosomes at the stop codon, to different extents <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. Claude&#39;s amide is the only chemical change in either library, and the paper did not test it. Neither library included a conjugate or a label.</p>
+<h2>What the paper found</h2>
+<p>The paper, published in 2026, measured binding of Pdi1 and its alanine scan (R14A to L20A) by biolayer interferometry <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>. Wild-type Pdi1 bound the ribosome with a dissociation constant of 209 ± 24 pM and a residence time of about 24 minutes. P15A, P16A, H17A and L20A changed binding little, while R14A, P18A and R19A bound less well and came off the ribosome 2 to 5 times faster <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
+<p>Cell assays showed that binding is not the whole story. R14A and R19A lost most of their potency (MIC 41-fold and more than 1,333-fold higher). H17A kept a submicromolar MIC (0.75 µM) but did not inhibit translation termination, and toeprinting showed that H17A and R19A both fail to stall ribosomes at the stop codon <sup class="cite"><a href="#src-paper" aria-label="Source 5">5</a></sup>.</p>
 </section>
 <section id="accounting">
-<h2>The Pdi1 variants the paper measured, compared with each library</h2>
+<h2>What the paper tested, against each library</h2>
 <div class="wrap"><table class="cmp-table">
 <thead><tr><th scope="col">Tested in the paper</th><th scope="col">GPT 6.1 sol (high)</th><th scope="col">Claude Sonnet 5.5 (high)</th></tr></thead>
 <tbody>
@@ -87,12 +44,12 @@
 <tr><td class="item" data-label="Tested in the paper"><span class="name">PEGylated Pdi1 and fluorescein-labeled Pdi1</span><span class="note">chemically modified reporter peptides</span><span class="where">Results: Antibiotic Activity of Pdi1 Derivatives; Evaluation of Ribosome Stalling for Pdi1 Derivatives</span></td><td data-label="GPT 6.1 sol (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span></td><td data-label="Claude Sonnet 5.5 (high)"><span class="lab"><span class="st st-absent" aria-hidden="true">–</span>Not proposed</span><span class="note">its only chemical change is a C-terminal amide, which the paper did not test</span></td></tr>
 </tbody></table></div>
 <p class="legend">✓ same edit · ~ related: a different change at the same position, or the same idea · – not proposed. Construct names are the ones each library uses.</p>
-
-</section><h2 id="sources">Sources</h2>
+</section>
+<h2 id="sources">Sources</h2>
 <ol class="sources">
 <li id="src-huang2024">Huang W, Baliga C, Aleksandrova EV, et al. Activity, structure, and diversity of Type II proline-rich antimicrobial peptides from insects. EMBO Reports 25, 5194–5211 (2024). <a href="https://doi.org/10.1038/s44319-024-00277-5">10.1038/s44319-024-00277-5</a></li>
-<li id="src-skowron2023">Skowron KJ, Baliga C, Johnson T, et al. Structure-activity relationships of the antimicrobial peptide natural product apidaecin. Journal of Medicinal Chemistry 66, 11831–11842 (2023). <a href="https://doi.org/10.1021/acs.jmedchem.3c00406">10.1021/acs.jmedchem.3c00406</a></li>
 <li id="src-dean2024">Evaluating the Ribosome Binding Activity of the Natural Product Antimicrobial Peptide Pdi1. Conference abstract, Sciforum (2024). Known to us only as GPT&#39;s record describes it. <a href="https://sciforum.net/paper/20228">link</a></li>
+<li id="src-skowron2023">Skowron KJ, Baliga C, Johnson T, et al. Structure-activity relationships of the antimicrobial peptide natural product apidaecin. Journal of Medicinal Chemistry 66, 11831–11842 (2023). <a href="https://doi.org/10.1021/acs.jmedchem.3c00406">10.1021/acs.jmedchem.3c00406</a></li>
 <li id="src-lauer2024">Lauer SM, Reepmeyer M, Berendes O, et al. Multimodal binding and inhibition of bacterial ribosomes by the antimicrobial peptides Api137 and Api88. Nature Communications 15, 3945 (2024). <a href="https://doi.org/10.1038/s41467-024-48027-4">10.1038/s41467-024-48027-4</a></li>
 <li id="src-paper">Dean TT, Ziyad A, Klepacki D, Villegas JA, Moore TW. Molecular determinants of ribosome binding for the antimicrobial peptide Pdi1. ACS Chemical Biology 2026;21(8):1897–1905. <a href="https://doi.org/10.1021/acschembio.6c00052">10.1021/acschembio.6c00052</a></li>
 </ol>

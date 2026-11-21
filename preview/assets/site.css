@@ -2,10 +2,9 @@
 @media (prefers-color-scheme:dark){:root{--bg:#161615;--ink:#ececea;--muted:#a3a39d;--line:#34342f;--card:#1e1e1c;--accent:#7fb0ff;--soft:#242422;--good:#6fd39a;--rel:#e8b04a;--none:#9a9a94}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:1000px;margin:0 auto;padding:32px 16px 24px}
+main{max-width:1040px;margin:0 auto;padding:32px 16px 24px}
 h1{font-size:2rem;margin:0 0 12px;line-height:1.2}
 h2{font-size:1.3rem;margin:40px 0 10px;line-height:1.3}
-h3{font-size:1.08rem;margin:26px 0 6px}
 a{color:var(--accent)}
 .crumbs{font-size:.9rem;color:var(--muted);margin:0 0 18px}
 .sub{color:var(--muted);margin:0 0 20px;font-size:1.1rem}
@@ -15,24 +14,21 @@ a{color:var(--accent)}
 .prose p,.prose blockquote,.prose .meta,.prose ul{max-width:72ch}
 .cite{font-size:.75em;margin-left:1px}
 .cite a{text-decoration:none;font-weight:600}
-.figrefs{font-size:.85em;margin-left:2px}
-.chip{text-decoration:none}
 code{font-size:.86em;background:var(--soft);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.pair{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px}
 .card:hover,.card:focus-within{border-color:var(--accent)}
-.card img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block}
+.card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:6px;border:1px solid var(--line);display:block}
 .card h3{font-size:1.08rem;margin:2px 0 0}
 .card h3 a{color:var(--ink);text-decoration:none}
 .card h3 a::after{content:"";position:absolute;inset:0;border-radius:10px}
 .card p{margin:0;color:var(--muted);font-size:.95rem}
 .card .go{color:var(--accent);font-weight:600;margin-top:auto;padding-top:6px}
 .card .body{display:flex;flex-direction:column;gap:8px}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .feature,.group .card{display:grid;gap:18px;align-items:center;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
 .feature{grid-column:1/-1;padding:18px;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
 .feature h3{font-size:1.3rem}
-.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .group{margin:34px 0 0}
 .group h2{margin:0 0 2px}
 .group .blurb{color:var(--muted);margin:0 0 12px;max-width:64ch}
@@ -44,28 +40,25 @@ code{font-size:.86em;background:var(--soft);padding:1px 5px;border-radius:4px;ov
 .facts{color:var(--muted);margin:0 0 16px;font-size:.95rem}
 .shot{display:block;margin:14px 0}
 .shot img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
 .buttons a{padding:9px 16px;border:1px solid var(--accent);border-radius:8px;text-decoration:none;font-weight:600}
 .buttons a.primary{background:var(--accent);color:var(--bg)}
-.label{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:26px 0 4px}
+.label{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 4px}
 blockquote{margin:8px 0;padding:8px 14px;border-left:3px solid var(--line);color:var(--ink)}
 blockquote.prompt{font-size:1.02rem;margin-top:0}
-.meta{font-size:.92rem;color:var(--muted);margin:4px 0 8px}
-.libs{margin:22px 0 8px}
-.lib .lib-title{font-weight:700;color:var(--ink);font-size:1.02rem}
-.lib .lib-note{color:var(--ink);font-size:.93rem}
-.lib .buttons{margin:6px 0}
-figure.preview{margin:14px 0 10px}
-figure.preview img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
-figure.preview figcaption{color:var(--ink);font-size:.95rem;margin-top:8px;max-width:72ch}
-figure.preview figcaption .open-map{white-space:nowrap}
-details{margin:10px 0}
-summary{cursor:pointer;font-weight:600}
-details.evidence{background:var(--soft);border-radius:10px;padding:8px 16px;margin:12px 0}
-details.evidence dl{margin:8px 0;display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;font-size:.93rem}
-details.evidence dt{font-weight:600}
-details.evidence dd{margin:0}
-iframe.viewer{width:100%;height:780px;border:1px solid var(--line);border-radius:8px;margin-top:10px;background:var(--bg)}
+.tabs{display:flex;flex-wrap:wrap;gap:0 8px;margin:22px 0 8px}
+.tab{display:contents}
+.tab input{position:absolute;opacity:0;pointer-events:none}
+.tab label{order:0;padding:9px 18px;border:1px solid var(--line);border-radius:8px 8px 0 0;cursor:pointer;background:var(--card);font-weight:600}
+.tab input:checked+label{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.tab input:focus-visible+label{outline:2px solid var(--accent);outline-offset:2px}
+.tab .panel{order:1;flex:0 0 100%;display:none}
+.tab input:checked+label+.panel{display:block}
+.solo{margin:22px 0 8px}
+iframe.map{width:100%;display:block;border:1px solid var(--line);border-radius:0 8px 8px 8px;background:var(--bg)}
+.solo iframe.map{border-radius:8px}
+.summary{margin:14px 0 6px}
+.links{font-size:.92rem;color:var(--muted);margin:6px 0 0}
 .wrap{overflow-x:auto;margin:10px 0}
 table{border-collapse:collapse;width:100%;font-size:.95rem}
 th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
@@ -83,12 +76,11 @@ td .note{display:block;color:var(--muted);font-size:.85rem;margin-top:3px}
 ul.plain{padding-left:20px;margin:6px 0}
 ol.sources{padding-left:22px;font-size:.92rem;color:var(--muted)}
 ol.sources li{margin:6px 0}
-footer{max-width:1000px;margin:0 auto;padding:20px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer{max-width:1040px;margin:0 auto;padding:20px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
 @media (max-width:640px){
 h1{font-size:1.6rem}
 .feature,.group .card{grid-template-columns:1fr}
 .group .grid{grid-template-columns:1fr}
-details.evidence dl{grid-template-columns:1fr}
 table.cmp-table thead{position:absolute;left:-9999px}
 table.cmp-table,table.cmp-table tbody,table.cmp-table tr,table.cmp-table td{display:block;width:100%}
 table.cmp-table tr{border:1px solid var(--line);border-radius:8px;margin:0 0 12px;padding:6px 0}
