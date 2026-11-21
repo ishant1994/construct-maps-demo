@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Claude Sonnet 5.5 (high) · GPX4: from binder to degrader · Construct Maps</title>
+<meta name="description" content="How can a designed binder to human GPX4 be turned into a degrader that removes GPX4 rather than only binding it?">
+<link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+<main>
+<p class="crumbs"><a href="../../../index.html">Construct Maps</a> / <a href="../">GPX4: from binder to degrader</a> / Claude</p>
+<nav class="switch" aria-label="Product"><a href="../gpt-r1/">GPT</a><a href="./" aria-current="page">Claude</a></nav>
+<h1>Claude Sonnet 5.5 (high)</h1>
+<p class="q">How can a designed binder to human GPX4 be turned into a degrader that removes GPX4 rather than only binding it?</p>
+<p class="facts">9 constructs (4 candidates, 4 controls, 1 reference) · 4 hypotheses · 26 cited sources, 25 confirmed in Europe PMC</p>
+<a class="shot" href="../../../demos/gpx4-claude-r1.html"><img src="../../../assets/gpx4-claude-r1.png" alt="Claude Sonnet 5.5 (high): the interactive library for GPX4: from binder to degrader"></a>
+<div class="buttons"><a class="primary" href="../../../demos/gpx4-claude-r1.html">Open interactive map</a><a href="../../../demos/gpx4-claude-r1.json">Download record</a><a href="../">Back to the article</a></div>
+<h2>Objective</h2><p>Convert binder5, a BindCraft-designed binder to human GPX4 (P36969), from a molecule that only binds into a degrader that lowers GPX4 protein in cells. Four mechanistically distinct recruitment routes are compared, each against a matched dead or ablated control and the binder-only reference.</p>
+<h2>Hypotheses</h2><ul class="plain"><li>Does a folded catalytic U-box E3 module on the binder turn GPX4 engagement into GPX4 ubiquitination and loss?</li><li>Does recruiting a CUL3 adapter (SPOP BTB/3-box) degrade GPX4, and does that need the 3-box?</li><li>Does a four-residue C-end degron suffice to degrade GPX4 through the binder?</li><li>Can a KFERQ-type motif route GPX4 to the lysosome without ubiquitination?</li></ul>
+<h2>Constructs</h2>
+<div class="wrap"><table><thead><tr><th scope="col">Construct</th><th scope="col">Role</th><th scope="col">What it is</th></tr></thead><tbody>
+<tr id="c-ref"><td><code>ref</code></td><td>reference</td><td>Binder with linker only</td></tr>
+<tr id="c-chip"><td><code>chip</code></td><td>candidate</td><td>CHIP U-box module on the binder</td></tr>
+<tr id="c-chip-r272a"><td><code>chip-r272a</code></td><td>control</td><td>E2-binding-dead U-box (R272A)</td></tr>
+<tr id="c-spop"><td><code>spop</code></td><td>candidate</td><td>SPOP BTB/3-box module on the binder</td></tr>
+<tr id="c-spop-d3box"><td><code>spop-d3box</code></td><td>control</td><td>SPOP without the 3-box</td></tr>
+<tr id="c-rrrg"><td><code>rrrg</code></td><td>candidate</td><td>RRRG C-end degron on the binder</td></tr>
+<tr id="c-trgn"><td><code>trgn</code></td><td>control</td><td>Degron-null TRGN ending</td></tr>
+<tr id="c-ctm"><td><code>ctm</code></td><td>candidate</td><td>KFERQ-type CMA motif on the binder</td></tr>
+<tr id="c-ctm-mut"><td><code>ctm-mut</code></td><td>control</td><td>Glutamine-to-alanine CMA motif</td></tr>
+</tbody></table></div>
+</main>
+<footer>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. We wrote the summaries and the paper comparisons.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../../LICENSE">License</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>ATP binding and hydrolysis in Hsp90 client maturation · Construct Maps</title>
+<meta name="description" content="In yeast, Hsp90 that cannot hydrolyze ATP still supports growth, but Hsp90 that cannot bind it does not. Which step does a given client protein need?">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<main>
+<p class="crumbs"><a href="../../index.html">Construct Maps</a> / ATP binding and hydrolysis in Hsp90 client maturation</p>
+<h1>ATP binding and hydrolysis in Hsp90 client maturation</h1>
+<div class="prose">
+<p>Budding yeast can grow with Hsp82-E33A as its sole source of Hsp90 <sup class="cite"><a href="#src-zierer2016" aria-label="Source 1">1</a></sup>. The mutant binds ATP, but its ATPase activity is below detection. The ATP-binding-defective D79N mutant, by contrast, fails to support growth <sup class="cite"><a href="#src-reidy2023" aria-label="Source 2">2</a></sup>. These observations distinguish the nucleotide requirements for viability while leaving open how individual clients respond to the same mutations. An earlier study found reduced activation of the client kinase v-Src in cells expressing E33A <sup class="cite"><a href="#src-zierer2016" aria-label="Source 1">1</a></sup>. A strain can therefore remain viable despite a measurable defect in client maturation.</p>
+<div class="prompt-block"><p class="label">The prompt</p>
+<blockquote class="prompt">Design a library of HSP90 variants to distinguish the roles of ATP binding and ATP hydrolysis in client maturation.</blockquote>
+</div>
+<div class="libs "><article class="card lib"><p class="lib-title">The Hsp82 library</p>
+<p class="meta">8 constructs (3 candidates, 4 controls, 1 reference) · 5 hypotheses · 8 cited sources, 8 confirmed in Europe PMC</p>
+<p class="lib-note">The library also includes K98A and E33A/K98A, which ask whether returning to the ADP state matters when hydrolysis is impaired, and R380A, which asks whether ATP turnover can be separated from client maturation.</p>
+<p class="buttons"><a class="primary" href="../../demos/hsp90.html">Open interactive map</a><a href="../../demos/hsp90.json">Download record</a><a href="library/">Construct list</a></p>
+<details class="embed"><summary>Show all 8 constructs on this page</summary>
+<iframe class="viewer" src="../../demos/hsp90.html" title="The Hsp82 library: the interactive library" loading="lazy"></iframe>
+</details></article></div>
+<section id="fig-1">
+
+<figure class="preview"><a href="../../demos/hsp90.html"><img src="../../assets/preview-hsp90-1.png" alt="The interactive library cropped to hsp82-wt, d79n, e33a" loading="lazy"></a><figcaption>Wild type, D79N and E33A. D79N cannot bind ATP well, and E33A binds ATP but does not hydrolyze it. Measuring one client&#39;s activity in all three would show which of the two steps that client needs. <a class="open-map" href="../../demos/hsp90.html">Open the full interactive map</a>.</figcaption></figure>
+
+
+</section>
+<section id="fig-2">
+<h2>E372K rescues growth in the E33A background. Does it also restore client activity?</h2>
+<figure class="preview"><a href="../../demos/hsp90.html"><img src="../../assets/preview-hsp90-2.png" alt="The interactive library cropped to hsp82-wt, e33a, e372k, e33a-e372k" loading="lazy"></a><figcaption>Wild type, E33A, E372K and the E33A/E372K double mutant. <a class="open-map" href="../../demos/hsp90.html">Open the full interactive map</a>.</figcaption></figure>
+<p>Reidy and colleagues found that E372K suppressed growth defects in Hsp82-E33A without restoring detectable ATP hydrolysis <sup class="cite"><a href="#src-reidy2023" aria-label="Source 2">2</a></sup><span class="figrefs">(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10148809/figure/Fig5/">Fig. 5</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10148809/figure/Fig6/">Fig. 6</a>)</span>. The library pairs that published double mutant (<a class="chip" href="library/#c-e33a-e372k"><code>e33a-e372k</code></a>) with wild type and both single mutants. Measuring the same client across all four would show whether the growth rescue extends to client activity. <a class="chip" href="library/#c-e372k"><code>e372k</code></a> alone supplies an important control: if it also increases activity in wild-type Hsp82, an improvement in the double mutant could reflect a more general effect on that client.</p>
+<p>Even a full rescue would not settle the mechanism. In E33A, E372K also restores stronger closed-clamp stabilization by ATP-γ-S <sup class="cite"><a href="#src-reidy2025" aria-label="Source 3">3</a></sup><span class="figrefs">(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12280139/figure/Fig3/">Fig. 3</a>)</span>, so the rescue could come from altered conformational coupling instead of a bypass of hydrolysis.</p>
+<details class="evidence"><summary>Evidence for <code>e33a-e372k</code> from the design record</summary>
+<dl>
+<dt>Construct</dt><dd><a class="chip" href="library/#c-e33a-e372k"><code>e33a-e372k</code></a>. Introduce the documented suppressor into the hydrolysis-defective background.</dd>
+<dt>Source</dt><dd>Reidy et al. 2023 <sup class="cite"><a href="#src-reidy2023" aria-label="Source 2">2</a></sup> · Results, Figures 4-6; Table 3 <span class="figrefs">(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10148809/figure/Fig5/">Fig. 5</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10148809/figure/Fig6/">Fig. 6</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10148809/table/Tab3/">Table 3</a>)</span></dd>
+<dt>What it measured</dt><dd>E372K suppressed growth and cell-wall-integrity defects of E33A without restoring detectable ATP hydrolysis; GAL induction was improved but not restored to WT.</dd>
+<dt>System</dt><dd>Hsp82 E33A/E372K in yeast; CWI/GAL pathway readouts and purified Hsp82 ATPase assays. Direct GR or Ste11 catalytic rescue was not demonstrated.</dd>
+<dt>Inference</dt><dd>This is a published genetic rescue pair used here to distinguish a chemical requirement from altered conformational progression. It is not a new proposed double mutant and does not pre-establish GR or Ste11 rescue.</dd>
+<dt>Still open</dt><dd>Published rescue concerns growth, CWI and partial GAL output, not universal client maturation. Exchange acceleration is inferred from genetics; the 2025 study also supports altered closed-state coupling.</dd>
+</dl>
+<p class="meta">This text comes straight from the design record. Expand the row for <code>e33a-e372k</code> in the interactive map to see the same evidence there.</p>
+</details>
+</section><h2 id="sources">Sources</h2>
+<ol class="sources">
+<li id="src-zierer2016">Zierer BK, Rübbelke M, Tippel F, et al. Importance of cycle timing for the function of the molecular chaperone Hsp90. Nature Structural &amp; Molecular Biology 23, 1020–1028 (2016). <a href="https://doi.org/10.1038/nsmb.3305">10.1038/nsmb.3305</a></li>
+<li id="src-reidy2023">Reidy M, Garzillo K, Masison DC. Nucleotide exchange is sufficient for Hsp90 functions in vivo. Nature Communications 14, 2489 (2023). <a href="https://doi.org/10.1038/s41467-023-38230-0">10.1038/s41467-023-38230-0</a></li>
+<li id="src-reidy2025">Reidy M, Masison DC. ATP plays a structural role in Hsp90 function. Nature Communications 16, 6710 (2025). <a href="https://doi.org/10.1038/s41467-025-61962-0">10.1038/s41467-025-61962-0</a></li>
+</ol>
+</div>
+</main>
+<footer>
+<p>Construct Maps is made by ishant1994 and released under GPL-3.0-or-later. Each interactive map is generated from a design record and published unedited. We wrote the summaries and the paper comparisons.</p>
+<p><a href="https://github.com/ishant1994/construct-maps">Source and plugin</a> · <a href="https://github.com/ishant1994/construct-maps/blob/main/PRIVACY.md">Privacy</a> · <a href="../../LICENSE">License</a></p>
+</footer>
+</body>
+</html>
